@@ -1,0 +1,10 @@
+C:\Users\ntha1\Desktop\BAOCAO\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe.config
+C:\Users\ntha1\Desktop\BAOCAO\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe
+C:\Users\ntha1\Desktop\BAOCAO\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.pdb
+C:\Users\ntha1\Desktop\BAOCAO\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.AssemblyReference.cache
+C:\Users\ntha1\Desktop\BAOCAO\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Properties.Resources.resources
+C:\Users\ntha1\Desktop\BAOCAO\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.GenerateResource.cache
+C:\Users\ntha1\Desktop\BAOCAO\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.CoreCompileInputs.cache
+C:\Users\ntha1\Desktop\BAOCAO\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.exe
+C:\Users\ntha1\Desktop\BAOCAO\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.pdb
+C:\Users\ntha1\Desktop\BAOCAO\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.frmMain.resources
