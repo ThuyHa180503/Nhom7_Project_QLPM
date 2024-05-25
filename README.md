@@ -3,7 +3,7 @@
 ## Thông tin chung
 
 - **Tên đề tài**: Xây dựng hệ thống quản lý phòng máy của trường đại học
-- **Giảng viên hướng dẫn**: 
+- **Giảng viên hướng dẫn**: Ths.Lê Cẩm Tú
 - **Nhóm thực hiện**: Nhóm 6
 - **Lớp học phần**: 232IS25A03
 - **Ngôn ngữ lập trình**: C#
