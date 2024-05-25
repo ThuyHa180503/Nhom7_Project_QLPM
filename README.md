@@ -1,4 +1,3 @@
-XÂY DỰNG HỆ THỐNG QUẢN LÝ PHÒNG MÁY CỦA TRƯỜNG ĐẠI HỌC
 # Xây dựng hệ thống quản lý phòng máy của trường đại học
 
 ## Thông tin chung
@@ -16,7 +15,7 @@ XÂY DỰNG HỆ THỐNG QUẢN LÝ PHÒNG MÁY CỦA TRƯỜNG ĐẠI HỌC
 | STT | Họ và tên      | Mã sinh viên  | Tỉ lệ đóng góp |
 |-----|----------------|---------------|----------------|
 | 1   | Nguyễn Thúy Hà | 24A4040617    |                |
-|Nhóm trưởng:                                           |
+|**Công việc**                                          |
 | 2   |                |               |                |
 |                                                       |
 | 3   |                |               |                |
