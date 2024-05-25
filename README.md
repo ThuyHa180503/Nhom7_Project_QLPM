@@ -15,10 +15,10 @@ XÂY DỰNG HỆ THỐNG QUẢN LÝ PHÒNG MÁY CỦA TRƯỜNG ĐẠI HỌC
 
 | STT | Họ và tên      | Mã sinh viên  | Tỉ lệ đóng góp |
 |-----|----------------|---------------|----------------|
-| 1   | Nguyễn Thúy Hà | 24A4040617    |  |
-|     | **Ghi chú:**   |               |                |
+| 1   | Nguyễn Thúy Hà | 24A4040617    |                |
+|Nhóm trưởng:                                           |
 | 2   |                |               |                |
-|     | **Ghi chú:**   |               |                |
+|                                                       |
 | 3   |                |               |                |
 |     | **Ghi chú:**   |               |                |
 | 4   |                |               |                |
@@ -26,7 +26,5 @@ XÂY DỰNG HỆ THỐNG QUẢN LÝ PHÒNG MÁY CỦA TRƯỜNG ĐẠI HỌC
 | 5   |                |               |                |
 |     | **Ghi chú:**   |               |                |
 
-## Xác nhận của sinh viên
 
----
 
