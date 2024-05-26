@@ -63,7 +63,7 @@ namespace Nhom7_Project_QLPM
             if (menuExpand == false)
             {
                 menuQuanLy.Height += 10;
-                if (menuQuanLy.Height >= 280)
+                if (menuQuanLy.Height >= 305)
                 {
                     menuTransition0.Stop();
                     menuExpand = true;
@@ -136,7 +136,6 @@ namespace Nhom7_Project_QLPM
         {
             OpenChildForm(new Forms.frmHome());
             label2.Text = btnHome.Text;
-          
         }
 
         private void btnPhongMay_Click(object sender, EventArgs e)
@@ -221,6 +220,22 @@ namespace Nhom7_Project_QLPM
         {
             OpenChildForm(new Forms.CaNhanCaiDat());
             label2.Text = btnCaNhanCaiDat.Text;
+        }
+
+        private void menuQuanLy_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnXuLyBCSC_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.QLXuLyBCSC());
+            label2.Text = btnXuLyBCSC.Text;
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            Class.functions.connect();
         }
     }
 }
