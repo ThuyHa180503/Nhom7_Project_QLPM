@@ -25,6 +25,7 @@ namespace Nhom7_Project_QLPM.Forms
         {
             btnLuu.Enabled = false;
             btnBoqua.Enabled = false;
+            btnCapnhat.Enabled = false;
 
             Load_DataGridView();
 
@@ -60,6 +61,9 @@ namespace Nhom7_Project_QLPM.Forms
 
             functions.FillCombo("SELECT MaPM, TenPM FROM tblPhongMay", cbophongmay, "MaPM", "TenPM");
             cbophongmay.SelectedIndex = -1;
+
+            functions.FillCombo("SELECT MaPM, TenPM FROM tblPhongMay", cboloc, "MaPM", "TenPM");
+            cboloc.SelectedIndex = -1;
 
             ResetValues();
         }
@@ -187,39 +191,145 @@ namespace Nhom7_Project_QLPM.Forms
             btnBoqua.Enabled = true;
             btnLuu.Enabled = true;
             btnThem.Enabled = false;
+            txtmamay.Enabled = false;
             ResetValues();
-            txtmamay.Enabled = true;
-            txtmamay.Focus();
+            
+            //thêm mã máy tự động
+            int count = 0;
+            count = dataGridView1.Rows.Count; //đếm tất cả các dòng có trong dtgv
+            string chuoi1 = "";
+            int chuoi2 = 0;
+            chuoi1 = Convert.ToString(dataGridView1.Rows[count - 1].Cells[0].Value);
+            chuoi2 = Convert.ToInt32((chuoi1.Remove(0, 2)));
+            if (chuoi2 + 1 < 10)
+                txtmamay.Text = "MT000" + (chuoi2 + 1).ToString();
+            else if (chuoi2 + 1 < 100)
+                txtmamay.Text = "MT00" + (chuoi2 + 1).ToString();
+            else if (chuoi2 + 1 < 1000)
+                txtmamay.Text = "MT0" + (chuoi2 + 1).ToString();
+            else if (chuoi2 + 1 < 10000)
+                txtmamay.Text = "MT" + (chuoi2 + 1).ToString();
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
             string sql;
-            if (txtmamay.Text.Trim().Length == 0)
-            {
-                MessageBox.Show("Bạn phải nhập mã máy", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
-                txtmamay.Focus();
-                return;
-            }
             if (txttenmay.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Bạn phải nhập tên máy", "Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("Bạn phải nhập tên máy", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txttenmay.Focus();
                 return;
             }
             if (cbophongmay.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Bạn phải chọn phòng máy", "Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Bạn phải chọn phòng máy", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 cbophongmay.Focus();
                 return;
             }
-            sql = "INSERT INTO tblMayTinh(MaMay,TenMay,GhiChu,MaOCung,MaDungLuong,MaPM, MaRam,MaTocDo,MaManHinh, MaBanPhim, MaChuot, MaCoManHinh, MaODia,MaChip) VALUES(N'" + txtmamay.Text.Trim() +"'," +"N'" + txttenmay.Text.Trim() + "',N'"+txtghichu.Text.Trim()+"',N'" + cbooc.SelectedValue.ToString() + "',N'" + cbodl.SelectedValue.ToString() + "',N'" + cbophongmay.SelectedValue.ToString() + "',N'" + cboram.SelectedValue.ToString() + "',N'" + cbotocdo.SelectedValue.ToString() + "',N'" + cbomh.SelectedValue.ToString() + "',N'" + cbobp.SelectedValue.ToString() + "',N'" + cbochuot.SelectedValue.ToString() + "',N'" + cbocmh.SelectedValue.ToString() + "',N'" + cboodia.SelectedValue.ToString() + "',N'" + cbochip.SelectedValue.ToString() + "')";
 
-            string sql1 = "UPDATE tblPhongMay SET SoMay = SoMay + 1 WHERE MaPM = N'" + cbophongmay.SelectedValue.ToString() + "'";
-            
+            string maOCung;
+            if (cbooc.SelectedValue != null)
+            {
+                maOCung = "N'" + cbooc.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maOCung = "NULL";
+            }
+
+            string maDungLuong;
+            if (cbodl.SelectedValue != null)
+            {
+                maDungLuong = "N'" + cbodl.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maDungLuong = "NULL";
+            }
+
+            string maRam;
+            if (cboram.SelectedValue != null)
+            {
+                maRam = "N'" + cboram.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maRam = "NULL";
+            }
+
+            string maTocDo;
+            if (cbotocdo.SelectedValue != null)
+            {
+                maTocDo = "N'" + cbotocdo.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maTocDo = "NULL";
+            }
+
+            string maManHinh;
+            if (cbomh.SelectedValue != null)
+            {
+                maManHinh = "N'" + cbomh.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maManHinh = "NULL";
+            }
+
+            string maBanPhim;
+            if (cbobp.SelectedValue != null)
+            {
+                maBanPhim = "N'" + cbobp.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maBanPhim = "NULL";
+            }
+
+            string maChuot;
+            if (cbochuot.SelectedValue != null)
+            {
+                maChuot = "N'" + cbochuot.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maChuot = "NULL";
+            }
+
+            string maCoManHinh;
+            if (cbocmh.SelectedValue != null)
+            {
+                maCoManHinh = "N'" + cbocmh.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maCoManHinh = "NULL";
+            }
+
+            string maODia;
+            if (cboodia.SelectedValue != null)
+            {
+                maODia = "N'" + cboodia.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maODia = "NULL";
+            }
+
+            string maChip;
+            if (cbochip.SelectedValue != null)
+            {
+                maChip = "N'" + cbochip.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maChip = "NULL";
+            }
+
+            sql = "INSERT INTO tblMayTinh (MaMay, TenMay, GhiChu, MaOCung, MaDungLuong, MaPM, MaRam, MaTocDo, MaManHinh, MaBanPhim, MaChuot, MaCoManHinh, MaODia, MaChip) VALUES (N'" + txtmamay.Text.Trim() + "', N'" + txttenmay.Text.Trim() + "', N'" + txtghichu.Text.Trim() + "', " + maOCung + ", " + maDungLuong + ", N'" + cbophongmay.SelectedValue.ToString() + "', " + maRam + ", " + maTocDo + ", " + maManHinh + ", " + maBanPhim + ", " + maChuot + "," + maCoManHinh + "," + maODia + "," + maChip + ")";
+
             functions.RunSql(sql);
-            functions.RunSql(sql1);
-
             Load_DataGridView();
             ResetValues();
 
@@ -228,7 +338,9 @@ namespace Nhom7_Project_QLPM.Forms
             btnSua.Enabled = true;
             btnBoqua.Enabled = false;
             btnLuu.Enabled = false;
+            btnCapnhat.Enabled = true;
             txtmamay.Enabled = false;
+
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -259,19 +371,117 @@ namespace Nhom7_Project_QLPM.Forms
 
             string mapmtruoc = functions.GetFieldValues("SELECT MaPM FROM tblMayTinh WHERE MaMay = N'" + txtmamay.Text.Trim() + "'");
 
+            string maOCung;
+            if (cbooc.SelectedValue != null)
+            {
+                maOCung = "N'" + cbooc.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maOCung = "NULL";
+            }
 
-            sql = "UPDATE tblMayTinh SET  TenMay=N'" + txttenmay.Text.Trim().ToString() +"',GhiChu=N'" + txtghichu.Text.Trim().ToString() + "',MaOCung=N'" + cbooc.SelectedValue.ToString() + "', MaDungLuong=N'" + cbodl.SelectedValue.ToString() + "',MaPM=N'" + cbophongmay.SelectedValue.ToString() + "',MaRam=N'" + cboram.SelectedValue.ToString() + "',MaTocDo=N'" + cbotocdo.SelectedValue.ToString() + "',MaManHinh=N'" + cbomh.SelectedValue.ToString() + "',MaBanPhim=N'" + cbobp.SelectedValue.ToString() + "', MaChuot=N'" + cbochuot.SelectedValue.ToString() + "',MaCoManHinh=N'" + cbocmh.SelectedValue.ToString() + "',MaODia=N'" + cboodia.SelectedValue.ToString() + "',MaChip=N'" + cbochip.SelectedValue.ToString() + "'WHERE MaMay=N'" + txtmamay.Text + "'";
+            string maDungLuong;
+            if (cbodl.SelectedValue != null)
+            {
+                maDungLuong = "N'" + cbodl.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maDungLuong = "NULL";
+            }
 
-            string sql1 = "UPDATE tblPhongMay SET SoMay = SoMay + 1 WHERE MaPM = N'" + cbophongmay.SelectedValue.ToString() + "'";
+            string maRam;
+            if (cboram.SelectedValue != null)
+            {
+                maRam = "N'" + cboram.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maRam = "NULL";
+            }
+
+            string maTocDo;
+            if (cbotocdo.SelectedValue != null)
+            {
+                maTocDo = "N'" + cbotocdo.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maTocDo = "NULL";
+            }
+
+            string maManHinh;
+            if (cbomh.SelectedValue != null)
+            {
+                maManHinh = "N'" + cbomh.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maManHinh = "NULL";
+            }
+
+            string maBanPhim;
+            if (cbobp.SelectedValue != null)
+            {
+                maBanPhim = "N'" + cbobp.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maBanPhim = "NULL";
+            }
+
+            string maChuot;
+            if (cbochuot.SelectedValue != null)
+            {
+                maChuot = "N'" + cbochuot.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maChuot = "NULL";
+            }
+
+            string maCoManHinh;
+            if (cbocmh.SelectedValue != null)
+            {
+                maCoManHinh = "N'" + cbocmh.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maCoManHinh = "NULL";
+            }
+
+            string maODia;
+            if (cboodia.SelectedValue != null)
+            {
+                maODia = "N'" + cboodia.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maODia = "NULL";
+            }
+
+            string maChip;
+            if (cbochip.SelectedValue != null)
+            {
+                maChip = "N'" + cbochip.SelectedValue.ToString() + "'";
+            }
+            else
+            {
+                maChip = "NULL";
+            }
+
+            sql = "UPDATE tblMayTinh SET  TenMay=N'" + txttenmay.Text.Trim().ToString() +"',GhiChu=N'" + txtghichu.Text.Trim().ToString() + "',MaOCung= "+maOCung+" , MaDungLuong=" + maDungLuong+",MaPM=N'" + cbophongmay.SelectedValue.ToString() + "',MaRam="+maRam+",MaTocDo="+maTocDo+",MaManHinh="+maManHinh+",MaBanPhim="+maBanPhim+", MaChuot="+maChuot+",MaCoManHinh="+maCoManHinh+",MaODia="+maODia+",MaChip="+maChip+" WHERE MaMay=N'" + txtmamay.Text + "'";
             functions.RunSql(sql);
 
+            sql = "UPDATE tblPhongMay SET SoMay = SoMay + 1 WHERE MaPM = N'" + cbophongmay.SelectedValue.ToString() + "'";
+            functions.RunSql(sql);
             // Cập nhật số máy của phòng máy cũ
-            string sql2 = "UPDATE tblPhongMay SET SoMay = SoMay - 1 WHERE MaPM = N'" + mapmtruoc + "'";
-            functions.RunSql(sql2);
-
+            sql = "UPDATE tblPhongMay SET SoMay = SoMay - 1 WHERE MaPM = N'" + mapmtruoc + "'";
+            functions.RunSql(sql);
             //Cập nhập số máy của phòng máy mới
-            string sql3 = "UPDATE tblPhongMay SET SoMay = SoMay + 1 WHERE MaPM = N'" + cbophongmay.SelectedValue.ToString() + "'";
-            functions.RunSql(sql3);
+            sql = "UPDATE tblPhongMay SET SoMay = SoMay + 1 WHERE MaPM = N'" + cbophongmay.SelectedValue.ToString() + "'";
+            functions.RunSql(sql);
 
             Load_DataGridView();
             ResetValues();
@@ -300,8 +510,8 @@ namespace Nhom7_Project_QLPM.Forms
                 functions.RunSqlDel(sql);
 
                 // Cập nhật số máy của phòng máy vừa xóa máy tính
-                string sql1 = "UPDATE tblPhongMay SET SoMay = SoMay - 1 WHERE MaPM = N'" + maPM + "'";
-                functions.RunSql(sql1);
+                sql = "UPDATE tblPhongMay SET SoMay = SoMay - 1 WHERE MaPM = N'" + maPM + "'";
+                functions.RunSql(sql);
 
                 Load_DataGridView();
                 ResetValues();
@@ -353,12 +563,34 @@ namespace Nhom7_Project_QLPM.Forms
         {
             Load_DataGridView();
             ResetValues();
+            btnThem.Enabled = true;
         }
 
-        private void btnDong_Click(object sender, EventArgs e)
+        private void btnCapnhat_Click(object sender, EventArgs e)
         {
-            this.Close();
+            string sql;
+            sql = "SELECT MaPM, COUNT(*) AS SoMay FROM tblMayTinh GROUP BY MaPM";
+            qlmt = functions.GetDataToTable(sql);
+
+            foreach (DataRow row in qlmt.Rows)
+            {
+                string maPM = row["MaPM"].ToString();
+                int somay = Convert.ToInt32(row["SoMay"]);
+                sql = "UPDATE tblPhongMay SET SoMay = " + somay + " WHERE MaPM = N'" + maPM + "'";
+                functions.RunSql(sql);
+            }
+
+            MessageBox.Show("Cập nhật số máy thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        private void btnLoc_Click(object sender, EventArgs e)
+        {
+            string maPM = cboloc.SelectedValue.ToString();
+
+            string sql = "SELECT MaMay, TenMay, MaPM, MaOCung, MaDungLuong, MaRam, MaTocDo, MaManHinh, MaBanPhim, MaChuot, MaCoManHinh, MaODia, MaChip, GhiChu FROM tblMayTinh WHERE MaPM = '" + maPM + "'";
+
+            qlmt = functions.GetDataToTable(sql);
+            dataGridView1.DataSource = qlmt;
+        }
     }
 }
