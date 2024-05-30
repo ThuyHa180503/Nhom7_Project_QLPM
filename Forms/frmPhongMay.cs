@@ -16,5 +16,10 @@ namespace Nhom7_Project_QLPM.Forms
         {
             InitializeComponent();
         }
+
+        private void frmPhongMay_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
