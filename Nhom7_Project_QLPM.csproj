@@ -46,6 +46,109 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Function.cs" />
+    <Compile Include="Forms\CaNhanBCSC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CaNhanBCSC.Designer.cs">
+      <DependentUpon>CaNhanBCSC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CaNhanCaiDat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CaNhanCaiDat.Designer.cs">
+      <DependentUpon>CaNhanCaiDat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CaNhanLichTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CaNhanLichTH.Designer.cs">
+      <DependentUpon>CaNhanLichTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CaNhanToi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CaNhanToi.Designer.cs">
+      <DependentUpon>CaNhanToi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLichTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLichTH.Designer.cs">
+      <DependentUpon>frmLichTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPhongMay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPhongMay.Designer.cs">
+      <DependentUpon>frmPhongMay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QLBCSC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QLBCSC.Designer.cs">
+      <DependentUpon>QLBCSC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QLCa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QLCa.Designer.cs">
+      <DependentUpon>QLCa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QLLichTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QLLichTH.Designer.cs">
+      <DependentUpon>QLLichTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QLLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QLLop.Designer.cs">
+      <DependentUpon>QLLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QLMayTinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QLMayTinh.Designer.cs">
+      <DependentUpon>QLMayTinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QLMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QLMon.Designer.cs">
+      <DependentUpon>QLMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QLPhongMay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QLPhongMay.Designer.cs">
+      <DependentUpon>QLPhongMay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QLTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QLTaiKhoan.Designer.cs">
+      <DependentUpon>QLTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QLXuLyBCSC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QLXuLyBCSC.Designer.cs">
+      <DependentUpon>QLXuLyBCSC.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +157,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\CaNhanBCSC.resx">
+      <DependentUpon>CaNhanBCSC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QLLop.resx">
+      <DependentUpon>QLLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QLXuLyBCSC.resx">
+      <DependentUpon>QLXuLyBCSC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,6 +183,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -80,26 +199,58 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\background_login.png" />
     <Content Include="Images\icons8-add-20.png" />
+    <Content Include="Images\icons8-bars-20.png" />
+    <Content Include="Images\icons8-bars-25.png" />
+    <Content Include="Images\icons8-class-20 %281%29.png" />
     <Content Include="Images\icons8-class-20.png" />
+    <Content Include="Images\icons8-computer-20 %281%29.png" />
     <Content Include="Images\icons8-computer-20.png" />
     <Content Include="Images\icons8-delete-20.png" />
     <Content Include="Images\icons8-edit-20.png" />
+    <Content Include="Images\icons8-error-20 %281%29.png" />
+    <Content Include="Images\icons8-error-20.png" />
+    <Content Include="Images\icons8-error-globe-20.png" />
     <Content Include="Images\icons8-help-20.png" />
+    <Content Include="Images\icons8-home-20 %281%29.png" />
     <Content Include="Images\icons8-home-20.png" />
     <Content Include="Images\icons8-import-20.png" />
     <Content Include="Images\icons8-login-20.png" />
     <Content Include="Images\icons8-logout-20.png" />
+    <Content Include="Images\icons8-me-20 %281%29.png" />
+    <Content Include="Images\icons8-me-20.png" />
+    <Content Include="Images\icons8-note-20 %281%29.png" />
     <Content Include="Images\icons8-note-20.png" />
+    <Content Include="Images\icons8-person-20 %281%29.png" />
+    <Content Include="Images\icons8-person-20 %282%29.png" />
     <Content Include="Images\icons8-print-20.png" />
+    <Content Include="Images\icons8-schedule-20 %281%29.png" />
     <Content Include="Images\icons8-schedule-20.png" />
+    <Content Include="Images\icons8-setting-20 %281%29.png" />
     <Content Include="Images\icons8-setting-20.png" />
+    <Content Include="Images\icons8-subject-20.png" />
     <Content Include="Images\icons8-task-20.png" />
+    <Content Include="Images\icons8-team-20 %281%29.png" />
+    <Content Include="Images\icons8-team-20.png" />
+    <Content Include="Images\icons8-time-20 %281%29.png" />
     <Content Include="Images\icons8-time-20.png" />
+    <Content Include="Images\logo.png" />
+    <None Include="Resources\LaBNET.png" />
+    <None Include="Resources\cloud-computing1.png" />
+    <None Include="Resources\filter.png" />
+    <None Include="Resources\send.png" />
+    <None Include="Resources\refresh1.png" />
+    <None Include="Resources\cloud-computing.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\bin.png" />
+    <None Include="Resources\pen.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\plus.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Class\" />
-    <Folder Include="Forms\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
