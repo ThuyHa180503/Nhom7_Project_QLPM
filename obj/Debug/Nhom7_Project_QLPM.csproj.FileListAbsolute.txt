@@ -8,3 +8,55 @@ C:\Users\ntha1\Desktop\BAOCAO\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.cs
 C:\Users\ntha1\Desktop\BAOCAO\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.exe
 C:\Users\ntha1\Desktop\BAOCAO\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.pdb
 C:\Users\ntha1\Desktop\BAOCAO\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.frmMain.resources
+C:\Users\ntha1\Desktop\BAOCAO\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanBCSC.resources
+C:\Users\ntha1\Desktop\BAOCAO\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmHome.resources
+C:\Users\Admin\Music\Downloads\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe.config
+C:\Users\Admin\Music\Downloads\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe
+C:\Users\Admin\Music\Downloads\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.pdb
+C:\Users\Admin\Music\Downloads\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.AssemblyReference.cache
+C:\Users\Admin\Music\Downloads\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanBCSC.resources
+C:\Users\Admin\Music\Downloads\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmHome.resources
+C:\Users\Admin\Music\Downloads\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.frmMain.resources
+C:\Users\Admin\Music\Downloads\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Properties.Resources.resources
+C:\Users\Admin\Music\Downloads\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.GenerateResource.cache
+C:\Users\Admin\Music\Downloads\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Music\Downloads\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.exe
+C:\Users\Admin\Music\Downloads\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.pdb
+C:\Users\Admin\Music\Downloads\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLXuLyBCSC.resources
+C:\Users\Admin\Music\Downloads\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLLop.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.AssemblyReference.cache
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanBCSC.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmHome.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLLop.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLXuLyBCSC.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.frmMain.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Properties.Resources.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.GenerateResource.cache
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.CoreCompileInputs.cache
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.exe
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.pdb
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe.config
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.pdb
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM (2)\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmLogin.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe.config
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.pdb
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.AssemblyReference.cache
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanBCSC.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmHome.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmLogin.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLLop.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLXuLyBCSC.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.frmMain.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Properties.Resources.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.GenerateResource.cache
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.CoreCompileInputs.cache
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.exe
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.pdb
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLMayTinh.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLPhongMay.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmPhongMay.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmLichTH.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLLichTH.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.ResolveComReference.cache

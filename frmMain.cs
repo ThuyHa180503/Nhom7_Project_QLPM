@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Nhom7_Project_QLPM.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,17 @@ namespace Nhom7_Project_QLPM
 {
     public partial class frmMain : Form
     {
+        private string userId;
+        private string chucVu;
         public frmMain()
         {
             InitializeComponent();
+        }
+        public frmMain(string userId, string chucVu)
+        {
+            InitializeComponent();
+            this.userId = userId;
+            this.chucVu = chucVu;
         }
         //sidebar
         bool sidebarExpand = true;
@@ -232,10 +241,31 @@ namespace Nhom7_Project_QLPM
             OpenChildForm(new Forms.QLXuLyBCSC());
             label2.Text = btnXuLyBCSC.Text;
         }
-
+       
         private void frmMain_Load(object sender, EventArgs e)
         {
-            Class.functions.connect();
+            // Thiết lập quyền sử dụng menu dựa trên chức vụ
+            if (chucVu == "Nhân viên")
+            {
+                EnableMenuQuanLy();
+            }
+            else if (chucVu == "Giáo viên")
+            {
+                DisableMenuQuanLy();
+            }
+        }
+        private void EnableMenuQuanLy()
+        {
+            // Bật menuQuanLy cho nhân viên
+            menuQuanLy.Enabled = true;
+
+        }
+
+        private void DisableMenuQuanLy()
+        {
+            // Tắt menuQuanLy cho giáo viên
+            menuQuanLy.Enabled = false;
+            menuQuanLy.Hide();
         }
     }
 }

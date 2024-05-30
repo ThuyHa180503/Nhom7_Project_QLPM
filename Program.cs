@@ -16,7 +16,7 @@ namespace Nhom7_Project_QLPM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            Application.Run(new Forms.frmLogin());
         }
     }
 }

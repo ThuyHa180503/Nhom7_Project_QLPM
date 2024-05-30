@@ -70,6 +70,8 @@
             this.btnCaNhanTK = new System.Windows.Forms.Button();
             this.pnCaNhanCaiDat = new System.Windows.Forms.Panel();
             this.btnCaNhanCaiDat = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -99,6 +101,7 @@
             this.pnCaNhanBCSC.SuspendLayout();
             this.pnCaNhanToi.SuspendLayout();
             this.pnCaNhanCaiDat.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -113,20 +116,20 @@
             this.sidebar.Controls.Add(this.pnLichTH);
             this.sidebar.Controls.Add(this.menuQuanLy);
             this.sidebar.Controls.Add(this.menuCaNhan);
+            this.sidebar.Controls.Add(this.panel2);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(200, 840);
+            this.sidebar.Size = new System.Drawing.Size(267, 1279);
             this.sidebar.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Nhom7_Project_QLPM.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 16);
+            this.pictureBox1.Image = global::Nhom7_Project_QLPM.Properties.Resources.LaBNET;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(10, 10, 10, 20);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(70, 68);
+            this.pictureBox1.Size = new System.Drawing.Size(93, 93);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -135,10 +138,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(94, 28);
-            this.label1.Margin = new System.Windows.Forms.Padding(8, 28, 15, 16);
+            this.label1.Location = new System.Drawing.Point(123, 35);
+            this.label1.Margin = new System.Windows.Forms.Padding(10, 35, 20, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 30);
+            this.label1.Size = new System.Drawing.Size(110, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "LabNet";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -147,10 +150,9 @@
             // 
             this.pnHome.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnHome.Controls.Add(this.btnHome);
-            this.pnHome.Location = new System.Drawing.Point(2, 94);
-            this.pnHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnHome.Location = new System.Drawing.Point(3, 126);
             this.pnHome.Name = "pnHome";
-            this.pnHome.Size = new System.Drawing.Size(198, 42);
+            this.pnHome.Size = new System.Drawing.Size(264, 53);
             this.pnHome.TabIndex = 4;
             // 
             // btnHome
@@ -159,11 +161,10 @@
             this.btnHome.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_home_20;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(-8, -11);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHome.Location = new System.Drawing.Point(-10, -14);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnHome.Size = new System.Drawing.Size(216, 66);
+            this.btnHome.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnHome.Size = new System.Drawing.Size(288, 82);
             this.btnHome.TabIndex = 2;
             this.btnHome.Text = "     Trang chủ\r\n";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -175,10 +176,9 @@
             // 
             this.pnPhongMay.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnPhongMay.Controls.Add(this.btnPhongMay);
-            this.pnPhongMay.Location = new System.Drawing.Point(2, 140);
-            this.pnPhongMay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnPhongMay.Location = new System.Drawing.Point(3, 185);
             this.pnPhongMay.Name = "pnPhongMay";
-            this.pnPhongMay.Size = new System.Drawing.Size(198, 42);
+            this.pnPhongMay.Size = new System.Drawing.Size(264, 53);
             this.pnPhongMay.TabIndex = 5;
             // 
             // btnPhongMay
@@ -187,11 +187,10 @@
             this.btnPhongMay.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPhongMay.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_class_20;
             this.btnPhongMay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhongMay.Location = new System.Drawing.Point(-8, -11);
-            this.btnPhongMay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPhongMay.Location = new System.Drawing.Point(-10, -14);
             this.btnPhongMay.Name = "btnPhongMay";
-            this.btnPhongMay.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnPhongMay.Size = new System.Drawing.Size(216, 66);
+            this.btnPhongMay.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnPhongMay.Size = new System.Drawing.Size(288, 82);
             this.btnPhongMay.TabIndex = 2;
             this.btnPhongMay.Text = "     Phòng máy";
             this.btnPhongMay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -203,10 +202,9 @@
             // 
             this.pnLichTH.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnLichTH.Controls.Add(this.btnLichTH);
-            this.pnLichTH.Location = new System.Drawing.Point(2, 186);
-            this.pnLichTH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnLichTH.Location = new System.Drawing.Point(3, 244);
             this.pnLichTH.Name = "pnLichTH";
-            this.pnLichTH.Size = new System.Drawing.Size(198, 42);
+            this.pnLichTH.Size = new System.Drawing.Size(264, 53);
             this.pnLichTH.TabIndex = 6;
             // 
             // btnLichTH
@@ -215,11 +213,10 @@
             this.btnLichTH.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLichTH.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_schedule_20;
             this.btnLichTH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLichTH.Location = new System.Drawing.Point(-8, -11);
-            this.btnLichTH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLichTH.Location = new System.Drawing.Point(-10, -14);
             this.btnLichTH.Name = "btnLichTH";
-            this.btnLichTH.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnLichTH.Size = new System.Drawing.Size(216, 66);
+            this.btnLichTH.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnLichTH.Size = new System.Drawing.Size(288, 82);
             this.btnLichTH.TabIndex = 2;
             this.btnLichTH.Text = "     Lịch TH";
             this.btnLichTH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -240,10 +237,9 @@
             this.menuQuanLy.Controls.Add(this.pnQLBC);
             this.menuQuanLy.Controls.Add(this.pnQLTaiKhoan);
             this.menuQuanLy.Controls.Add(this.pnXuLyBCSC);
-            this.menuQuanLy.Location = new System.Drawing.Point(2, 232);
-            this.menuQuanLy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.menuQuanLy.Location = new System.Drawing.Point(3, 303);
             this.menuQuanLy.Name = "menuQuanLy";
-            this.menuQuanLy.Size = new System.Drawing.Size(198, 477);
+            this.menuQuanLy.Size = new System.Drawing.Size(264, 596);
             this.menuQuanLy.TabIndex = 16;
             this.menuQuanLy.Paint += new System.Windows.Forms.PaintEventHandler(this.menuQuanLy_Paint);
             // 
@@ -251,10 +247,9 @@
             // 
             this.btnQL.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnQL.Controls.Add(this.btnQuanLy);
-            this.btnQL.Location = new System.Drawing.Point(2, 2);
-            this.btnQL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQL.Location = new System.Drawing.Point(3, 3);
             this.btnQL.Name = "btnQL";
-            this.btnQL.Size = new System.Drawing.Size(198, 42);
+            this.btnQL.Size = new System.Drawing.Size(264, 53);
             this.btnQL.TabIndex = 15;
             // 
             // btnQuanLy
@@ -262,11 +257,10 @@
             this.btnQuanLy.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnQuanLy.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuanLy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQuanLy.Location = new System.Drawing.Point(-8, -11);
-            this.btnQuanLy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQuanLy.Location = new System.Drawing.Point(-10, -14);
             this.btnQuanLy.Name = "btnQuanLy";
-            this.btnQuanLy.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnQuanLy.Size = new System.Drawing.Size(216, 66);
+            this.btnQuanLy.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnQuanLy.Size = new System.Drawing.Size(288, 82);
             this.btnQuanLy.TabIndex = 2;
             this.btnQuanLy.Text = "     Quản lý";
             this.btnQuanLy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -278,10 +272,9 @@
             // 
             this.pnQLLop.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnQLLop.Controls.Add(this.btnQLLop);
-            this.pnQLLop.Location = new System.Drawing.Point(2, 48);
-            this.pnQLLop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnQLLop.Location = new System.Drawing.Point(3, 62);
             this.pnQLLop.Name = "pnQLLop";
-            this.pnQLLop.Size = new System.Drawing.Size(198, 42);
+            this.pnQLLop.Size = new System.Drawing.Size(264, 53);
             this.pnQLLop.TabIndex = 11;
             // 
             // btnQLLop
@@ -290,11 +283,10 @@
             this.btnQLLop.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLLop.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_task_20;
             this.btnQLLop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLLop.Location = new System.Drawing.Point(-8, -11);
-            this.btnQLLop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLLop.Location = new System.Drawing.Point(-10, -14);
             this.btnQLLop.Name = "btnQLLop";
-            this.btnQLLop.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnQLLop.Size = new System.Drawing.Size(216, 66);
+            this.btnQLLop.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnQLLop.Size = new System.Drawing.Size(288, 82);
             this.btnQLLop.TabIndex = 2;
             this.btnQLLop.Text = "     Lớp";
             this.btnQLLop.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -306,10 +298,9 @@
             // 
             this.pnQLMon.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnQLMon.Controls.Add(this.btnQLMon);
-            this.pnQLMon.Location = new System.Drawing.Point(2, 94);
-            this.pnQLMon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnQLMon.Location = new System.Drawing.Point(3, 121);
             this.pnQLMon.Name = "pnQLMon";
-            this.pnQLMon.Size = new System.Drawing.Size(198, 42);
+            this.pnQLMon.Size = new System.Drawing.Size(264, 53);
             this.pnQLMon.TabIndex = 12;
             // 
             // btnQLMon
@@ -318,11 +309,10 @@
             this.btnQLMon.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLMon.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_class_201;
             this.btnQLMon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLMon.Location = new System.Drawing.Point(-8, -11);
-            this.btnQLMon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLMon.Location = new System.Drawing.Point(-10, -14);
             this.btnQLMon.Name = "btnQLMon";
-            this.btnQLMon.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnQLMon.Size = new System.Drawing.Size(216, 66);
+            this.btnQLMon.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnQLMon.Size = new System.Drawing.Size(288, 82);
             this.btnQLMon.TabIndex = 2;
             this.btnQLMon.Text = "     Môn";
             this.btnQLMon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -334,10 +324,9 @@
             // 
             this.pnQLCa.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnQLCa.Controls.Add(this.btnQLCa);
-            this.pnQLCa.Location = new System.Drawing.Point(2, 140);
-            this.pnQLCa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnQLCa.Location = new System.Drawing.Point(3, 180);
             this.pnQLCa.Name = "pnQLCa";
-            this.pnQLCa.Size = new System.Drawing.Size(198, 42);
+            this.pnQLCa.Size = new System.Drawing.Size(264, 53);
             this.pnQLCa.TabIndex = 7;
             // 
             // btnQLCa
@@ -346,11 +335,10 @@
             this.btnQLCa.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLCa.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_time_20;
             this.btnQLCa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLCa.Location = new System.Drawing.Point(-8, -11);
-            this.btnQLCa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLCa.Location = new System.Drawing.Point(-10, -14);
             this.btnQLCa.Name = "btnQLCa";
-            this.btnQLCa.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnQLCa.Size = new System.Drawing.Size(216, 66);
+            this.btnQLCa.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnQLCa.Size = new System.Drawing.Size(288, 82);
             this.btnQLCa.TabIndex = 2;
             this.btnQLCa.Text = "     Ca";
             this.btnQLCa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -362,10 +350,9 @@
             // 
             this.pnQLLichTH.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnQLLichTH.Controls.Add(this.btnQLLichTH);
-            this.pnQLLichTH.Location = new System.Drawing.Point(2, 186);
-            this.pnQLLichTH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnQLLichTH.Location = new System.Drawing.Point(3, 239);
             this.pnQLLichTH.Name = "pnQLLichTH";
-            this.pnQLLichTH.Size = new System.Drawing.Size(198, 42);
+            this.pnQLLichTH.Size = new System.Drawing.Size(264, 53);
             this.pnQLLichTH.TabIndex = 9;
             // 
             // btnQLLichTH
@@ -374,11 +361,10 @@
             this.btnQLLichTH.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLLichTH.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_schedule_20;
             this.btnQLLichTH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLLichTH.Location = new System.Drawing.Point(-8, -11);
-            this.btnQLLichTH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLLichTH.Location = new System.Drawing.Point(-10, -14);
             this.btnQLLichTH.Name = "btnQLLichTH";
-            this.btnQLLichTH.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnQLLichTH.Size = new System.Drawing.Size(216, 66);
+            this.btnQLLichTH.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnQLLichTH.Size = new System.Drawing.Size(288, 82);
             this.btnQLLichTH.TabIndex = 2;
             this.btnQLLichTH.Text = "     Lịch TH";
             this.btnQLLichTH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -390,10 +376,9 @@
             // 
             this.pnQLPhongMay.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnQLPhongMay.Controls.Add(this.btnQLPhongMay);
-            this.pnQLPhongMay.Location = new System.Drawing.Point(2, 232);
-            this.pnQLPhongMay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnQLPhongMay.Location = new System.Drawing.Point(3, 298);
             this.pnQLPhongMay.Name = "pnQLPhongMay";
-            this.pnQLPhongMay.Size = new System.Drawing.Size(198, 42);
+            this.pnQLPhongMay.Size = new System.Drawing.Size(264, 53);
             this.pnQLPhongMay.TabIndex = 8;
             // 
             // btnQLPhongMay
@@ -402,11 +387,10 @@
             this.btnQLPhongMay.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLPhongMay.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_class_20;
             this.btnQLPhongMay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLPhongMay.Location = new System.Drawing.Point(-8, -11);
-            this.btnQLPhongMay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLPhongMay.Location = new System.Drawing.Point(-10, -14);
             this.btnQLPhongMay.Name = "btnQLPhongMay";
-            this.btnQLPhongMay.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnQLPhongMay.Size = new System.Drawing.Size(216, 66);
+            this.btnQLPhongMay.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnQLPhongMay.Size = new System.Drawing.Size(288, 82);
             this.btnQLPhongMay.TabIndex = 2;
             this.btnQLPhongMay.Text = "     Phòng máy";
             this.btnQLPhongMay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -418,10 +402,9 @@
             // 
             this.pnQLMt.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnQLMt.Controls.Add(this.btnQLMayTinh);
-            this.pnQLMt.Location = new System.Drawing.Point(2, 278);
-            this.pnQLMt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnQLMt.Location = new System.Drawing.Point(3, 357);
             this.pnQLMt.Name = "pnQLMt";
-            this.pnQLMt.Size = new System.Drawing.Size(198, 42);
+            this.pnQLMt.Size = new System.Drawing.Size(264, 53);
             this.pnQLMt.TabIndex = 10;
             // 
             // btnQLMayTinh
@@ -430,11 +413,10 @@
             this.btnQLMayTinh.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLMayTinh.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_computer_20;
             this.btnQLMayTinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLMayTinh.Location = new System.Drawing.Point(-8, -11);
-            this.btnQLMayTinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLMayTinh.Location = new System.Drawing.Point(-10, -14);
             this.btnQLMayTinh.Name = "btnQLMayTinh";
-            this.btnQLMayTinh.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnQLMayTinh.Size = new System.Drawing.Size(216, 66);
+            this.btnQLMayTinh.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnQLMayTinh.Size = new System.Drawing.Size(288, 82);
             this.btnQLMayTinh.TabIndex = 2;
             this.btnQLMayTinh.Text = "     Máy tính";
             this.btnQLMayTinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -446,10 +428,9 @@
             // 
             this.pnQLBC.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnQLBC.Controls.Add(this.btnQLBaoCao);
-            this.pnQLBC.Location = new System.Drawing.Point(2, 324);
-            this.pnQLBC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnQLBC.Location = new System.Drawing.Point(3, 416);
             this.pnQLBC.Name = "pnQLBC";
-            this.pnQLBC.Size = new System.Drawing.Size(198, 42);
+            this.pnQLBC.Size = new System.Drawing.Size(264, 53);
             this.pnQLBC.TabIndex = 13;
             // 
             // btnQLBaoCao
@@ -458,11 +439,10 @@
             this.btnQLBaoCao.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLBaoCao.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_error_20;
             this.btnQLBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLBaoCao.Location = new System.Drawing.Point(-8, -11);
-            this.btnQLBaoCao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLBaoCao.Location = new System.Drawing.Point(-10, -14);
             this.btnQLBaoCao.Name = "btnQLBaoCao";
-            this.btnQLBaoCao.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnQLBaoCao.Size = new System.Drawing.Size(216, 66);
+            this.btnQLBaoCao.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnQLBaoCao.Size = new System.Drawing.Size(288, 82);
             this.btnQLBaoCao.TabIndex = 2;
             this.btnQLBaoCao.Text = "     Báo cáo";
             this.btnQLBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -474,10 +454,9 @@
             // 
             this.pnQLTaiKhoan.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnQLTaiKhoan.Controls.Add(this.btnQLTaiKhoan);
-            this.pnQLTaiKhoan.Location = new System.Drawing.Point(2, 370);
-            this.pnQLTaiKhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnQLTaiKhoan.Location = new System.Drawing.Point(3, 475);
             this.pnQLTaiKhoan.Name = "pnQLTaiKhoan";
-            this.pnQLTaiKhoan.Size = new System.Drawing.Size(198, 42);
+            this.pnQLTaiKhoan.Size = new System.Drawing.Size(264, 53);
             this.pnQLTaiKhoan.TabIndex = 14;
             // 
             // btnQLTaiKhoan
@@ -486,11 +465,10 @@
             this.btnQLTaiKhoan.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLTaiKhoan.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_person_20__1_;
             this.btnQLTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLTaiKhoan.Location = new System.Drawing.Point(-8, -11);
-            this.btnQLTaiKhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLTaiKhoan.Location = new System.Drawing.Point(-10, -14);
             this.btnQLTaiKhoan.Name = "btnQLTaiKhoan";
-            this.btnQLTaiKhoan.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnQLTaiKhoan.Size = new System.Drawing.Size(216, 66);
+            this.btnQLTaiKhoan.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnQLTaiKhoan.Size = new System.Drawing.Size(288, 82);
             this.btnQLTaiKhoan.TabIndex = 2;
             this.btnQLTaiKhoan.Text = "     Tài khoản";
             this.btnQLTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -502,10 +480,9 @@
             // 
             this.pnXuLyBCSC.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnXuLyBCSC.Controls.Add(this.btnXuLyBCSC);
-            this.pnXuLyBCSC.Location = new System.Drawing.Point(2, 416);
-            this.pnXuLyBCSC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnXuLyBCSC.Location = new System.Drawing.Point(3, 534);
             this.pnXuLyBCSC.Name = "pnXuLyBCSC";
-            this.pnXuLyBCSC.Size = new System.Drawing.Size(198, 42);
+            this.pnXuLyBCSC.Size = new System.Drawing.Size(264, 53);
             this.pnXuLyBCSC.TabIndex = 15;
             // 
             // btnXuLyBCSC
@@ -514,11 +491,10 @@
             this.btnXuLyBCSC.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXuLyBCSC.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_error_globe_20;
             this.btnXuLyBCSC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuLyBCSC.Location = new System.Drawing.Point(-8, -11);
-            this.btnXuLyBCSC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXuLyBCSC.Location = new System.Drawing.Point(-10, -14);
             this.btnXuLyBCSC.Name = "btnXuLyBCSC";
-            this.btnXuLyBCSC.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnXuLyBCSC.Size = new System.Drawing.Size(216, 66);
+            this.btnXuLyBCSC.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnXuLyBCSC.Size = new System.Drawing.Size(288, 82);
             this.btnXuLyBCSC.TabIndex = 2;
             this.btnXuLyBCSC.Text = "     Xử lý BCSC";
             this.btnXuLyBCSC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -534,20 +510,18 @@
             this.menuCaNhan.Controls.Add(this.pnCaNhanBCSC);
             this.menuCaNhan.Controls.Add(this.pnCaNhanToi);
             this.menuCaNhan.Controls.Add(this.pnCaNhanCaiDat);
-            this.menuCaNhan.Location = new System.Drawing.Point(2, 713);
-            this.menuCaNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.menuCaNhan.Location = new System.Drawing.Point(3, 905);
             this.menuCaNhan.Name = "menuCaNhan";
-            this.menuCaNhan.Size = new System.Drawing.Size(198, 235);
+            this.menuCaNhan.Size = new System.Drawing.Size(264, 294);
             this.menuCaNhan.TabIndex = 17;
             // 
             // pnCaNhan
             // 
             this.pnCaNhan.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnCaNhan.Controls.Add(this.btnCaNhan);
-            this.pnCaNhan.Location = new System.Drawing.Point(2, 2);
-            this.pnCaNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnCaNhan.Location = new System.Drawing.Point(3, 3);
             this.pnCaNhan.Name = "pnCaNhan";
-            this.pnCaNhan.Size = new System.Drawing.Size(198, 42);
+            this.pnCaNhan.Size = new System.Drawing.Size(264, 53);
             this.pnCaNhan.TabIndex = 7;
             // 
             // btnCaNhan
@@ -555,11 +529,10 @@
             this.btnCaNhan.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnCaNhan.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaNhan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCaNhan.Location = new System.Drawing.Point(-8, -11);
-            this.btnCaNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCaNhan.Location = new System.Drawing.Point(-10, -14);
             this.btnCaNhan.Name = "btnCaNhan";
-            this.btnCaNhan.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnCaNhan.Size = new System.Drawing.Size(216, 66);
+            this.btnCaNhan.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnCaNhan.Size = new System.Drawing.Size(288, 82);
             this.btnCaNhan.TabIndex = 2;
             this.btnCaNhan.Text = "     Cá nhân";
             this.btnCaNhan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -571,10 +544,9 @@
             // 
             this.pnCaNhanLichTH.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnCaNhanLichTH.Controls.Add(this.btnCaNhanLichTH);
-            this.pnCaNhanLichTH.Location = new System.Drawing.Point(2, 48);
-            this.pnCaNhanLichTH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnCaNhanLichTH.Location = new System.Drawing.Point(3, 62);
             this.pnCaNhanLichTH.Name = "pnCaNhanLichTH";
-            this.pnCaNhanLichTH.Size = new System.Drawing.Size(198, 42);
+            this.pnCaNhanLichTH.Size = new System.Drawing.Size(264, 53);
             this.pnCaNhanLichTH.TabIndex = 8;
             // 
             // btnCaNhanLichTH
@@ -583,11 +555,10 @@
             this.btnCaNhanLichTH.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaNhanLichTH.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_class_20;
             this.btnCaNhanLichTH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCaNhanLichTH.Location = new System.Drawing.Point(-8, -11);
-            this.btnCaNhanLichTH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCaNhanLichTH.Location = new System.Drawing.Point(-10, -14);
             this.btnCaNhanLichTH.Name = "btnCaNhanLichTH";
-            this.btnCaNhanLichTH.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnCaNhanLichTH.Size = new System.Drawing.Size(216, 66);
+            this.btnCaNhanLichTH.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnCaNhanLichTH.Size = new System.Drawing.Size(288, 82);
             this.btnCaNhanLichTH.TabIndex = 2;
             this.btnCaNhanLichTH.Text = "     Lịch TH";
             this.btnCaNhanLichTH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -599,10 +570,9 @@
             // 
             this.pnCaNhanBCSC.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnCaNhanBCSC.Controls.Add(this.btnCaNhanBCSC);
-            this.pnCaNhanBCSC.Location = new System.Drawing.Point(2, 94);
-            this.pnCaNhanBCSC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnCaNhanBCSC.Location = new System.Drawing.Point(3, 121);
             this.pnCaNhanBCSC.Name = "pnCaNhanBCSC";
-            this.pnCaNhanBCSC.Size = new System.Drawing.Size(198, 42);
+            this.pnCaNhanBCSC.Size = new System.Drawing.Size(264, 53);
             this.pnCaNhanBCSC.TabIndex = 10;
             // 
             // btnCaNhanBCSC
@@ -611,11 +581,10 @@
             this.btnCaNhanBCSC.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaNhanBCSC.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_error_20;
             this.btnCaNhanBCSC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCaNhanBCSC.Location = new System.Drawing.Point(-8, -11);
-            this.btnCaNhanBCSC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCaNhanBCSC.Location = new System.Drawing.Point(-10, -14);
             this.btnCaNhanBCSC.Name = "btnCaNhanBCSC";
-            this.btnCaNhanBCSC.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnCaNhanBCSC.Size = new System.Drawing.Size(216, 66);
+            this.btnCaNhanBCSC.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnCaNhanBCSC.Size = new System.Drawing.Size(288, 82);
             this.btnCaNhanBCSC.TabIndex = 2;
             this.btnCaNhanBCSC.Text = "     BC sự cố";
             this.btnCaNhanBCSC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -627,10 +596,9 @@
             // 
             this.pnCaNhanToi.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnCaNhanToi.Controls.Add(this.btnCaNhanTK);
-            this.pnCaNhanToi.Location = new System.Drawing.Point(2, 140);
-            this.pnCaNhanToi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnCaNhanToi.Location = new System.Drawing.Point(3, 180);
             this.pnCaNhanToi.Name = "pnCaNhanToi";
-            this.pnCaNhanToi.Size = new System.Drawing.Size(198, 42);
+            this.pnCaNhanToi.Size = new System.Drawing.Size(264, 53);
             this.pnCaNhanToi.TabIndex = 9;
             // 
             // btnCaNhanTK
@@ -639,11 +607,10 @@
             this.btnCaNhanTK.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaNhanTK.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_me_20;
             this.btnCaNhanTK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCaNhanTK.Location = new System.Drawing.Point(-8, -11);
-            this.btnCaNhanTK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCaNhanTK.Location = new System.Drawing.Point(-10, -14);
             this.btnCaNhanTK.Name = "btnCaNhanTK";
-            this.btnCaNhanTK.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnCaNhanTK.Size = new System.Drawing.Size(216, 66);
+            this.btnCaNhanTK.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnCaNhanTK.Size = new System.Drawing.Size(288, 82);
             this.btnCaNhanTK.TabIndex = 2;
             this.btnCaNhanTK.Text = "     Tôi";
             this.btnCaNhanTK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -655,10 +622,9 @@
             // 
             this.pnCaNhanCaiDat.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnCaNhanCaiDat.Controls.Add(this.btnCaNhanCaiDat);
-            this.pnCaNhanCaiDat.Location = new System.Drawing.Point(2, 186);
-            this.pnCaNhanCaiDat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnCaNhanCaiDat.Location = new System.Drawing.Point(3, 239);
             this.pnCaNhanCaiDat.Name = "pnCaNhanCaiDat";
-            this.pnCaNhanCaiDat.Size = new System.Drawing.Size(198, 42);
+            this.pnCaNhanCaiDat.Size = new System.Drawing.Size(264, 53);
             this.pnCaNhanCaiDat.TabIndex = 11;
             // 
             // btnCaNhanCaiDat
@@ -667,11 +633,10 @@
             this.btnCaNhanCaiDat.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaNhanCaiDat.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_setting_20;
             this.btnCaNhanCaiDat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCaNhanCaiDat.Location = new System.Drawing.Point(-8, -11);
-            this.btnCaNhanCaiDat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCaNhanCaiDat.Location = new System.Drawing.Point(-10, -14);
             this.btnCaNhanCaiDat.Name = "btnCaNhanCaiDat";
-            this.btnCaNhanCaiDat.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.btnCaNhanCaiDat.Size = new System.Drawing.Size(216, 66);
+            this.btnCaNhanCaiDat.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnCaNhanCaiDat.Size = new System.Drawing.Size(288, 82);
             this.btnCaNhanCaiDat.TabIndex = 2;
             this.btnCaNhanCaiDat.Text = "     Cài đặt";
             this.btnCaNhanCaiDat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -679,35 +644,57 @@
             this.btnCaNhanCaiDat.UseVisualStyleBackColor = false;
             this.btnCaNhanCaiDat.Click += new System.EventHandler(this.btnCaNhanCaiDat_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel2.Controls.Add(this.btnLogout);
+            this.panel2.Location = new System.Drawing.Point(3, 1205);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(264, 53);
+            this.panel2.TabIndex = 5;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_home_20;
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Location = new System.Drawing.Point(-13, -18);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnLogout.Size = new System.Drawing.Size(288, 82);
+            this.btnLogout.TabIndex = 2;
+            this.btnLogout.Text = "     Đăng xuất";
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLogout.UseVisualStyleBackColor = false;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(200, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(267, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1243, 82);
+            this.panel1.Size = new System.Drawing.Size(1670, 102);
             this.panel1.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(80, 36);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(107, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 25);
+            this.label2.Size = new System.Drawing.Size(0, 32);
             this.label2.TabIndex = 4;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_bars_25;
-            this.pictureBox2.Location = new System.Drawing.Point(18, 18);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(24, 22);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(51, 49);
+            this.pictureBox2.Size = new System.Drawing.Size(68, 61);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -731,22 +718,20 @@
             // pnBody
             // 
             this.pnBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnBody.Location = new System.Drawing.Point(200, 82);
-            this.pnBody.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnBody.Location = new System.Drawing.Point(267, 102);
             this.pnBody.Name = "pnBody";
-            this.pnBody.Size = new System.Drawing.Size(1243, 758);
+            this.pnBody.Size = new System.Drawing.Size(1670, 1177);
             this.pnBody.TabIndex = 3;
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1443, 840);
+            this.ClientSize = new System.Drawing.Size(1937, 1279);
             this.Controls.Add(this.pnBody);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.sidebar);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmMain";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmMain_Load);
@@ -773,6 +758,7 @@
             this.pnCaNhanBCSC.ResumeLayout(false);
             this.pnCaNhanToi.ResumeLayout(false);
             this.pnCaNhanCaiDat.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -830,6 +816,8 @@
         private System.Windows.Forms.Panel pnBody;
         private System.Windows.Forms.Panel pnXuLyBCSC;
         private System.Windows.Forms.Button btnXuLyBCSC;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnLogout;
     }
 }
 

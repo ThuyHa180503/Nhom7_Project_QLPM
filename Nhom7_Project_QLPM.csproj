@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Function.cs" />
     <Compile Include="Forms\CaNhanBCSC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +82,12 @@
     </Compile>
     <Compile Include="Forms\frmLichTH.Designer.cs">
       <DependentUpon>frmLichTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmPhongMay.cs">
       <SubType>Form</SubType>
@@ -136,6 +143,12 @@
     <Compile Include="Forms\QLTaiKhoan.Designer.cs">
       <DependentUpon>QLTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\QLXuLyBCSC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QLXuLyBCSC.Designer.cs">
+      <DependentUpon>QLXuLyBCSC.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +157,36 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\CaNhanBCSC.resx">
+      <DependentUpon>CaNhanBCSC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLichTH.resx">
+      <DependentUpon>frmLichTH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPhongMay.resx">
+      <DependentUpon>frmPhongMay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QLLichTH.resx">
+      <DependentUpon>QLLichTH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QLLop.resx">
+      <DependentUpon>QLLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QLMayTinh.resx">
+      <DependentUpon>QLMayTinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QLPhongMay.resx">
+      <DependentUpon>QLPhongMay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QLXuLyBCSC.resx">
+      <DependentUpon>QLXuLyBCSC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +214,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\background_login.png" />
     <Content Include="Images\icons8-add-20.png" />
     <Content Include="Images\icons8-bars-20.png" />
     <Content Include="Images\icons8-bars-25.png" />
@@ -182,6 +226,7 @@
     <Content Include="Images\icons8-edit-20.png" />
     <Content Include="Images\icons8-error-20 %281%29.png" />
     <Content Include="Images\icons8-error-20.png" />
+    <Content Include="Images\icons8-error-globe-20.png" />
     <Content Include="Images\icons8-help-20.png" />
     <Content Include="Images\icons8-home-20 %281%29.png" />
     <Content Include="Images\icons8-home-20.png" />
@@ -206,9 +251,52 @@
     <Content Include="Images\icons8-time-20 %281%29.png" />
     <Content Include="Images\icons8-time-20.png" />
     <Content Include="Images\logo.png" />
+    <Content Include="Resources\eye.png" />
+    <Content Include="Resources\remove1.png" />
+    <Content Include="Resources\rotate.png" />
+    <None Include="Resources\LaBNET.png" />
+    <None Include="Resources\cloud-computing1.png" />
+    <None Include="Resources\filter.png" />
+    <None Include="Resources\send.png" />
+    <None Include="Resources\refresh1.png" />
+    <None Include="Resources\cloud-computing.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\bin.png" />
+    <None Include="Resources\pen.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\plus.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Class\" />
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
