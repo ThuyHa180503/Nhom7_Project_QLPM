@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Nhom7_Project_QLPM.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +23,25 @@ namespace Nhom7_Project_QLPM.Forms
 
         private void QLLop_Load(object sender, EventArgs e)
         {
+            // Kiểm tra xem người dùng đã đăng nhập chưa
+            if (!UserSession.IsLoggedIn())
+            {
+                MessageBox.Show("Bạn cần đăng nhập trước khi sử dụng chức năng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                // Chuyển đến trang đăng nhập
+                frmLogin loginForm = new frmLogin();
+                loginForm.ShowDialog(); // Mở form đăng nhập dưới dạng dialog để chặn tương tác với các form khác
+                return;
+
+            }
+            // Kiểm tra chức vụ của người dùng
+            if (UserSession.ChucVu != "Nhân viên")
+            {
+                MessageBox.Show("Bạn không có quyền truy cập chức năng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.Close(); // Đóng form nếu không có quyền truy cập
+                return;
+            }
+
+
             Class.Function.Connect();
             txtMalop.Enabled = false;
             btnLuu.Enabled = false;
@@ -46,7 +66,7 @@ namespace Nhom7_Project_QLPM.Forms
 
         private void dataGridView1_Click(object sender, EventArgs e)
         {
-            if (btnThem.Enabled = false)
+            if (btnThem.Enabled == false)
             {
                 MessageBox.Show("Đang ở chế độ thêm mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtMalop.Focus();

@@ -25,7 +25,6 @@ namespace Nhom7_Project_QLPM.Forms
         {
             btnLuu.Enabled = false;
             btnBoqua.Enabled = false;
-            btnCapnhat.Enabled = false;
 
             Load_DataGridView();
 
@@ -66,6 +65,8 @@ namespace Nhom7_Project_QLPM.Forms
             cboloc.SelectedIndex = -1;
 
             ResetValues();
+
+            txtmamay.Enabled = false;
         }
 
         private void Load_DataGridView()
@@ -130,6 +131,7 @@ namespace Nhom7_Project_QLPM.Forms
 
         private void dataGridView1_Click(object sender, EventArgs e)
         {
+
             if (btnThem.Enabled == false)
             {
                 MessageBox.Show("Đang ở chế độ thêm mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -182,6 +184,8 @@ namespace Nhom7_Project_QLPM.Forms
             btnSua.Enabled = true;
             btnXoa.Enabled = true;
             btnBoqua.Enabled = true;
+
+            txtmamay.Enabled = false;
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -192,11 +196,12 @@ namespace Nhom7_Project_QLPM.Forms
             btnLuu.Enabled = true;
             btnThem.Enabled = false;
             txtmamay.Enabled = false;
+            txttenmay.Focus();
             ResetValues();
 
-            //thêm mã máy tự động
+            //thêm mã máy tính tự động
             int count = 0;
-            count = dataGridView1.Rows.Count; //đếm tất cả các dòng có trong dtgv
+            count = dataGridView1.Rows.Count; //đếm tất cả các dòng có trong datagridview
             string chuoi1 = "";
             int chuoi2 = 0;
             chuoi1 = Convert.ToString(dataGridView1.Rows[count - 1].Cells[0].Value);
@@ -226,108 +231,69 @@ namespace Nhom7_Project_QLPM.Forms
                 cbophongmay.Focus();
                 return;
             }
-
-            string maOCung;
-            if (cbooc.SelectedValue != null)
+            if (cbooc.Text.Trim().Length == 0)
             {
-                maOCung = "N'" + cbooc.SelectedValue.ToString() + "'";
+                MessageBox.Show("Bạn phải chọn ổ cứng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbooc.Focus();
+                return;
             }
-            else
+            if (cbodl.Text.Trim().Length == 0)
             {
-                maOCung = "NULL";
+                MessageBox.Show("Bạn phải chọn dung lượng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbodl.Focus();
+                return;
             }
-
-            string maDungLuong;
-            if (cbodl.SelectedValue != null)
+            if (cboram.Text.Trim().Length == 0)
             {
-                maDungLuong = "N'" + cbodl.SelectedValue.ToString() + "'";
+                MessageBox.Show("Bạn phải chọn ram", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboram.Focus();
+                return;
             }
-            else
+            if (cbotocdo.Text.Trim().Length == 0)
             {
-                maDungLuong = "NULL";
+                MessageBox.Show("Bạn phải chọn tốc độ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbotocdo.Focus();
+                return;
             }
-
-            string maRam;
-            if (cboram.SelectedValue != null)
+            if (cbomh.Text.Trim().Length == 0)
             {
-                maRam = "N'" + cboram.SelectedValue.ToString() + "'";
+                MessageBox.Show("Bạn phải chọn màn hình", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbomh.Focus();
+                return;
             }
-            else
+            if (cbobp.Text.Trim().Length == 0)
             {
-                maRam = "NULL";
+                MessageBox.Show("Bạn phải chọn bàn phím", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbobp.Focus();
+                return;
             }
-
-            string maTocDo;
-            if (cbotocdo.SelectedValue != null)
+            if (cbochuot.Text.Trim().Length == 0)
             {
-                maTocDo = "N'" + cbotocdo.SelectedValue.ToString() + "'";
+                MessageBox.Show("Bạn phải chọn chuột", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbochuot.Focus();
+                return;
             }
-            else
+            if (cbocmh.Text.Trim().Length == 0)
             {
-                maTocDo = "NULL";
+                MessageBox.Show("Bạn phải chọn cỡ màn hình", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbocmh.Focus();
+                return;
             }
-
-            string maManHinh;
-            if (cbomh.SelectedValue != null)
+            if (cboodia.Text.Trim().Length == 0)
             {
-                maManHinh = "N'" + cbomh.SelectedValue.ToString() + "'";
+                MessageBox.Show("Bạn phải chọn ổ đĩa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboodia.Focus();
+                return;
             }
-            else
+            if (cbochip.Text.Trim().Length == 0)
             {
-                maManHinh = "NULL";
-            }
-
-            string maBanPhim;
-            if (cbobp.SelectedValue != null)
-            {
-                maBanPhim = "N'" + cbobp.SelectedValue.ToString() + "'";
-            }
-            else
-            {
-                maBanPhim = "NULL";
-            }
-
-            string maChuot;
-            if (cbochuot.SelectedValue != null)
-            {
-                maChuot = "N'" + cbochuot.SelectedValue.ToString() + "'";
-            }
-            else
-            {
-                maChuot = "NULL";
+                MessageBox.Show("Bạn phải chọn chip", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbochip.Focus();
+                return;
             }
 
-            string maCoManHinh;
-            if (cbocmh.SelectedValue != null)
-            {
-                maCoManHinh = "N'" + cbocmh.SelectedValue.ToString() + "'";
-            }
-            else
-            {
-                maCoManHinh = "NULL";
-            }
 
-            string maODia;
-            if (cboodia.SelectedValue != null)
-            {
-                maODia = "N'" + cboodia.SelectedValue.ToString() + "'";
-            }
-            else
-            {
-                maODia = "NULL";
-            }
-
-            string maChip;
-            if (cbochip.SelectedValue != null)
-            {
-                maChip = "N'" + cbochip.SelectedValue.ToString() + "'";
-            }
-            else
-            {
-                maChip = "NULL";
-            }
-
-            sql = "INSERT INTO tblMayTinh (MaMay, TenMay, GhiChu, MaOCung, MaDungLuong, MaPM, MaRam, MaTocDo, MaManHinh, MaBanPhim, MaChuot, MaCoManHinh, MaODia, MaChip) VALUES (N'" + txtmamay.Text.Trim() + "', N'" + txttenmay.Text.Trim() + "', N'" + txtghichu.Text.Trim() + "', " + maOCung + ", " + maDungLuong + ", N'" + cbophongmay.SelectedValue.ToString() + "', " + maRam + ", " + maTocDo + ", " + maManHinh + ", " + maBanPhim + ", " + maChuot + "," + maCoManHinh + "," + maODia + "," + maChip + ")";
+            sql = "INSERT INTO tblMayTinh (MaMay, TenMay, GhiChu, MaOCung, MaDungLuong, MaPM, MaRam, MaTocDo, MaManHinh, MaBanPhim, MaChuot, MaCoManHinh, MaODia, MaChip) VALUES (N'" + txtmamay.Text.Trim() + "', N'" + txttenmay.Text.Trim() + "', N'" + txtghichu.Text.Trim() + "', N'" + cbooc.SelectedValue.ToString() + "',N'" + cbodl.SelectedValue.ToString() + "', N'" + cbophongmay.SelectedValue.ToString() + "', N'" + cboram.SelectedValue.ToString() + "',N'" + cbotocdo.SelectedValue.ToString() + "', N'" + cbomh.SelectedValue.ToString() + "', N'" + cbobp.SelectedValue.ToString() + "', N'" + cbochuot.SelectedValue.ToString() + "',N'" + cbocmh.SelectedValue.ToString() + "',N'" + cboodia.SelectedValue.ToString() + "',N'" + cbochip.SelectedValue.ToString() + "')";
 
             Function.RunSql(sql);
             Load_DataGridView();
@@ -368,119 +334,68 @@ namespace Nhom7_Project_QLPM.Forms
                 cbophongmay.Focus();
                 return;
             }
-
-            string mapmtruoc = Function.GetFieldValues("SELECT MaPM FROM tblMayTinh WHERE MaMay = N'" + txtmamay.Text.Trim() + "'");
-
-            string maOCung;
-            if (cbooc.SelectedValue != null)
+            if (cbooc.Text.Trim().Length == 0)
             {
-                maOCung = "N'" + cbooc.SelectedValue.ToString() + "'";
+                MessageBox.Show("Bạn phải chọn ổ cứng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbooc.Focus();
+                return;
             }
-            else
+            if (cbodl.Text.Trim().Length == 0)
             {
-                maOCung = "NULL";
+                MessageBox.Show("Bạn phải chọn dung lượng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbodl.Focus();
+                return;
             }
-
-            string maDungLuong;
-            if (cbodl.SelectedValue != null)
+            if (cboram.Text.Trim().Length == 0)
             {
-                maDungLuong = "N'" + cbodl.SelectedValue.ToString() + "'";
+                MessageBox.Show("Bạn phải chọn ram", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboram.Focus();
+                return;
             }
-            else
+            if (cbotocdo.Text.Trim().Length == 0)
             {
-                maDungLuong = "NULL";
+                MessageBox.Show("Bạn phải chọn tốc độ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbotocdo.Focus();
+                return;
             }
-
-            string maRam;
-            if (cboram.SelectedValue != null)
+            if (cbomh.Text.Trim().Length == 0)
             {
-                maRam = "N'" + cboram.SelectedValue.ToString() + "'";
+                MessageBox.Show("Bạn phải chọn màn hình", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbomh.Focus();
+                return;
             }
-            else
+            if (cbobp.Text.Trim().Length == 0)
             {
-                maRam = "NULL";
+                MessageBox.Show("Bạn phải chọn bàn phím", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbobp.Focus();
+                return;
             }
-
-            string maTocDo;
-            if (cbotocdo.SelectedValue != null)
+            if (cbochuot.Text.Trim().Length == 0)
             {
-                maTocDo = "N'" + cbotocdo.SelectedValue.ToString() + "'";
+                MessageBox.Show("Bạn phải chọn chuột", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbochuot.Focus();
+                return;
             }
-            else
+            if (cbocmh.Text.Trim().Length == 0)
             {
-                maTocDo = "NULL";
+                MessageBox.Show("Bạn phải chọn cỡ màn hình", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbocmh.Focus();
+                return;
             }
-
-            string maManHinh;
-            if (cbomh.SelectedValue != null)
+            if (cboodia.Text.Trim().Length == 0)
             {
-                maManHinh = "N'" + cbomh.SelectedValue.ToString() + "'";
+                MessageBox.Show("Bạn phải chọn ổ đĩa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboodia.Focus();
+                return;
             }
-            else
+            if (cbochip.Text.Trim().Length == 0)
             {
-                maManHinh = "NULL";
-            }
-
-            string maBanPhim;
-            if (cbobp.SelectedValue != null)
-            {
-                maBanPhim = "N'" + cbobp.SelectedValue.ToString() + "'";
-            }
-            else
-            {
-                maBanPhim = "NULL";
+                MessageBox.Show("Bạn phải chọn chip", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cbochip.Focus();
+                return;
             }
 
-            string maChuot;
-            if (cbochuot.SelectedValue != null)
-            {
-                maChuot = "N'" + cbochuot.SelectedValue.ToString() + "'";
-            }
-            else
-            {
-                maChuot = "NULL";
-            }
-
-            string maCoManHinh;
-            if (cbocmh.SelectedValue != null)
-            {
-                maCoManHinh = "N'" + cbocmh.SelectedValue.ToString() + "'";
-            }
-            else
-            {
-                maCoManHinh = "NULL";
-            }
-
-            string maODia;
-            if (cboodia.SelectedValue != null)
-            {
-                maODia = "N'" + cboodia.SelectedValue.ToString() + "'";
-            }
-            else
-            {
-                maODia = "NULL";
-            }
-
-            string maChip;
-            if (cbochip.SelectedValue != null)
-            {
-                maChip = "N'" + cbochip.SelectedValue.ToString() + "'";
-            }
-            else
-            {
-                maChip = "NULL";
-            }
-
-            sql = "UPDATE tblMayTinh SET  TenMay=N'" + txttenmay.Text.Trim().ToString() + "',GhiChu=N'" + txtghichu.Text.Trim().ToString() + "',MaOCung= " + maOCung + " , MaDungLuong=" + maDungLuong + ",MaPM=N'" + cbophongmay.SelectedValue.ToString() + "',MaRam=" + maRam + ",MaTocDo=" + maTocDo + ",MaManHinh=" + maManHinh + ",MaBanPhim=" + maBanPhim + ", MaChuot=" + maChuot + ",MaCoManHinh=" + maCoManHinh + ",MaODia=" + maODia + ",MaChip=" + maChip + " WHERE MaMay=N'" + txtmamay.Text + "'";
-            Function.RunSql(sql);
-
-            sql = "UPDATE tblPhongMay SET SoMay = SoMay + 1 WHERE MaPM = N'" + cbophongmay.SelectedValue.ToString() + "'";
-            Function.RunSql(sql);
-            // Cập nhật số máy của phòng máy cũ
-            sql = "UPDATE tblPhongMay SET SoMay = SoMay - 1 WHERE MaPM = N'" + mapmtruoc + "'";
-            Function.RunSql(sql);
-            //Cập nhập số máy của phòng máy mới
-            sql = "UPDATE tblPhongMay SET SoMay = SoMay + 1 WHERE MaPM = N'" + cbophongmay.SelectedValue.ToString() + "'";
+            sql = "UPDATE tblMayTinh SET  TenMay=N'" + txttenmay.Text.Trim().ToString() + "',GhiChu=N'" + txtghichu.Text.Trim().ToString() + "',MaOCung= N'" + cbooc.SelectedValue.ToString() + "' , MaDungLuong=N'" + cbodl.SelectedValue.ToString() + "',MaPM=N'" + cbophongmay.SelectedValue.ToString() + "',MaRam=N'" + cboram.SelectedValue.ToString() + "',MaTocDo=N'" + cbotocdo.SelectedValue.ToString() + "',MaManHinh=N'" + cbomh.SelectedValue.ToString() + "',MaBanPhim=N'" + cbobp.SelectedValue.ToString() + "', MaChuot=N'" + cbochuot.SelectedValue.ToString() + "',MaCoManHinh=N'" + cbocmh.SelectedValue.ToString() + "',MaODia=N'" + cboodia.SelectedValue.ToString() + "',MaChip=N'" + cbochip.SelectedValue.ToString() + "' WHERE MaMay=N'" + txtmamay.Text + "'";
             Function.RunSql(sql);
 
             Load_DataGridView();
@@ -499,19 +414,13 @@ namespace Nhom7_Project_QLPM.Forms
             }
             if (txtmamay.Text == "")
             {
-                MessageBox.Show("Bạn chưa chọn bản ghi nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn chưa chọn bản ghi nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (MessageBox.Show("Bạn có muốn xóa không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
-                string maPM = Function.GetFieldValues("SELECT MaPM FROM tblMayTinh WHERE MaMay = N'" + txtmamay.Text + "'");
-
                 sql = "DELETE tblMayTinh WHERE MaMay=N'" + txtmamay.Text + "'";
                 Function.RunSqlDel(sql);
-
-                // Cập nhật số máy của phòng máy vừa xóa máy tính
-                sql = "UPDATE tblPhongMay SET SoMay = SoMay - 1 WHERE MaPM = N'" + maPM + "'";
-                Function.RunSql(sql);
 
                 Load_DataGridView();
                 ResetValues();
@@ -524,25 +433,25 @@ namespace Nhom7_Project_QLPM.Forms
             string sql;
             if (txtTimkiem.Text == "")
             {
-                MessageBox.Show("Bạn cần nhập từ khóa tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn cần nhập từ khóa tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtTimkiem.Focus();
                 return;
             }
 
             sql = "select MaMay,TenMay,MaPM,MaOCung,MaDungLuong,MaRam,MaTocDo,MaManHinh,MaBanPhim,MaChuot,MaCoManHinh,MaODia,MaChip,GhiChu from tblMayTinh where 1=1";
 
-            string keyword = txtTimkiem.Text.Trim();
+            string tukhoa = txtTimkiem.Text.Trim();
 
             if (txtTimkiem.Text != "")
             {
-                sql += " AND (MaMay LIKE N'%" + keyword + "%' OR TenMay LIKE N'%" + keyword + "%' )";
+                sql += " AND (MaMay LIKE N'%" + tukhoa + "%' OR TenMay LIKE N'%" + tukhoa + "%' )";
             }
 
             qlmt = Function.GetDataToTable(sql);
             if (qlmt.Rows.Count == 0)
-                MessageBox.Show("Không có bản ghi thỏa mãn điều kiện!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Không có bản ghi thỏa mãn điều kiện!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
-                MessageBox.Show("Có " + qlmt.Rows.Count + " bản ghi thỏa mãn điều kiện!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Có " + qlmt.Rows.Count + " bản ghi thỏa mãn điều kiện!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             dataGridView1.DataSource = qlmt;
             ResetValues();
@@ -552,6 +461,7 @@ namespace Nhom7_Project_QLPM.Forms
         {
             ResetValues();
             btnBoqua.Enabled = false;
+            btnCapnhat.Enabled = false;
             btnThem.Enabled = true;
             btnXoa.Enabled = true;
             btnSua.Enabled = true;
@@ -569,14 +479,14 @@ namespace Nhom7_Project_QLPM.Forms
         private void btnCapnhat_Click(object sender, EventArgs e)
         {
             string sql;
-            sql = "SELECT MaPM, COUNT(*) AS SoMay FROM tblMayTinh GROUP BY MaPM";
+            sql = "SELECT tblPhongMay.MaPM, COUNT(tblMayTinh.MaMay) AS SoMay FROM tblPhongMay Left JOIN tblMayTinh  ON tblPhongMay.MaPM = tblMayTinh.MaPM GROUP BY tblPhongMay.MaPM;";
             qlmt = Function.GetDataToTable(sql);
 
             foreach (DataRow row in qlmt.Rows)
             {
-                string maPM = row["MaPM"].ToString();
+                string mapm = row["MaPM"].ToString();
                 int somay = Convert.ToInt32(row["SoMay"]);
-                sql = "UPDATE tblPhongMay SET SoMay = " + somay + " WHERE MaPM = N'" + maPM + "'";
+                sql = "UPDATE tblPhongMay SET SoMay = " + somay + " WHERE MaPM = N'" + mapm + "'";
                 Function.RunSql(sql);
             }
 
@@ -585,17 +495,12 @@ namespace Nhom7_Project_QLPM.Forms
 
         private void btnLoc_Click(object sender, EventArgs e)
         {
-            string maPM = cboloc.SelectedValue.ToString();
+            string mapm = cboloc.SelectedValue.ToString();
 
-            string sql = "SELECT MaMay, TenMay, MaPM, MaOCung, MaDungLuong, MaRam, MaTocDo, MaManHinh, MaBanPhim, MaChuot, MaCoManHinh, MaODia, MaChip, GhiChu FROM tblMayTinh WHERE MaPM = '" + maPM + "'";
+            string sql = "SELECT MaMay, TenMay, MaPM, MaOCung, MaDungLuong, MaRam, MaTocDo, MaManHinh, MaBanPhim, MaChuot, MaCoManHinh, MaODia, MaChip, GhiChu FROM tblMayTinh WHERE MaPM = '" + mapm + "'";
 
             qlmt = Function.GetDataToTable(sql);
             dataGridView1.DataSource = qlmt;
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

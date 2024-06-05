@@ -30,6 +30,8 @@ namespace Nhom7_Project_QLPM.Forms
             ResetValues();
             txtmapm.Enabled = false;
             txtsomay.Enabled = false;
+            btnBoqua.Enabled = false;
+            btnLuu.Enabled = false;
         }
 
         private void load()
@@ -238,7 +240,7 @@ namespace Nhom7_Project_QLPM.Forms
             string sql;
             if (txtTimkiem.Text == "")
             {
-                MessageBox.Show("Bạn cần nhập từ khóa tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn cần nhập từ khóa tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtTimkiem.Focus();
                 return;
             }
@@ -255,9 +257,9 @@ namespace Nhom7_Project_QLPM.Forms
 
             qlpm = Function.GetDataToTable(sql);
             if (qlpm.Rows.Count == 0)
-                MessageBox.Show("Không có bản ghi thỏa mãn điều kiện!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Không có bản ghi thỏa mãn điều kiện!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
-                MessageBox.Show("Có " + qlpm.Rows.Count + " bản ghi thỏa mãn điều kiện!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Có " + qlpm.Rows.Count + " bản ghi thỏa mãn điều kiện!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             dataGridView1.DataSource = qlpm;
             ResetValues();

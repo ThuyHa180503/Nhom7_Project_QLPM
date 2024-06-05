@@ -24,72 +24,75 @@ namespace Nhom7_Project_QLPM.Forms
         System.Data.DataTable tbllth;
         private void frmLichTH_Load(object sender, EventArgs e)
         {
+            // Kiểm tra xem người dùng đã đăng nhập chưa
+            if (!UserSession.IsLoggedIn())
+            {
+                MessageBox.Show("Bạn cần đăng nhập trước khi sử dụng chức năng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                // Chuyển đến trang đăng nhập
+                frmLogin loginForm = new frmLogin();
+                loginForm.ShowDialog(); // Mở form đăng nhập dưới dạng dialog để chặn tương tác với các form khác
+                return;
+
+            }
+
             Class.Function.FillCombo("SELECT maca, tenca FROM tblcahoc", cboca, "maca", "tenca");
             cboca.SelectedIndex = -1;
-            Class.Function.FillCombo("SELECT magv, tengv FROM tblgiaovien", cbogiaovien, "magv", "tengv");
+            Class.Function.FillCombo("SELECT manv, tennv FROM tblnhanvien WHERE chucvu ='Giáo viên'", cbogiaovien, "manv", "tennv");
             cbogiaovien.SelectedIndex = -1;
             Class.Function.FillCombo("SELECT malop, tenlop FROM tbllop", cbolop, "malop", "tenlop");
             cbolop.SelectedIndex = -1;
             Class.Function.FillCombo("SELECT mamon, tenmon FROM tblmonthuchanh", cbomon, "mamon", "tenmon");
             cbomon.SelectedIndex = -1;
-            Class.Function.FillCombo("SELECT manv, tennv FROM tblnhanvien", cbonhanvien, "manv", "tennv");
-            cbonhanvien.SelectedIndex = -1;
             Class.Function.FillCombo("SELECT mapm, tenpm FROM tblphongmay", cbophongmay, "mapm", "tenpm");
             cbophongmay.SelectedIndex = -1;
 
-            string[] thuList = { "hai", "ba", "tư", "năm", "sáu", "bảy", "Chủ Nhật" };
+            string[] thuList = { "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy", "Chủ Nhật" };
             cbothu.Items.AddRange(thuList);
             cbothu.SelectedIndex = -1;
 
             load_datagrid();
+            txtmastt.Enabled = false;
+            cbophongmay.Enabled = false;
+            cbogiaovien.Enabled = false;
+            cbolop.Enabled = false;
+            cbomon.Enabled = false;
+            cboca.Enabled = false;
+            cbothu.Enabled = false;
+            mskngaybatdau.Enabled = false;
+            mskngayketthuc.Enabled = false;
 
         }
         private void load_datagrid()
         {
-            string sql;
-            sql = "SELECT mastt,mapm,manv,magv,malop,mamon,maca,thu, ngaybd,ngaykt FROM tbllichthuchanh ";
+            string sql = "select lth.mastt, pm.tenpm, nv.tennv, lop.tenlop, mon.tenmon, ca.tenca, lth.thu, lth.ngaybd, lth.ngaykt,lth.mapm,lth.magv,lth.malop,lth.mamon,lth.maca from tbllich lth JOIN tblphongmay pm on lth.mapm = pm.mapm " +
+               "join tblnhanvien nv on lth.magv = nv.manv " +
+               "join tbllop lop on lth.malop = lop.malop " +
+               "join tblmonthuchanh mon on lth.mamon = mon.mamon " +
+               "join tblcahoc ca on lth.maca = ca.maca";
+
             tbllth = Class.Function.GetDataToTable(sql);
             dataGridView1.DataSource = tbllth;
-            dataGridView1.Columns[0].HeaderText = "Mã stt";
-            dataGridView1.Columns[1].HeaderText = "Mã phòng máy";
-            dataGridView1.Columns[2].HeaderText = "Mã nhân viên";
-            dataGridView1.Columns[3].HeaderText = "Mã giáo viên";
-            dataGridView1.Columns[4].HeaderText = "Mã lớp";
-            dataGridView1.Columns[5].HeaderText = "Mã môn";
-            dataGridView1.Columns[6].HeaderText = "Mã ca";
-            dataGridView1.Columns[7].HeaderText = "Thứ";
-            dataGridView1.Columns[8].HeaderText = "Ngày bắt đầu";
-            dataGridView1.Columns[9].HeaderText = "Ngày kết thúc";
+            dataGridView1.Columns[0].HeaderText = "Mã STT";
+            dataGridView1.Columns[1].HeaderText = "Phòng máy";
+            dataGridView1.Columns[2].HeaderText = "Giáo viên";
+            dataGridView1.Columns[3].HeaderText = "Lớp";
+            dataGridView1.Columns[4].HeaderText = "Môn";
+            dataGridView1.Columns[5].HeaderText = "Ca học";
+            dataGridView1.Columns[6].HeaderText = "Thứ";
+            dataGridView1.Columns[7].HeaderText = "Ngày bắt đầu";
+            dataGridView1.Columns[8].HeaderText = "Ngày kết thúc";
+            dataGridView1.Columns[9].HeaderText = "Mã phòng máy";
+            dataGridView1.Columns[10].HeaderText = "Mã giáo viên";
+            dataGridView1.Columns[11].HeaderText = "Mã lớp";
+            dataGridView1.Columns[12].HeaderText = "Mã môn";
+            dataGridView1.Columns[13].HeaderText = "Mã ca học";
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.EditMode = DataGridViewEditMode.EditProgrammatically;
-
-            //string sql = "select lth.mastt, pm.tenpm, nv.tennv, gv.tengv, lop.tenlop, mon.tenmon, ca.tenca, lth.thu, lth.ngaybd, lth.ngaykt from tbllichthuchanh lth JOIN tblphongmay pm on lth.mapm = pm.mapm " +
-            //    "join tblnhanvien nv on lth.manv = nv.manv " +
-            //    "join tblgiaovien gv on lth.magv = gv.magv " +
-            //    "join tbllop lop on lth.malop = lop.malop " +
-            //    "join tblmonthuchanh mon on lth.mamon = mon.mamon " +
-            //    "join tblcahoc ca on lth.maca = ca.maca";
-
-            //tbllth = Class.functions.GetDataToTable(sql);
-            //dataGridView1.DataSource = tbllth;
-            //dataGridView1.Columns[0].HeaderText = "Mã STT";
-            //dataGridView1.Columns[1].HeaderText = "Phòng máy";
-            //dataGridView1.Columns[2].HeaderText = "Nhân viên";
-            //dataGridView1.Columns[3].HeaderText = "Giáo viên";
-            //dataGridView1.Columns[4].HeaderText = "Lớp";
-            //dataGridView1.Columns[5].HeaderText = "Môn";
-            //dataGridView1.Columns[6].HeaderText = "Ca học";
-            //dataGridView1.Columns[7].HeaderText = "Thứ";
-            //dataGridView1.Columns[8].HeaderText = "Ngày bắt đầu";
-            //dataGridView1.Columns[9].HeaderText = "Ngày kết thúc";
-            //dataGridView1.AllowUserToAddRows = false;
-            //dataGridView1.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
         private void resetvalue()
         {
             txtmastt.Text = "";
             cbophongmay.Text = "";
-            cbonhanvien.Text = "";
             cbogiaovien.Text = "";
             cbolop.Text = "";
             cbomon.Text = "";
@@ -109,7 +112,6 @@ namespace Nhom7_Project_QLPM.Forms
 
             txtmastt.Text = dataGridView1.CurrentRow.Cells["mastt"].Value.ToString();
             cbophongmay.SelectedValue = dataGridView1.CurrentRow.Cells["mapm"].Value.ToString();
-            cbonhanvien.SelectedValue = dataGridView1.CurrentRow.Cells["manv"].Value.ToString();
             cbogiaovien.SelectedValue = dataGridView1.CurrentRow.Cells["magv"].Value.ToString();
             cbolop.SelectedValue = dataGridView1.CurrentRow.Cells["malop"].Value.ToString();
             cbomon.SelectedValue = dataGridView1.CurrentRow.Cells["mamon"].Value.ToString();
@@ -117,44 +119,28 @@ namespace Nhom7_Project_QLPM.Forms
             cbothu.Text = dataGridView1.CurrentRow.Cells["thu"].Value.ToString();
             mskngaybatdau.Text = dataGridView1.CurrentRow.Cells["ngaybd"].Value.ToString();
             mskngayketthuc.Text = dataGridView1.CurrentRow.Cells["ngaykt"].Value.ToString();
-
-            //txtmastt.Text = dataGridView1.CurrentRow.Cells["mastt"].Value.ToString();
-            //string mastt = dataGridView1.CurrentRow.Cells["mastt"].Value.ToString();
-
-            //string tenpm = dataGridView1.CurrentRow.Cells["tenpm"].Value.ToString();
-            //cbophongmay.SelectedValue = Class.functions.getfieldvalues("select lth.mapm from tbllichthuchanh lth JOIN tblphongmay pm on lth.mapm = pm.mapm where lth.mastt = '" + mastt + "' and pm.tenpm = '" + tenpm + "'");
-
-            //string tennv = dataGridView1.CurrentRow.Cells["tennv"].Value.ToString();
-            //cbonhanvien.SelectedValue = Class.functions.getfieldvalues("select lth.manv from tbllichthuchanh lth join tblnhanvien nv on lth.manv = nv.manv where lth.mastt = '" + mastt + "' and nv.tennv = '" + tennv + "'");
-
-            //string tengv = dataGridView1.CurrentRow.Cells["tengv"].Value.ToString();
-            //cbogiaovien.SelectedValue = Class.functions.getfieldvalues("select lth.magv from tbllichthuchanh lth join tblgiaovien gv on lth.magv = gv.magv where lth.mastt = '" + mastt + "' and gv.tengv = '" + tengv + "'");
-
-            //string tenlop = dataGridView1.CurrentRow.Cells["tenlop"].Value.ToString();
-            //cbolop.SelectedValue = Class.functions.getfieldvalues("select lth.malop from tbllichthuchanh lth join tbllop lop on lth.malop = lop.malop where lth.mastt = '" + mastt + "' and lop.tenlop = '" + tenlop + "'");
-
-            //string tenmon = dataGridView1.CurrentRow.Cells["tenmon"].Value.ToString();
-            //cbomon.SelectedValue = Class.functions.getfieldvalues("select lth.mamon from tbllichthuchanh lth join tblmonthuchanh mon on lth.mamon = mon.mamon where lth.mastt = '" + mastt + "' and mon.tenmon = '" + tenmon + "'");
-
-            //string tenca = dataGridView1.CurrentRow.Cells["tenca"].Value.ToString();
-            //cboca.SelectedValue = Class.functions.getfieldvalues("select lth.maca from tbllichthuchanh lth join tblcahoc ca on lth.maca = ca.maca where lth.mastt = '" + mastt + "' and ca.tenca = '" + tenca + "'"); ;
-
-            //cbothu.Text = dataGridView1.CurrentRow.Cells["thu"].Value.ToString();
-            //mskngaybatdau.Text = dataGridView1.CurrentRow.Cells["ngaybd"].Value.ToString();
-            //mskngayketthuc.Text = dataGridView1.CurrentRow.Cells["ngaykt"].Value.ToString();
         }
 
         private void rdomon_Click(object sender, EventArgs e)
         {
-            string sql;
             if (txttimkiem.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            sql = "SELECT mastt,mapm,manv,magv,malop,lth.mamon,maca,thu, ngaybd,ngaykt from tbllichthuchanh lth join tblmonthuchanh mon on lth.mamon = mon.mamon where 1=1";
+            DateTime ngaybd = dtpngaybd.Value;
+            DateTime ngaykt = dtpngaykt.Value;
             string keyword = txttimkiem.Text.Trim();
+            string sql = "select lth.mastt, pm.tenpm, nv.tennv, lop.tenlop, mon.tenmon, ca.tenca, lth.thu, lth.ngaybd, lth.ngaykt,lth.mapm,lth.magv,lth.malop,lth.mamon,lth.maca from tbllich lth JOIN tblphongmay pm on lth.mapm = pm.mapm " +
+               "join tblnhanvien nv on lth.magv = nv.manv " +
+               "join tbllop lop on lth.malop = lop.malop " +
+               "join tblmonthuchanh mon on lth.mamon = mon.mamon " +
+               "join tblcahoc ca on lth.maca = ca.maca where 1=1";
             sql += "AND (mon.mamon LIKE N'%" + keyword + "%' OR tenmon LIKE N'%" + keyword + "%' )";
+            if (btnloc.Enabled == false)
+            {
+                sql += "AND NOT ((ngaybd > '" + ngaykt.ToString("dd-MM-yyyy") + "') OR (ngaykt < '" + ngaybd.ToString("dd-MM-yyyy") + "')) ";
+            }
 
             tbllth = Class.Function.GetDataToTable(sql);
             dataGridView1.DataSource = tbllth;
@@ -162,15 +148,27 @@ namespace Nhom7_Project_QLPM.Forms
 
         private void rdolop_Click(object sender, EventArgs e)
         {
-            string sql;
             if (txttimkiem.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            sql = "SELECT mastt,mapm,manv,magv,malop,lth.mamon,maca,thu, ngaybd,ngaykt from tbllichthuchanh lth join tbllop lop on lth.malop = lop.malop where 1=1";
+            string sql;
             string keyword = txttimkiem.Text.Trim();
+            DateTime ngaybd = dtpngaybd.Value;
+            DateTime ngaykt = dtpngaykt.Value;
+            sql = "select lth.mastt, pm.tenpm, nv.tennv, lop.tenlop, mon.tenmon, ca.tenca, lth.thu, lth.ngaybd, lth.ngaykt,lth.mapm,lth.magv,lth.malop,lth.mamon,lth.maca from tbllich lth JOIN tblphongmay pm on lth.mapm = pm.mapm " +
+                "join tblnhanvien nv on lth.magv = nv.manv " +
+                "join tbllop lop on lth.malop = lop.malop " +
+                "join tblmonthuchanh mon on lth.mamon = mon.mamon " +
+                "join tblcahoc ca on lth.maca = ca.maca where 1=1";
+             
             sql += "AND (lth.malop LIKE N'%" + keyword + "%' OR tenlop LIKE N'%" + keyword + "%' )";
+
+            if (btnloc.Enabled == false)
+            {
+                sql += "AND NOT ((ngaybd > '" + ngaykt.ToString("dd-MM-yyyy") + "') OR (ngaykt < '" + ngaybd.ToString("dd-MM-yyyy") + "')) ";
+            }
 
             tbllth = Class.Function.GetDataToTable(sql);
             dataGridView1.DataSource = tbllth;
@@ -178,15 +176,26 @@ namespace Nhom7_Project_QLPM.Forms
 
         private void rdophongmay_Click(object sender, EventArgs e)
         {
-            string sql;
             if (txttimkiem.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            sql = "SELECT mastt,mapm,manv,magv,malop,lth.mamon,maca,thu, ngaybd,ngaykt from tbllichthuchanh lth JOIN tblphongmay pm on lth.mapm = pm.mapm where 1=1";
+            string sql;
             string keyword = txttimkiem.Text.Trim();
+            DateTime ngaybd = dtpngaybd.Value;
+            DateTime ngaykt = dtpngaykt.Value;
+            sql = "select lth.mastt, pm.tenpm, nv.tennv, lop.tenlop, mon.tenmon, ca.tenca, lth.thu, lth.ngaybd, lth.ngaykt,lth.mapm,lth.magv,lth.malop,lth.mamon,lth.maca from tbllich lth JOIN tblphongmay pm on lth.mapm = pm.mapm " +
+               "join tblnhanvien nv on lth.magv = nv.manv " +
+               "join tbllop lop on lth.malop = lop.malop " +
+               "join tblmonthuchanh mon on lth.mamon = mon.mamon " +
+               "join tblcahoc ca on lth.maca = ca.maca where 1=1";
+             
             sql += "AND (lth.mapm LIKE N'%" + keyword + "%' OR tenpm LIKE N'%" + keyword + "%' )";
+            if (btnloc.Enabled == false)
+            {
+                sql += "AND NOT ((ngaybd > '" + ngaykt.ToString("dd-MM-yyyy") + "') OR (ngaykt < '" + ngaybd.ToString("dd-MM-yyyy") + "')) ";
+            }
 
             tbllth = Class.Function.GetDataToTable(sql);
             dataGridView1.DataSource = tbllth;
@@ -194,15 +203,25 @@ namespace Nhom7_Project_QLPM.Forms
 
         private void rdogiaovien_Click(object sender, EventArgs e)
         {
-            string sql;
             if (txttimkiem.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            sql = "SELECT mastt,mapm,manv,magv,malop,lth.mamon,maca,thu, ngaybd,ngaykt from tbllichthuchanh lth join tblgiaovien gv on lth.magv = gv.magv where 1=1";
+            string sql;
             string keyword = txttimkiem.Text.Trim();
-            sql += "AND (lth.magv LIKE N'%" + keyword + "%' OR tengv LIKE N'%" + keyword + "%' )";
+            DateTime ngaybd = dtpngaybd.Value;
+            DateTime ngaykt = dtpngaykt.Value;
+            sql = "select lth.mastt, pm.tenpm, nv.tennv, lop.tenlop, mon.tenmon, ca.tenca, lth.thu, lth.ngaybd, lth.ngaykt,lth.mapm,lth.magv,lth.malop,lth.mamon,lth.maca from tbllich lth JOIN tblphongmay pm on lth.mapm = pm.mapm " +
+               "join tblnhanvien nv on lth.magv = nv.manv " +
+               "join tbllop lop on lth.malop = lop.malop " +
+               "join tblmonthuchanh mon on lth.mamon = mon.mamon " +
+               "join tblcahoc ca on lth.maca = ca.maca where 1=1";
+            sql += "AND (lth.magv LIKE N'%" + keyword + "%' OR tennv LIKE N'%" + keyword + "%' )";
+            if (btnloc.Enabled == false)
+            {
+                sql += "AND NOT ((ngaybd > '" + ngaykt.ToString("dd-MM-yyyy") + "') OR (ngaykt < '" + ngaybd.ToString("dd-MM-yyyy") + "')) ";
+            }
 
             tbllth = Class.Function.GetDataToTable(sql);
             dataGridView1.DataSource = tbllth;
@@ -210,7 +229,58 @@ namespace Nhom7_Project_QLPM.Forms
 
         private void btnloc_Click(object sender, EventArgs e)
         {
+            DateTime ngaybd = dtpngaybd.Value;
+            DateTime ngaykt = dtpngaykt.Value;
             string sql;
+            string keyword = txttimkiem.Text.Trim();
+            if (ngaybd > ngaykt)
+            {
+                MessageBox.Show("Ngày kết thúc cần lớn hơn ngày bắt đầu!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            sql = "select lth.mastt, pm.tenpm, nv.tennv, lop.tenlop, mon.tenmon, ca.tenca, lth.thu, lth.ngaybd, lth.ngaykt,lth.mapm,lth.magv,lth.malop,lth.mamon,lth.maca from tbllich lth JOIN tblphongmay pm on lth.mapm = pm.mapm " +
+            "join tblnhanvien nv on lth.magv = nv.manv " +
+            "join tbllop lop on lth.malop = lop.malop " +
+            "join tblmonthuchanh mon on lth.mamon = mon.mamon " +
+            "join tblcahoc ca on lth.maca = ca.maca where NOT ((ngaybd > '" + ngaykt.ToString("dd-MM-yyyy") + "') OR (ngaykt < '" + ngaybd.ToString("dd-MM-yyyy") + "')) ";
+            if(rdogiaovien.Checked == true)
+            {
+                sql += "AND (lth.magv LIKE N'%" + keyword + "%' OR tennv LIKE N'%" + keyword + "%' )";
+            }
+            else if (rdolop.Checked == true)
+            {
+                sql += "AND (lth.malop LIKE N'%" + keyword + "%' OR tenlop LIKE N'%" + keyword + "%' )";
+            }
+            else if (rdomon.Checked == true)
+            {
+                sql += "AND (mon.mamon LIKE N'%" + keyword + "%' OR tenmon LIKE N'%" + keyword + "%' )";
+            }
+            else if (rdophongmay.Checked == true)
+            {
+                sql += "AND (lth.mapm LIKE N'%" + keyword + "%' OR tenpm LIKE N'%" + keyword + "%' )";
+            }
+
+            btnloc.Enabled = false;
+            tbllth = Class.Function.GetDataToTable(sql);
+            dataGridView1.DataSource = tbllth;
+        }
+
+        private void btnthietlaplai_Click(object sender, EventArgs e)
+        {
+            load_datagrid();
+            btnloc.Enabled = true;
+            rdomon.Checked = false;
+            rdolop.Checked = false;
+            rdophongmay.Checked = false;
+            rdogiaovien.Checked = false;
+            txttimkiem.Text = "";
+            resetvalue();
+            dtpngaybd.Value = DateTime.Today;
+            dtpngaykt.Value = DateTime.Today;
+        }
+
+        private void btnin_Click(object sender, EventArgs e)
+        {
             DateTime ngaybd = dtpngaybd.Value;
             DateTime ngaykt = dtpngaykt.Value;
             if (ngaybd > ngaykt)
@@ -218,52 +288,42 @@ namespace Nhom7_Project_QLPM.Forms
                 MessageBox.Show("Ngày kết thúc cần lớn hơn ngày bắt đầu!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            else
-            {
-                sql = "select * from tbllichthuchanh where NOT ((ngaybd > '" + ngaykt.ToString("MM-dd-yyyy") + "') OR (ngaykt < '" + ngaybd.ToString("MM-dd-yyyy") + "')) ";
-                tbllth = Class.Function.GetDataToTable(sql);
-                dataGridView1.DataSource = tbllth;
-            }
 
-        }
-
-        private void btnthietlaplai_Click(object sender, EventArgs e)
-        {
-            load_datagrid();
-        }
-
-        private void btnin_Click(object sender, EventArgs e)
-        {
+            int cot = (ngaykt - ngaybd).Days + 3;
 
             COMExcel.Application exApp = new COMExcel.Application();
             COMExcel.Workbook exBook = exApp.Workbooks.Add(COMExcel.XlWBATemplate.xlWBATWorksheet);
             COMExcel.Worksheet exSheet = exBook.Worksheets[1];
 
             // Định dạng chung cho các ô
+
             COMExcel.Range exRange = exSheet.Cells[1, 1];
-            //exRange.Range[exSheet.Cells[1, 1], exSheet.Cells[1, 365]].MergeCells = true;
+            //định dạng chung
+            exRange.Range[exSheet.Cells[1, 1], exSheet.Cells[1, cot]].RowHeight = 30;
+            exSheet.Range[exSheet.Cells[1, 1], exSheet.Cells[28, cot]].Borders.LineStyle = COMExcel.XlLineStyle.xlContinuous;
+            exSheet.Range[exSheet.Cells[1, 1], exSheet.Cells[28, cot]].Font.Name = "Times new roman";
+            exSheet.Range[exSheet.Cells[2, 1], exSheet.Cells[28, 2]].RowHeight = 25;
+            exSheet.Range[exSheet.Cells[2, 1], exSheet.Cells[28, 2]].ColumnWidth = 15;
+            exSheet.Range[exSheet.Cells[2, 1], exSheet.Cells[28, cot+3]].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
+            exRange.Range[exSheet.Cells[1, 1], exSheet.Cells[28, cot+3]].VerticalAlignment = COMExcel.XlVAlign.xlVAlignCenter;
+            exSheet.Range[exSheet.Cells[2, 3], exSheet.Cells[3, cot]].ColumnWidth = 25;
+            exSheet.Range[exSheet.Cells[2, 3], exSheet.Cells[28, cot]].WrapText = true;
+
+            //định dạng cho dòng thứ nhất
+            exRange.Range[exSheet.Cells[1, 1], exSheet.Cells[1, cot]].MergeCells = true;
             exRange.Range["A1:A1"].Font.Size = 16;
-            exRange.Range["A1:A1"].Font.Name = "Times new roman";
             exRange.Range["A1:A1"].Font.Bold = true;
-            exRange.Range["A1:A1"].Font.ColorIndex = 3; // Màu đỏ
-            exRange.Range[exSheet.Cells[1, 1], exSheet.Cells[1, 365]].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignLeft;
+            exRange.Range["A1:A1"].Font.ColorIndex = 3;
+            exRange.Range[exSheet.Cells[1, 1], exSheet.Cells[1, cot]].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignLeft;
             exRange.Range["A1:A1"].Value = "LỊCH THỰC HÀNH";
 
-            exSheet.Range[exSheet.Cells[2, 1], exSheet.Cells[365, 2]].ColumnWidth = 15;
-            exSheet.Range[exSheet.Cells[2, 1], exSheet.Cells[365, 2]].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
+            //định dạng cho dòng thứ 2 và 3
+            exSheet.Range[exSheet.Cells[2, 1], exSheet.Cells[28, 2]].ColumnWidth = 15; //độ rộng 2 cột đầu 
+            exSheet.Range[exSheet.Cells[2, 3], exSheet.Cells[28, cot]].ColumnWidth = 25; //độ rộng từ cột thứ 3
+            exSheet.Range[exSheet.Cells[2, 3], exSheet.Cells[28, cot]].Font.Size = 11;
+            exSheet.Range[exSheet.Cells[2, 3], exSheet.Cells[3, cot]].Font.Bold = true;
+            
 
-            exSheet.Range[exSheet.Cells[2, 3], exSheet.Cells[3, 365]].ColumnWidth = 25;
-            exSheet.Range[exSheet.Cells[2, 1], exSheet.Cells[3, 365]].Interior.Color = ColorTranslator.ToOle(System.Drawing.Color.LightBlue);
-            exSheet.Range[exSheet.Cells[2, 3], exSheet.Cells[3, 365]].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
-            exSheet.Range[exSheet.Cells[2, 3], exSheet.Cells[365, 365]].WrapText = true;
-
-            DateTime ngaybd = dtpngaybd.Value;
-            DateTime ngaykt = dtpngaykt.Value;
-            if (ngaybd > ngaykt)
-            {
-                MessageBox.Show("Ngày kết thúc cần lớn hơn ngày bắt đầu!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
             // Lấy danh sách phòng máy
             string phongmay = "select tenpm from tblphongmay";
             System.Data.DataTable tblpm = Class.Function.GetDataToTable(phongmay);
@@ -273,63 +333,69 @@ namespace Nhom7_Project_QLPM.Forms
             System.Data.DataTable tblch = Class.Function.GetDataToTable(cahoc);
 
             // Lấy dữ liệu từ cơ sở dữ liệu
-            string sql = "SELECT lth.mastt, pm.tenpm, nv.tennv, gv.tengv, lop.tenlop, mon.tenmon, ca.tenca, lth.thu, lth.ngaybd, lth.ngaykt " +
-                         "FROM tbllichthuchanh lth " +
-                         "JOIN tblphongmay pm on lth.mapm = pm.mapm " +
-                         "JOIN tblnhanvien nv on lth.manv = nv.manv " +
-                         "JOIN tblgiaovien gv on lth.magv = gv.magv " +
-                         "JOIN tbllop lop on lth.malop = lop.malop " +
-                         "JOIN tblmonthuchanh mon on lth.mamon = mon.mamon " +
-                         "JOIN tblcahoc ca on lth.maca = ca.maca where NOT((ngaybd > '" + ngaykt.ToString("MM-dd-yyyy") + "') OR(ngaykt < '" + ngaybd.ToString("MM-dd-yyyy") + "')) ";
+            string sql = "select lth.mastt, pm.tenpm, nv.tennv, nv.tennv, lop.tenlop, mon.tenmon, ca.tenca, lth.thu, lth.ngaybd, lth.ngaykt " +
+                         "from tbllich lth " +
+                         "join tblphongmay pm on lth.mapm = pm.mapm " +
+                         "join tblnhanvien nv on lth.magv = nv.manv " +
+                         "join tbllop lop on lth.malop = lop.malop " +
+                         "join tblmonthuchanh mon on lth.mamon = mon.mamon " +
+                         "join tblcahoc ca on lth.maca = ca.maca where NOT((ngaybd > '" + ngaykt.ToString("dd-MM-yyyy") + "') OR(ngaykt < '" + ngaybd.ToString("dd-MM-yyyy") + "')) ";
             System.Data.DataTable tbllth = Class.Function.GetDataToTable(sql);
-
             //Đổ dữ liệu
-            int cotngay = 3; 
+            int cotngay = 3;
             for (DateTime date = ngaybd; date <= ngaykt; date = date.AddDays(1))
             {
-                exSheet.Cells[2, cotngay].Value = GetDayOfWeekVN(date.DayOfWeek);
+                exSheet.Cells[2, cotngay].Value = thutrongtuan(date.DayOfWeek);
                 exSheet.Cells[3, cotngay].Value = date.ToString("MM/dd/yyyy");
                 cotngay++;
             }
-
             int rowstart = 4;
-
             foreach (DataRow phong in tblpm.Rows)
             {
                 string tenpm = phong["tenpm"].ToString();
+
                 foreach (DataRow ca in tblch.Rows)
                 {
                     string tenca = ca["tenca"].ToString();
                     exSheet.Cells[rowstart, 1].Value = tenpm;
                     exSheet.Cells[rowstart, 2].Value = tenca;
+                    
                     foreach (DataRow row in tbllth.Rows)
                     {
-                        if (row["tenpm"].ToString() == tenpm && row["tenca"].ToString() == tenca)
+                        for (DateTime date = ngaybd; date <= ngaykt; date = date.AddDays(1))
                         {
-                            for (DateTime date = ngaybd; date <= ngaykt; date = date.AddDays(1))
+
+                            cotngay = (date - ngaybd).Days + 3;
+                            string thu = thutrongtuan(date.DayOfWeek);
+                            if (row["thu"].ToString() == thu && row["tenpm"].ToString() == tenpm && row["tenca"].ToString() == tenca)
                             {
-                                cotngay = (date - ngaybd).Days + 3;
-                                exSheet.Cells[rowstart, cotngay].Value = "GV: " + row["tengv"] + ", Lớp: " + row["tenlop"] + ", Môn: " + row["tenmon"];
+                                DateTime lthNgaybd = Convert.ToDateTime(row["ngaybd"].ToString());
+                                DateTime lthNgaykt = Convert.ToDateTime(row["ngaykt"].ToString());
+                                if (date >= lthNgaybd && date <= lthNgaykt)
+                                {
+                                    exSheet.Cells[rowstart, cotngay].Value = "GV: " + row["tennv"] + ", Lớp: " + row["tenlop"] + ", Môn: " + row["tenmon"];
+                                }
                             }
                         }
                     }
                     rowstart++;
                 }
             }
+
             exApp.Visible = true;
         }
 
-        private string GetDayOfWeekVN(DayOfWeek dayOfWeek)
+        private string thutrongtuan(DayOfWeek ngay)
         {
-            switch (dayOfWeek)
+            switch (ngay)
             {
-                case DayOfWeek.Monday: return "Thứ hai";
-                case DayOfWeek.Tuesday: return "Thứ ba";
-                case DayOfWeek.Wednesday: return "Thứ tư";
-                case DayOfWeek.Thursday: return "Thứ năm";
-                case DayOfWeek.Friday: return "Thứ sáu";
-                case DayOfWeek.Saturday: return "Thứ bảy";
-                case DayOfWeek.Sunday: return "Chủ nhật";
+                case DayOfWeek.Monday: return "Thứ Hai";
+                case DayOfWeek.Tuesday: return "Thứ Ba";
+                case DayOfWeek.Wednesday: return "Thứ Tư";
+                case DayOfWeek.Thursday: return "Thứ Năm";
+                case DayOfWeek.Friday: return "Thứ Sáu";
+                case DayOfWeek.Saturday: return "Thứ Bảy";
+                case DayOfWeek.Sunday: return "Chủ Nhật";
                 default: return "";
             }
         }

@@ -1,6 +1,6 @@
 ﻿namespace Nhom7_Project_QLPM.Forms
 {
-    partial class QLCa
+    partial class frmQuenMK
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // QLCa
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "QLCa";
-            this.Text = "QLCa";
-            this.Load += new System.EventHandler(this.QLCa_Load);
-            this.ResumeLayout(false);
-
+            this.Text = "frmQuenMK";
         }
 
         #endregion

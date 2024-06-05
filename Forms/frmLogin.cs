@@ -18,12 +18,6 @@ namespace Nhom7_Project_QLPM.Forms
         {
             InitializeComponent();
         }
-
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCancle_Click(object sender, EventArgs e)
         {
             DialogResult tb = MessageBox.Show("Ban co muon thoat hay khong?", "Thong bao" ,MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -32,31 +26,6 @@ namespace Nhom7_Project_QLPM.Forms
                 Application.Exit();
             }
         }
-        //CÁCH KHÔNG VIẾT CONNECT VÀO FUNCTION
-        //private void btnLogin_Click(object sender, EventArgs e)
-        //{
-        //    SqlConnection conn = new SqlConnection(@"Data Source=RYNNA\THUYHA;Initial Catalog=QLPM;Integrated Security=True;Encrypt=False");
-        //    try
-        //    {
-        //        conn.Open();
-        //        string tk = txtAccountid.Text;
-        //        string mk = txtPassword.Text;
-        //        string sql = "SELECT * FROM tblAccount WHERE Accountid = '" + tk + "'and password='" + mk + "'";
-        //        SqlCommand cmd = new SqlCommand(sql, conn);
-        //        SqlDataReader dta = cmd.ExecuteReader();
-        //        if (dta.Read() == true) {
-        //            MessageBox.Show("Dang nhap thanh cong", "thong bao", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //        }
-        //        else
-        //        {
-        //            MessageBox.Show("Dang nhap that bai" ,"thong bao", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //        }
-
-        //    }catch (Exception ex)
-        //    {
-        //        MessageBox.Show("Loi ket noi");
-        //    }
-        //}
 
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -64,37 +33,51 @@ namespace Nhom7_Project_QLPM.Forms
             try
             {
                 Class.Function.Connect();
-                string tk = txtAccountid.Text;
-                string mk = txtPassword.Text;
-                string sql = "SELECT * FROM tblAccount WHERE Accountid = @Accountid AND password = @password";
-                SqlCommand cmd = new SqlCommand(sql, Function.Conn);
-                cmd.Parameters.AddWithValue("@Accountid", tk);
-                cmd.Parameters.AddWithValue("@password", mk);
+                string tk = txtAccountid.Text.Trim();
+                string mk = txtPassword.Text.Trim();
 
-                SqlDataReader dta = cmd.ExecuteReader();
-                if (dta.Read())
+                if (string.IsNullOrEmpty(tk) || string.IsNullOrEmpty(mk))
                 {
-                    dta.Close(); // Đóng DataReader trước khi thực hiện truy vấn tiếp theo
-
-                    // Truy vấn để lấy thông tin chức vụ từ bảng NhanVien
-                    string sqlChucVu = "SELECT ChucVu FROM tblNhanVien WHERE Accountid = @Accountid";
-                    SqlCommand cmdChucVu = new SqlCommand(sqlChucVu, Function.Conn);
-                    cmdChucVu.Parameters.AddWithValue("@Accountid", tk);
-
-                    string chucVu = (string)cmdChucVu.ExecuteScalar();
-
-                    MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    // Đóng form đăng nhập và mở form chính
-
-                    frmMain mainForm = new frmMain(tk, chucVu); // Truyền tài khoản và chức vụ vào form chính
-                    this.Hide();
-                    mainForm.ShowDialog();
-                    this.Close();
+                    MessageBox.Show("Vui lòng nhập tài khoản và mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
-                else
+
+                string sql = "SELECT * FROM tblAccount WHERE Accountid = @Accountid AND password = @password";
+                using (SqlCommand cmd = new SqlCommand(sql, Function.Conn))
                 {
-                    MessageBox.Show("Đăng nhập thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cmd.Parameters.AddWithValue("@Accountid", tk);
+                    cmd.Parameters.AddWithValue("@password", mk);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            reader.Close();
+
+                            // Lấy chức vụ từ bảng tblNhanVien
+                            string sqlChucVu = "SELECT ChucVu FROM tblNhanVien WHERE Accountid = @Accountid";
+                            using (SqlCommand cmdChucVu = new SqlCommand(sqlChucVu, Function.Conn))
+                            {
+                                cmdChucVu.Parameters.AddWithValue("@Accountid", tk);
+                                string chucVu = (string)cmdChucVu.ExecuteScalar();
+
+                                MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                // Bắt đầu phiên người dùng
+                                UserSession.StartSession(tk, chucVu);
+
+                                // Mở form chính
+                                frmMain mainForm = new frmMain();
+                                this.Hide();
+                                mainForm.ShowDialog();
+                                this.Close();
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Đăng nhập thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
                 }
             }
             catch (Exception ex)
@@ -110,5 +93,15 @@ namespace Nhom7_Project_QLPM.Forms
             }
         }
 
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quenmatkhau_Click(object sender, EventArgs e)
+        {
+            Forms.frmQuenMK f = new Forms.frmQuenMK();
+            f.ShowDialog();
+        }
     }
 }

@@ -56,50 +56,57 @@
             this.dateTu = new System.Windows.Forms.DateTimePicker();
             this.label15 = new System.Windows.Forms.Label();
             this.txtNgayXL = new System.Windows.Forms.TextBox();
-            this.btnLammoi = new System.Windows.Forms.Button();
+            this.picSuco2 = new System.Windows.Forms.PictureBox();
+            this.btnHienthi = new System.Windows.Forms.Button();
             this.btnBoqua = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnLoc = new System.Windows.Forms.Button();
             this.btnCapnhat = new System.Windows.Forms.Button();
             this.picSuCo = new System.Windows.Forms.PictureBox();
+            this.txtTenGV = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtGhichu = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSuco2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSuCo)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNgaySC
             // 
-            this.txtNgaySC.Location = new System.Drawing.Point(1270, 124);
+            this.txtNgaySC.Location = new System.Drawing.Point(1405, 120);
             this.txtNgaySC.Name = "txtNgaySC";
-            this.txtNgaySC.Size = new System.Drawing.Size(203, 22);
+            this.txtNgaySC.Size = new System.Drawing.Size(235, 22);
             this.txtNgaySC.TabIndex = 27;
             // 
             // txtMaBCSC
             // 
-            this.txtMaBCSC.Location = new System.Drawing.Point(996, 126);
+            this.txtMaBCSC.Location = new System.Drawing.Point(1131, 126);
             this.txtMaBCSC.Name = "txtMaBCSC";
-            this.txtMaBCSC.Size = new System.Drawing.Size(131, 22);
+            this.txtMaBCSC.Size = new System.Drawing.Size(132, 22);
             this.txtMaBCSC.TabIndex = 26;
             // 
             // txtMota
             // 
-            this.txtMota.Location = new System.Drawing.Point(880, 537);
+            this.txtMota.Location = new System.Drawing.Point(1027, 425);
             this.txtMota.Multiline = true;
             this.txtMota.Name = "txtMota";
-            this.txtMota.Size = new System.Drawing.Size(596, 195);
+            this.txtMota.Size = new System.Drawing.Size(615, 124);
             this.txtMota.TabIndex = 24;
             // 
             // txtGiaovien
             // 
-            this.txtGiaovien.Location = new System.Drawing.Point(996, 174);
+            this.txtGiaovien.Location = new System.Drawing.Point(1131, 171);
             this.txtGiaovien.Name = "txtGiaovien";
-            this.txtGiaovien.Size = new System.Drawing.Size(131, 22);
+            this.txtGiaovien.Size = new System.Drawing.Size(107, 22);
             this.txtGiaovien.TabIndex = 23;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(889, 288);
+            this.label5.Location = new System.Drawing.Point(1021, 559);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 23);
             this.label5.TabIndex = 22;
@@ -109,7 +116,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(886, 506);
+            this.label4.Location = new System.Drawing.Point(1028, 391);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 23);
             this.label4.TabIndex = 21;
@@ -119,7 +126,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1159, 172);
+            this.label3.Location = new System.Drawing.Point(1021, 214);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 23);
             this.label3.TabIndex = 20;
@@ -129,7 +136,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(885, 172);
+            this.label2.Location = new System.Drawing.Point(1020, 169);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 23);
             this.label2.TabIndex = 19;
@@ -138,16 +145,16 @@
             // cboPhongmay
             // 
             this.cboPhongmay.FormattingEnabled = true;
-            this.cboPhongmay.Location = new System.Drawing.Point(1271, 171);
+            this.cboPhongmay.Location = new System.Drawing.Point(1132, 215);
             this.cboPhongmay.Name = "cboPhongmay";
-            this.cboPhongmay.Size = new System.Drawing.Size(202, 24);
+            this.cboPhongmay.Size = new System.Drawing.Size(187, 24);
             this.cboPhongmay.TabIndex = 17;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(886, 125);
+            this.label1.Location = new System.Drawing.Point(1021, 125);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 23);
             this.label1.TabIndex = 16;
@@ -170,7 +177,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(805, 536);
+            this.dataGridView1.Size = new System.Drawing.Size(911, 593);
             this.dataGridView1.TabIndex = 28;
             this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
@@ -178,7 +185,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1159, 124);
+            this.label6.Location = new System.Drawing.Point(1294, 120);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(95, 23);
             this.label6.TabIndex = 29;
@@ -188,18 +195,18 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(886, 222);
+            this.label7.Location = new System.Drawing.Point(1335, 256);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 23);
+            this.label7.Size = new System.Drawing.Size(90, 23);
             this.label7.TabIndex = 30;
-            this.label7.Text = "Thời gian XL";
+            this.label7.Text = "Ngày xử lý";
             // 
             // cboTrangthai
             // 
             this.cboTrangthai.FormattingEnabled = true;
-            this.cboTrangthai.Location = new System.Drawing.Point(1285, 221);
+            this.cboTrangthai.Location = new System.Drawing.Point(1131, 259);
             this.cboTrangthai.Name = "cboTrangthai";
-            this.cboTrangthai.Size = new System.Drawing.Size(166, 24);
+            this.cboTrangthai.Size = new System.Drawing.Size(188, 24);
             this.cboTrangthai.TabIndex = 33;
             // 
             // dateDen
@@ -284,7 +291,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label13.Location = new System.Drawing.Point(885, 86);
+            this.label13.Location = new System.Drawing.Point(1020, 86);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(231, 28);
             this.label13.TabIndex = 46;
@@ -316,7 +323,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(1184, 221);
+            this.label15.Location = new System.Drawing.Point(1023, 259);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(87, 23);
             this.label15.TabIndex = 50;
@@ -324,28 +331,38 @@
             // 
             // txtNgayXL
             // 
-            this.txtNgayXL.Location = new System.Drawing.Point(996, 223);
+            this.txtNgayXL.Location = new System.Drawing.Point(1428, 258);
             this.txtNgayXL.Name = "txtNgayXL";
-            this.txtNgayXL.Size = new System.Drawing.Size(175, 22);
+            this.txtNgayXL.Size = new System.Drawing.Size(212, 22);
             this.txtNgayXL.TabIndex = 51;
             // 
-            // btnLammoi
+            // picSuco2
             // 
-            this.btnLammoi.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.btnLammoi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnLammoi.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnLammoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLammoi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLammoi.Image = global::Nhom7_Project_QLPM.Properties.Resources.refresh;
-            this.btnLammoi.Location = new System.Drawing.Point(693, 738);
-            this.btnLammoi.Name = "btnLammoi";
-            this.btnLammoi.Size = new System.Drawing.Size(145, 34);
-            this.btnLammoi.TabIndex = 52;
-            this.btnLammoi.Text = "Làm mới";
-            this.btnLammoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLammoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLammoi.UseVisualStyleBackColor = false;
-            this.btnLammoi.Click += new System.EventHandler(this.btnLammoi_Click);
+            this.picSuco2.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.picSuco2.Location = new System.Drawing.Point(1339, 585);
+            this.picSuco2.Name = "picSuco2";
+            this.picSuco2.Size = new System.Drawing.Size(290, 222);
+            this.picSuco2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSuco2.TabIndex = 53;
+            this.picSuco2.TabStop = false;
+            // 
+            // btnHienthi
+            // 
+            this.btnHienthi.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnHienthi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnHienthi.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnHienthi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHienthi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            //this.btnHienthi.Image = global::Nhom7_Project_QLPM.Properties.Resources.eye;
+            this.btnHienthi.Location = new System.Drawing.Point(799, 795);
+            this.btnHienthi.Name = "btnHienthi";
+            this.btnHienthi.Size = new System.Drawing.Size(145, 34);
+            this.btnHienthi.TabIndex = 52;
+            this.btnHienthi.Text = "Hiển thị";
+            this.btnHienthi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHienthi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHienthi.UseVisualStyleBackColor = false;
+            this.btnHienthi.Click += new System.EventHandler(this.btnLammoi_Click);
             // 
             // btnBoqua
             // 
@@ -355,9 +372,9 @@
             this.btnBoqua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBoqua.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBoqua.Image = global::Nhom7_Project_QLPM.Properties.Resources.remove;
-            this.btnBoqua.Location = new System.Drawing.Point(1205, 764);
+            this.btnBoqua.Location = new System.Drawing.Point(1329, 813);
             this.btnBoqua.Name = "btnBoqua";
-            this.btnBoqua.Size = new System.Drawing.Size(94, 34);
+            this.btnBoqua.Size = new System.Drawing.Size(116, 34);
             this.btnBoqua.TabIndex = 49;
             this.btnBoqua.Text = "Bỏ qua";
             this.btnBoqua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -373,9 +390,9 @@
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Image = global::Nhom7_Project_QLPM.Properties.Resources.cancel;
-            this.btnThoat.Location = new System.Drawing.Point(1316, 764);
+            this.btnThoat.Location = new System.Drawing.Point(1451, 813);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(106, 34);
+            this.btnThoat.Size = new System.Drawing.Size(128, 34);
             this.btnThoat.TabIndex = 44;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -398,7 +415,7 @@
             this.btnLoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLoc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLoc.UseVisualStyleBackColor = false;
-            //this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
+            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
             // btnCapnhat
             // 
@@ -408,9 +425,9 @@
             this.btnCapnhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCapnhat.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapnhat.Image = global::Nhom7_Project_QLPM.Properties.Resources.pen;
-            this.btnCapnhat.Location = new System.Drawing.Point(1332, 262);
+            this.btnCapnhat.Location = new System.Drawing.Point(1498, 356);
             this.btnCapnhat.Name = "btnCapnhat";
-            this.btnCapnhat.Size = new System.Drawing.Size(120, 34);
+            this.btnCapnhat.Size = new System.Drawing.Size(142, 34);
             this.btnCapnhat.TabIndex = 25;
             this.btnCapnhat.Text = "Cập nhật";
             this.btnCapnhat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -421,19 +438,68 @@
             // picSuCo
             // 
             this.picSuCo.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.picSuCo.Location = new System.Drawing.Point(890, 326);
+            this.picSuCo.Location = new System.Drawing.Point(1024, 585);
             this.picSuCo.Name = "picSuCo";
-            this.picSuCo.Size = new System.Drawing.Size(586, 175);
+            this.picSuCo.Size = new System.Drawing.Size(309, 222);
+            this.picSuCo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSuCo.TabIndex = 18;
             this.picSuCo.TabStop = false;
+            // 
+            // txtTenGV
+            // 
+            this.txtTenGV.Location = new System.Drawing.Point(1244, 171);
+            this.txtTenGV.Name = "txtTenGV";
+            this.txtTenGV.Size = new System.Drawing.Size(169, 22);
+            this.txtTenGV.TabIndex = 54;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(1424, 168);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(40, 23);
+            this.label16.TabIndex = 55;
+            this.label16.Text = "SĐT";
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.Location = new System.Drawing.Point(1471, 169);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(169, 22);
+            this.txtSDT.TabIndex = 56;
+            // 
+            // txtGhichu
+            // 
+            this.txtGhichu.Location = new System.Drawing.Point(1133, 307);
+            this.txtGhichu.Multiline = true;
+            this.txtGhichu.Name = "txtGhichu";
+            this.txtGhichu.Size = new System.Drawing.Size(507, 43);
+            this.txtGhichu.TabIndex = 58;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(1024, 306);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(69, 23);
+            this.label17.TabIndex = 57;
+            this.label17.Text = "Ghi chú";
             // 
             // QLXuLyBCSC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1488, 814);
-            this.Controls.Add(this.btnLammoi);
+            this.ClientSize = new System.Drawing.Size(1747, 829);
+            this.Controls.Add(this.txtGhichu);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.txtSDT);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.txtTenGV);
+            this.Controls.Add(this.picSuco2);
+            this.Controls.Add(this.btnHienthi);
             this.Controls.Add(this.txtNgayXL);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.btnBoqua);
@@ -470,6 +536,7 @@
             this.Text = "QLXuLyBCSC";
             this.Load += new System.EventHandler(this.QLXuLyBCSC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSuco2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSuCo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -510,6 +577,12 @@
         private System.Windows.Forms.Button btnBoqua;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtNgayXL;
-        private System.Windows.Forms.Button btnLammoi;
+        private System.Windows.Forms.Button btnHienthi;
+        private System.Windows.Forms.PictureBox picSuco2;
+        private System.Windows.Forms.TextBox txtTenGV;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.TextBox txtGhichu;
+        private System.Windows.Forms.Label label17;
     }
 }
