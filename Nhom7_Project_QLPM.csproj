@@ -33,8 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\Function.cs" />
+    <Compile Include="Class\UserSession.cs" />
     <Compile Include="Forms\CaNhanBCSC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +102,12 @@
     </Compile>
     <Compile Include="Forms\frmPhongMay.Designer.cs">
       <DependentUpon>frmPhongMay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmQuenMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmQuenMK.Designer.cs">
+      <DependentUpon>frmQuenMK.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\QLBCSC.cs">
       <SubType>Form</SubType>
@@ -160,6 +174,15 @@
     <EmbeddedResource Include="Forms\CaNhanBCSC.resx">
       <DependentUpon>CaNhanBCSC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CaNhanCaiDat.resx">
+      <DependentUpon>CaNhanCaiDat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CaNhanLichTH.resx">
+      <DependentUpon>CaNhanLichTH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CaNhanToi.resx">
+      <DependentUpon>CaNhanToi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +195,12 @@
     <EmbeddedResource Include="Forms\frmPhongMay.resx">
       <DependentUpon>frmPhongMay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QLBCSC.resx">
+      <DependentUpon>QLBCSC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QLCa.resx">
+      <DependentUpon>QLCa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\QLLichTH.resx">
       <DependentUpon>QLLichTH.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,8 +210,14 @@
     <EmbeddedResource Include="Forms\QLMayTinh.resx">
       <DependentUpon>QLMayTinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QLMon.resx">
+      <DependentUpon>QLMon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\QLPhongMay.resx">
       <DependentUpon>QLPhongMay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QLTaiKhoan.resx">
+      <DependentUpon>QLTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\QLXuLyBCSC.resx">
       <DependentUpon>QLXuLyBCSC.cs</DependentUpon>
@@ -200,6 +235,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -215,6 +251,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\background_login.png" />
+    <Content Include="Images\computers.png" />
     <Content Include="Images\icons8-add-20.png" />
     <Content Include="Images\icons8-bars-20.png" />
     <Content Include="Images\icons8-bars-25.png" />
@@ -242,6 +279,7 @@
     <Content Include="Images\icons8-print-20.png" />
     <Content Include="Images\icons8-schedule-20 %281%29.png" />
     <Content Include="Images\icons8-schedule-20.png" />
+    <Content Include="Images\icons8-search-20.png" />
     <Content Include="Images\icons8-setting-20 %281%29.png" />
     <Content Include="Images\icons8-setting-20.png" />
     <Content Include="Images\icons8-subject-20.png" />
@@ -250,8 +288,16 @@
     <Content Include="Images\icons8-team-20.png" />
     <Content Include="Images\icons8-time-20 %281%29.png" />
     <Content Include="Images\icons8-time-20.png" />
+    <Content Include="Images\lich.png" />
     <Content Include="Images\logo.png" />
+    <None Include="Resources\Thiết kế chưa có tên %2812%29.png" />
+    <None Include="Resources\Thiết kế chưa có tên %2811%29.png" />
+    <None Include="Resources\Thiết kế chưa có tên %2810%29.png" />
+    <None Include="Resources\computers.png" />
     <Content Include="Resources\eye.png" />
+    <None Include="Resources\icons8-search-20.png" />
+    <None Include="Resources\lich.png" />
+    <None Include="Resources\icons8-logout-20.png" />
     <Content Include="Resources\remove1.png" />
     <Content Include="Resources\rotate.png" />
     <None Include="Resources\LaBNET.png" />
