@@ -109,24 +109,6 @@ namespace Nhom7_Project_QLPM.Class
 
         //Phượng
 
-        public static string createmastt()
-        {
-            int maxMastt = 0;
-            string sql = "SELECT ISNULL(MAX(CAST(mastt AS INT)), 0) FROM tbllichthuchanh";
-            SqlCommand command = new SqlCommand(sql, Class.Function.Conn);
-            object result = command.ExecuteScalar();
-            maxMastt = Convert.ToInt32(result);
-
-            maxMastt += 1;
-
-            if (maxMastt < 10)
-                return "00" + maxMastt;
-            else if (maxMastt < 100)
-                return "0" + maxMastt;
-            else
-                return maxMastt.ToString();
-
-        }
         public static bool isdate(string d)
         {
             string[] parts = d.Split('/');
@@ -141,47 +123,6 @@ namespace Nhom7_Project_QLPM.Class
             string[] parts = d.Split('/');
             string dt = String.Format("{0}/{1}/{2}", parts[1], parts[0], parts[2]);
             return dt;
-        }
-
-        public static string getfieldvaluesint(string sql)
-        {
-            string value = null;
-            SqlCommand cmd = new SqlCommand(sql, Class.Function.Conn);
-            SqlDataReader reader;
-
-            reader = cmd.ExecuteReader();
-
-            if (reader.Read())
-            {
-                if (!reader.IsDBNull(0))
-                {
-                    int intValue;
-                    if (int.TryParse(reader[0].ToString(), out intValue))
-                    {
-                        value = intValue.ToString();
-                    }
-                }
-            }
-            reader.Close();
-            return value;
-        }
-        public static DataTable getdatatotables(string sql, SqlParameter[] parameters)
-        {
-            using (SqlConnection connection = new SqlConnection(connString))
-            {
-                using (SqlCommand command = new SqlCommand(sql, connection))
-                {
-                    if (parameters != null)
-                    {
-                        command.Parameters.AddRange(parameters);
-                    }
-
-                    SqlDataAdapter adapter = new SqlDataAdapter(command);
-                    DataTable table = new DataTable();
-                    adapter.Fill(table);
-                    return table;
-                }
-            }
         }
 
 

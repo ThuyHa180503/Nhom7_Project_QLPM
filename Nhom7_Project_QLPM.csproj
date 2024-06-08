@@ -36,12 +36,65 @@
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Abstractions, Version=6.34.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.Abstractions.6.34.0\lib\net472\Microsoft.IdentityModel.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=6.34.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.JsonWebTokens.6.34.0\lib\net472\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=6.34.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.Logging.6.34.0\lib\net472\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=6.34.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IdentityModel.Tokens.6.34.0\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Collections.Specialized.4.3.0\lib\net46\System.Collections.Specialized.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=6.34.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\System.IdentityModel.Tokens.Jwt.6.34.0\lib\net472\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
     <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.5.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Encodings.Web.4.7.2\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Text.Json.4.7.2\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,6 +104,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Twilio, Version=7.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Twilio.7.1.1\lib\net462\Twilio.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\Function.cs" />
@@ -60,12 +116,6 @@
     </Compile>
     <Compile Include="Forms\CaNhanBCSC.Designer.cs">
       <DependentUpon>CaNhanBCSC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\CaNhanCaiDat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\CaNhanCaiDat.Designer.cs">
-      <DependentUpon>CaNhanCaiDat.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\CaNhanLichTH.cs">
       <SubType>Form</SubType>
@@ -174,9 +224,6 @@
     <EmbeddedResource Include="Forms\CaNhanBCSC.resx">
       <DependentUpon>CaNhanBCSC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CaNhanCaiDat.resx">
-      <DependentUpon>CaNhanCaiDat.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CaNhanLichTH.resx">
       <DependentUpon>CaNhanLichTH.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmPhongMay.resx">
       <DependentUpon>frmPhongMay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmQuenMK.resx">
+      <DependentUpon>frmQuenMK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\QLBCSC.resx">
       <DependentUpon>QLBCSC.cs</DependentUpon>
@@ -227,19 +277,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -250,20 +300,30 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\avt girl 1.png" />
     <Content Include="Images\background_login.png" />
+    <Content Include="Images\boy1.png" />
+    <Content Include="Images\boy2.png" />
     <Content Include="Images\computers.png" />
+    <Content Include="Images\girl2.png" />
+    <Content Include="Images\icons8-add-20 %281%29.png" />
     <Content Include="Images\icons8-add-20.png" />
     <Content Include="Images\icons8-bars-20.png" />
     <Content Include="Images\icons8-bars-25.png" />
+    <Content Include="Images\icons8-cancel-20.png" />
     <Content Include="Images\icons8-class-20 %281%29.png" />
     <Content Include="Images\icons8-class-20.png" />
     <Content Include="Images\icons8-computer-20 %281%29.png" />
     <Content Include="Images\icons8-computer-20.png" />
+    <Content Include="Images\icons8-delete-20 %281%29.png" />
     <Content Include="Images\icons8-delete-20.png" />
+    <Content Include="Images\icons8-edit-20 %281%29.png" />
     <Content Include="Images\icons8-edit-20.png" />
     <Content Include="Images\icons8-error-20 %281%29.png" />
     <Content Include="Images\icons8-error-20.png" />
     <Content Include="Images\icons8-error-globe-20.png" />
+    <Content Include="Images\icons8-eye-20.png" />
+    <Content Include="Images\icons8-funnel-20.png" />
     <Content Include="Images\icons8-help-20.png" />
     <Content Include="Images\icons8-home-20 %281%29.png" />
     <Content Include="Images\icons8-home-20.png" />
@@ -277,9 +337,13 @@
     <Content Include="Images\icons8-person-20 %281%29.png" />
     <Content Include="Images\icons8-person-20 %282%29.png" />
     <Content Include="Images\icons8-print-20.png" />
+    <Content Include="Images\icons8-reset-20 %281%29.png" />
+    <Content Include="Images\icons8-reset-20.png" />
+    <Content Include="Images\icons8-save-20.png" />
     <Content Include="Images\icons8-schedule-20 %281%29.png" />
     <Content Include="Images\icons8-schedule-20.png" />
     <Content Include="Images\icons8-search-20.png" />
+    <Content Include="Images\icons8-sent-20.png" />
     <Content Include="Images\icons8-setting-20 %281%29.png" />
     <Content Include="Images\icons8-setting-20.png" />
     <Content Include="Images\icons8-subject-20.png" />
@@ -288,12 +352,15 @@
     <Content Include="Images\icons8-team-20.png" />
     <Content Include="Images\icons8-time-20 %281%29.png" />
     <Content Include="Images\icons8-time-20.png" />
+    <Content Include="Images\icons8-upload-20 %281%29.png" />
+    <Content Include="Images\icons8-upload-20.png" />
     <Content Include="Images\lich.png" />
     <Content Include="Images\logo.png" />
     <None Include="Resources\Thiết kế chưa có tên %2812%29.png" />
     <None Include="Resources\Thiết kế chưa có tên %2811%29.png" />
     <None Include="Resources\Thiết kế chưa có tên %2810%29.png" />
     <None Include="Resources\computers.png" />
+    <None Include="Resources\computers1.png" />
     <Content Include="Resources\eye.png" />
     <None Include="Resources\icons8-search-20.png" />
     <None Include="Resources\lich.png" />
