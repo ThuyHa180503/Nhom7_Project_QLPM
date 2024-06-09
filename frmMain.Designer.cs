@@ -292,7 +292,7 @@
             this.menuQuanLy.Location = new System.Drawing.Point(3, 292);
             this.menuQuanLy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.menuQuanLy.Name = "menuQuanLy";
-            this.menuQuanLy.Size = new System.Drawing.Size(264, 605);
+            this.menuQuanLy.Size = new System.Drawing.Size(264, 575);
             this.menuQuanLy.TabIndex = 16;
             this.menuQuanLy.Paint += new System.Windows.Forms.PaintEventHandler(this.menuQuanLy_Paint);
             // 
@@ -583,7 +583,7 @@
             this.menuCaNhan.Controls.Add(this.pnCaNhanBCSC);
             this.menuCaNhan.Controls.Add(this.pnCaNhanToi);
             this.menuCaNhan.Controls.Add(this.panel2);
-            this.menuCaNhan.Location = new System.Drawing.Point(3, 901);
+            this.menuCaNhan.Location = new System.Drawing.Point(3, 871);
             this.menuCaNhan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.menuCaNhan.Name = "menuCaNhan";
             this.menuCaNhan.Size = new System.Drawing.Size(264, 304);
@@ -738,7 +738,7 @@
             this.panel1.Location = new System.Drawing.Point(267, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1938, 102);
+            this.panel1.Size = new System.Drawing.Size(1942, 102);
             this.panel1.TabIndex = 1;
             // 
             // label_welcom
@@ -1153,12 +1153,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(2205, 1275);
+            this.ClientSize = new System.Drawing.Size(2209, 1275);
             this.Controls.Add(this.pnBody);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.sidebar);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(2231, 1346);
+            this.MaximumSize = new System.Drawing.Size(2235, 1346);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(2231, 1346);
             this.Name = "frmMain";

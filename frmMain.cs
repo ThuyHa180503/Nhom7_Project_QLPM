@@ -23,16 +23,11 @@ namespace Nhom7_Project_QLPM
             InitializeComponent();
             if (UserSession.IsLoggedIn())
             {
-                // Hiển thị thông tin chào mừng
                 label_welcom.Text = $"Chào mừng, {UserSession.ChucVu} ({UserSession.AccountId})";
-
-                // Kiểm tra chức vụ để hiển thị hoặc ẩn menu và nút liên quan
                 if (UserSession.ChucVu == "Giáo viên")
                 {
-                    // Ẩn menuQuanLy
                     menuQuanLy.Visible = false;
 
-                    // Ẩn các button quản lý
                     btnQLLop.Visible = false;
                     btnQLMon.Visible = false;
                     btnQLCa.Visible = false;
@@ -47,9 +42,7 @@ namespace Nhom7_Project_QLPM
                 }
                 else if (UserSession.ChucVu == "Nhân viên")
                 {
-                    // Hiển thị menuQuanLy
                     menuQuanLy.Visible = true;
-                    // Hiển thị các button quản lý
                     btnQLLop.Visible = true;
                     btnQLMon.Visible = true;
                     btnQLCa.Visible = true;
@@ -58,8 +51,6 @@ namespace Nhom7_Project_QLPM
                     btnQLMayTinh.Visible = true;
                     btnQLBaoCao.Visible = true;
                     btnQLTaiKhoan.Visible = true;
-                    //btnCaNhanBCSC.Visible = false;
-                    //btnCaNhanLichTH.Visible = false;
                 }
                 // Truy vấn SQL để đếm số phòng máy
                 string query = "SELECT COUNT(*) FROM tblPhongMay";
@@ -113,7 +104,7 @@ namespace Nhom7_Project_QLPM
             else
             {
                 sidebar.Width += 10;
-                if (sidebar.Width >= 130
+                if (sidebar.Width >= 135
                     )
                 {
                     sidebarExpand = true;
@@ -138,7 +129,7 @@ namespace Nhom7_Project_QLPM
             if (menuExpand == false)
             {
                 menuQuanLy.Height += 10;
-                if (menuQuanLy.Height >= 320)
+                if (menuQuanLy.Height >= 280)
                 {
                     menuTransition0.Stop();
                     menuExpand = true;
@@ -147,7 +138,7 @@ namespace Nhom7_Project_QLPM
             else
             {
                 menuQuanLy.Height -= 10;
-                if (menuQuanLy.Height <= 35)
+                if (menuQuanLy.Height <= 34)
                 {
                     menuTransition0.Stop();
                     menuExpand = false;
