@@ -73,7 +73,6 @@ C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\D
 C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.AssemblyReference.cache
 C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.ResolveComReference.cache
 C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanBCSC.resources
-C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanCaiDat.resources
 C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanLichTH.resources
 C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanToi.resources
 C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmHome.resources
@@ -97,3 +96,346 @@ C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\D
 C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.pdb
 C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Guna.UI2.dll
 C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.CopyComplete
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmQuenMK.resources
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Buffers.dll
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Memory.dll
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Json.dll
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.ValueTuple.dll
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Twilio.dll
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Buffers.xml
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Memory.xml
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Json.xml
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.ValueTuple.xml
+C:\Users\ntha1\Desktop\Nhom7_Project\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Twilio.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe.config
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.pdb
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Guna.UI2.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Newtonsoft.Json.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Buffers.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Memory.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Numerics.Vectors.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Encodings.Web.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Json.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.ValueTuple.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Twilio.dll
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Newtonsoft.Json.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Buffers.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Memory.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Numerics.Vectors.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Encodings.Web.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Json.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.ValueTuple.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Twilio.xml
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.AssemblyReference.cache
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.ResolveComReference.cache
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanBCSC.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanLichTH.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanToi.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmHome.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmLichTH.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmLogin.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmPhongMay.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmQuenMK.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLBCSC.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLCa.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLLichTH.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLLop.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLMayTinh.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLMon.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLPhongMay.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLTaiKhoan.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLXuLyBCSC.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.frmMain.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Properties.Resources.resources
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.GenerateResource.cache
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.CoreCompileInputs.cache
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.CopyComplete
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.exe
+D:\nam ba\ki2\Lập trình .Net\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.pdb
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe.config
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.pdb
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Guna.UI2.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Buffers.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Memory.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Json.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.ValueTuple.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Twilio.dll
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Buffers.xml
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Memory.xml
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Json.xml
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.ValueTuple.xml
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Twilio.xml
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.ResolveComReference.cache
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanBCSC.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanLichTH.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanToi.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmHome.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmLichTH.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmLogin.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmPhongMay.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmQuenMK.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLBCSC.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLCa.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLLichTH.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLLop.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLMayTinh.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLMon.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLPhongMay.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLTaiKhoan.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLXuLyBCSC.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.frmMain.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Properties.Resources.resources
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Pr.C72A740E.Up2Date
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.exe
+C:\Users\DELL\Desktop\test ngày\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.pdb
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe.config
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.pdb
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Guna.UI2.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Newtonsoft.Json.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Buffers.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Memory.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Numerics.Vectors.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Encodings.Web.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Json.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.ValueTuple.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Twilio.dll
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Newtonsoft.Json.xml
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Buffers.xml
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Memory.xml
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Numerics.Vectors.xml
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Encodings.Web.xml
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Json.xml
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.ValueTuple.xml
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Twilio.xml
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.AssemblyReference.cache
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.ResolveComReference.cache
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanBCSC.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanLichTH.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanToi.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmHome.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmLichTH.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmLogin.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmPhongMay.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmQuenMK.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLBCSC.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLCa.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLLichTH.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLLop.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLMayTinh.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLMon.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLPhongMay.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLTaiKhoan.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLXuLyBCSC.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.frmMain.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Properties.Resources.resources
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.GenerateResource.cache
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.CoreCompileInputs.cache
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.CopyComplete
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.exe
+D:\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.pdb
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe.config
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.pdb
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Guna.UI2.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Buffers.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Memory.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Json.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.ValueTuple.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Twilio.dll
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Buffers.xml
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Memory.xml
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Json.xml
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.ValueTuple.xml
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Twilio.xml
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.AssemblyReference.cache
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.ResolveComReference.cache
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanBCSC.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanLichTH.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanToi.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmHome.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmLichTH.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmLogin.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmPhongMay.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmQuenMK.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLBCSC.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLCa.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLLichTH.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLLop.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLMayTinh.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLMon.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLPhongMay.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLTaiKhoan.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLXuLyBCSC.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.frmMain.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Properties.Resources.resources
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.GenerateResource.cache
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.CoreCompileInputs.cache
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.CopyComplete
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.exe
+C:\Users\ntha1\Desktop\Nhom7_Project_QLPM\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.pdb
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe.config
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.exe
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Nhom7_Project_QLPM.pdb
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Guna.UI2.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Buffers.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Memory.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Json.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.ValueTuple.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Twilio.dll
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Buffers.xml
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Memory.xml
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Text.Json.xml
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\System.ValueTuple.xml
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\bin\Debug\Twilio.xml
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.AssemblyReference.cache
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.ResolveComReference.cache
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanBCSC.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanLichTH.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.CaNhanToi.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmHome.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmLichTH.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmLogin.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmPhongMay.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.frmQuenMK.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLBCSC.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLCa.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLLichTH.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLLop.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLMayTinh.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLMon.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLPhongMay.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLTaiKhoan.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Forms.QLXuLyBCSC.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.frmMain.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.Properties.Resources.resources
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.GenerateResource.cache
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.CoreCompileInputs.cache
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.csproj.CopyComplete
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.exe
+C:\Users\ntha1\Desktop\Nhóm_07\Nhom7_Project_QLPM\Nhom7_Project_QLPM\obj\Debug\Nhom7_Project_QLPM.pdb
