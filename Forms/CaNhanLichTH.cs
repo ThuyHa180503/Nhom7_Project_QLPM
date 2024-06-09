@@ -142,15 +142,21 @@ namespace Nhom7_Project_QLPM.Forms
         private string taomastt()
         {
             string mamax = Class.Function.GetFieldValues("select max(mastt) from tbllich ");
-            int masttmax = Convert.ToInt32(mamax);
-            masttmax += 1;
-
-            if (masttmax < 10)
-                return "00" + masttmax;
-            else if (masttmax < 100)
-                return "0" + masttmax;
+            if (mamax == "")
+            {
+                return "001";
+            }
             else
-                return masttmax.ToString();
+            {
+                int masttmax = Convert.ToInt32(mamax);
+                masttmax += 1;
+                if (masttmax < 10)
+                    return "00" + masttmax;
+                else if (masttmax < 100)
+                    return "0" + masttmax;
+                else
+                    return masttmax.ToString();
+            }
         }
 
         private void dataGridView1_Click(object sender, EventArgs e)
@@ -486,6 +492,11 @@ namespace Nhom7_Project_QLPM.Forms
             btnluu.Enabled = false;
             btnboqua.Enabled = false;
             resetvalue();
+        }
+
+        private void pnSidebar_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

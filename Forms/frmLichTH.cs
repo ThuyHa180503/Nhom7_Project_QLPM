@@ -139,7 +139,7 @@ namespace Nhom7_Project_QLPM.Forms
             sql += "AND (mon.mamon LIKE N'%" + keyword + "%' OR tenmon LIKE N'%" + keyword + "%' )";
             if (btnloc.Enabled == false)
             {
-                sql += "AND NOT ((ngaybd > '" + ngaykt.ToString("dd-MM-yyyy") + "') OR (ngaykt < '" + ngaybd.ToString("dd-MM-yyyy") + "')) ";
+                sql += "AND NOT ((ngaybd > '" + ngaykt.ToString("yyyy-MM-dd") + "') OR (ngaykt < '" + ngaybd.ToString("yyyy-MM-dd") + "')) ";
             }
 
             tbllth = Class.Function.GetDataToTable(sql);
@@ -167,7 +167,7 @@ namespace Nhom7_Project_QLPM.Forms
 
             if (btnloc.Enabled == false)
             {
-                sql += "AND NOT ((ngaybd > '" + ngaykt.ToString("dd-MM-yyyy") + "') OR (ngaykt < '" + ngaybd.ToString("dd-MM-yyyy") + "')) ";
+                sql += "AND NOT ((ngaybd > '" + ngaykt.ToString("yyyy-MM-dd") + "') OR (ngaykt < '" + ngaybd.ToString("yyyy-MM-dd") + "')) ";
             }
 
             tbllth = Class.Function.GetDataToTable(sql);
@@ -194,7 +194,7 @@ namespace Nhom7_Project_QLPM.Forms
             sql += "AND (lth.mapm LIKE N'%" + keyword + "%' OR tenpm LIKE N'%" + keyword + "%' )";
             if (btnloc.Enabled == false)
             {
-                sql += "AND NOT ((ngaybd > '" + ngaykt.ToString("dd-MM-yyyy") + "') OR (ngaykt < '" + ngaybd.ToString("dd-MM-yyyy") + "')) ";
+                sql += "AND NOT ((ngaybd > '" + ngaykt.ToString("yyyy-MM-dd") + "') OR (ngaykt < '" + ngaybd.ToString("yyyy-MM-dd") + "')) ";
             }
 
             tbllth = Class.Function.GetDataToTable(sql);
@@ -220,7 +220,7 @@ namespace Nhom7_Project_QLPM.Forms
             sql += "AND (lth.magv LIKE N'%" + keyword + "%' OR tennv LIKE N'%" + keyword + "%' )";
             if (btnloc.Enabled == false)
             {
-                sql += "AND NOT ((ngaybd > '" + ngaykt.ToString("dd-MM-yyyy") + "') OR (ngaykt < '" + ngaybd.ToString("dd-MM-yyyy") + "')) ";
+                sql += "AND NOT ((ngaybd > '" + ngaykt.ToString("yyyy-MM-dd") + "') OR (ngaykt < '" + ngaybd.ToString("yyyy-MM-dd") + "')) ";
             }
 
             tbllth = Class.Function.GetDataToTable(sql);
@@ -242,7 +242,7 @@ namespace Nhom7_Project_QLPM.Forms
             "join tblnhanvien nv on lth.magv = nv.manv " +
             "join tbllop lop on lth.malop = lop.malop " +
             "join tblmonthuchanh mon on lth.mamon = mon.mamon " +
-            "join tblcahoc ca on lth.maca = ca.maca where NOT ((ngaybd > '" + ngaykt.ToString("dd-MM-yyyy") + "') OR (ngaykt < '" + ngaybd.ToString("dd-MM-yyyy") + "')) ";
+            "join tblcahoc ca on lth.maca = ca.maca where NOT ((ngaybd > '" + ngaykt.ToString("yyyy-MM-dd") + "') OR (ngaykt < '" + ngaybd.ToString("yyyy-MM-dd") + "')) ";
             if(rdogiaovien.Checked == true)
             {
                 sql += "AND (lth.magv LIKE N'%" + keyword + "%' OR tennv LIKE N'%" + keyword + "%' )";
@@ -291,6 +291,13 @@ namespace Nhom7_Project_QLPM.Forms
 
             int cot = (ngaykt - ngaybd).Days + 3;
 
+            string sophong = Class.Function.GetFieldValues("select count(*) from tblphongmay");
+            string soca = Class.Function.GetFieldValues("select count(*) from tblcahoc");
+
+            int socahoc = Convert.ToInt32(soca);
+            int sophongmay = Convert.ToInt32(sophong);
+            int sohang = socahoc * sophongmay + 3;
+
             COMExcel.Application exApp = new COMExcel.Application();
             COMExcel.Workbook exBook = exApp.Workbooks.Add(COMExcel.XlWBATemplate.xlWBATWorksheet);
             COMExcel.Worksheet exSheet = exBook.Worksheets[1];
@@ -300,14 +307,14 @@ namespace Nhom7_Project_QLPM.Forms
             COMExcel.Range exRange = exSheet.Cells[1, 1];
             //định dạng chung
             exRange.Range[exSheet.Cells[1, 1], exSheet.Cells[1, cot]].RowHeight = 30;
-            exSheet.Range[exSheet.Cells[1, 1], exSheet.Cells[28, cot]].Borders.LineStyle = COMExcel.XlLineStyle.xlContinuous;
-            exSheet.Range[exSheet.Cells[1, 1], exSheet.Cells[28, cot]].Font.Name = "Times new roman";
-            exSheet.Range[exSheet.Cells[2, 1], exSheet.Cells[28, 2]].RowHeight = 25;
-            exSheet.Range[exSheet.Cells[2, 1], exSheet.Cells[28, 2]].ColumnWidth = 15;
-            exSheet.Range[exSheet.Cells[2, 1], exSheet.Cells[28, cot+3]].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
-            exRange.Range[exSheet.Cells[1, 1], exSheet.Cells[28, cot+3]].VerticalAlignment = COMExcel.XlVAlign.xlVAlignCenter;
+            exSheet.Range[exSheet.Cells[1, 1], exSheet.Cells[sohang, cot]].Borders.LineStyle = COMExcel.XlLineStyle.xlContinuous;
+            exSheet.Range[exSheet.Cells[1, 1], exSheet.Cells[sohang, cot]].Font.Name = "Times new roman";
+            exSheet.Range[exSheet.Cells[2, 1], exSheet.Cells[sohang, 2]].RowHeight = 25;
+            exSheet.Range[exSheet.Cells[2, 1], exSheet.Cells[sohang, 2]].ColumnWidth = 15;
+            exSheet.Range[exSheet.Cells[2, 1], exSheet.Cells[sohang, cot+3]].HorizontalAlignment = COMExcel.XlHAlign.xlHAlignCenter;
+            exRange.Range[exSheet.Cells[1, 1], exSheet.Cells[sohang, cot+3]].VerticalAlignment = COMExcel.XlVAlign.xlVAlignCenter;
             exSheet.Range[exSheet.Cells[2, 3], exSheet.Cells[3, cot]].ColumnWidth = 25;
-            exSheet.Range[exSheet.Cells[2, 3], exSheet.Cells[28, cot]].WrapText = true;
+            exSheet.Range[exSheet.Cells[2, 3], exSheet.Cells[sohang, cot]].WrapText = true;
 
             //định dạng cho dòng thứ nhất
             exRange.Range[exSheet.Cells[1, 1], exSheet.Cells[1, cot]].MergeCells = true;
@@ -318,9 +325,9 @@ namespace Nhom7_Project_QLPM.Forms
             exRange.Range["A1:A1"].Value = "LỊCH THỰC HÀNH";
 
             //định dạng cho dòng thứ 2 và 3
-            exSheet.Range[exSheet.Cells[2, 1], exSheet.Cells[28, 2]].ColumnWidth = 15; //độ rộng 2 cột đầu 
-            exSheet.Range[exSheet.Cells[2, 3], exSheet.Cells[28, cot]].ColumnWidth = 25; //độ rộng từ cột thứ 3
-            exSheet.Range[exSheet.Cells[2, 3], exSheet.Cells[28, cot]].Font.Size = 11;
+            exSheet.Range[exSheet.Cells[2, 1], exSheet.Cells[sohang, 2]].ColumnWidth = 15; //độ rộng 2 cột đầu 
+            exSheet.Range[exSheet.Cells[2, 3], exSheet.Cells[sohang, cot]].ColumnWidth = 25; //độ rộng từ cột thứ 3
+            exSheet.Range[exSheet.Cells[2, 3], exSheet.Cells[sohang, cot]].Font.Size = 11;
             exSheet.Range[exSheet.Cells[2, 3], exSheet.Cells[3, cot]].Font.Bold = true;
             
 
@@ -339,14 +346,14 @@ namespace Nhom7_Project_QLPM.Forms
                          "join tblnhanvien nv on lth.magv = nv.manv " +
                          "join tbllop lop on lth.malop = lop.malop " +
                          "join tblmonthuchanh mon on lth.mamon = mon.mamon " +
-                         "join tblcahoc ca on lth.maca = ca.maca where NOT((ngaybd > '" + ngaykt.ToString("dd-MM-yyyy") + "') OR(ngaykt < '" + ngaybd.ToString("dd-MM-yyyy") + "')) ";
+                         "join tblcahoc ca on lth.maca = ca.maca where NOT((ngaybd > '" + ngaykt.ToString("yyyy-MM-dd") + "') OR(ngaykt < '" + ngaybd.ToString("yyyy-MM-dd") + "')) ";
             System.Data.DataTable tbllth = Class.Function.GetDataToTable(sql);
             //Đổ dữ liệu
             int cotngay = 3;
             for (DateTime date = ngaybd; date <= ngaykt; date = date.AddDays(1))
             {
                 exSheet.Cells[2, cotngay].Value = thutrongtuan(date.DayOfWeek);
-                exSheet.Cells[3, cotngay].Value = date.ToString("MM/dd/yyyy");
+                exSheet.Cells[3, cotngay].Value = date.ToString("yyyy-MM-dd");
                 cotngay++;
             }
             int rowstart = 4;
@@ -399,6 +406,5 @@ namespace Nhom7_Project_QLPM.Forms
                 default: return "";
             }
         }
-
     }
 }

@@ -156,5 +156,10 @@ namespace Nhom7_Project_QLPM.Forms
             txtmapm.Enabled = false;
             loaddanhsachmt();
         }
+
+        private void label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

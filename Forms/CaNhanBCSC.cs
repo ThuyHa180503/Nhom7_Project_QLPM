@@ -52,10 +52,10 @@ namespace Nhom7_Project_QLPM.Forms
             txtMota.Enabled = false;
             txtAnhSuCo.Enabled = false;
             picSuCo.Enabled = false;
-            btnXoaanh1.Visible = false;
+            btnXoaanh01.Visible = false;
             txtAnhSuCo2.Enabled = false;
             picSuCo2.Enabled = false;
-            btnXoaanh2.Visible = false;
+            btnXoaanh02.Visible = false;
             btnOpen.Enabled = false;
             labelTT.Visible = false;
             txtTrangthai.Visible = false;
@@ -130,30 +130,19 @@ namespace Nhom7_Project_QLPM.Forms
 
         private void dataGridView1_Click(object sender, EventArgs e)
         {
-            cboPhongmay.Enabled = false;
-            txtMota.Enabled = false;
-            picSuCo.Enabled = false;
-            btnXoaanh1.Visible = false;
-            picSuCo2.Enabled = false;
-            btnXoaanh2.Visible = false;
-            txtAnhSuCo.Visible = false;
-            txtAnhSuCo2.Visible = false;
-            btnLamlai.Enabled = true;
-            labelTT.Visible = true;
-            txtTrangthai.Visible = true;
-            txtTrangthai.Enabled = false;
             if (btnThem.Enabled == false)
             {
                 MessageBox.Show("Đang ở chế độ thêm mới!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 cboPhongmay.Focus();
                 return;
-            }
-
+            } 
             if (CN.Rows.Count == 0)
             {
                 MessageBox.Show("Không có dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+            
+           
             string ma;
             txtNgayBCSC.Text = dataGridView1.CurrentRow.Cells["NgayBCSC"].Value.ToString();
 
@@ -221,6 +210,19 @@ namespace Nhom7_Project_QLPM.Forms
             btnOpen.Enabled = false;
             btnGui.Enabled = false;
 
+            cboPhongmay.Enabled = false;
+            txtMota.Enabled = false;
+            picSuCo.Enabled = false;
+            btnXoaanh01.Visible = false;
+            picSuCo2.Enabled = false;
+            btnXoaanh02.Visible = false;
+            txtAnhSuCo.Visible = false;
+            txtAnhSuCo2.Visible = false;
+            btnLamlai.Enabled = true;
+            labelTT.Visible = true;
+            txtTrangthai.Visible = true;
+            txtTrangthai.Enabled = false;
+
         }
         private void btnThem_Click(object sender, EventArgs e)
         {
@@ -242,8 +244,8 @@ namespace Nhom7_Project_QLPM.Forms
             cboPhongmay.SelectedIndex = -1;
             string maNV = GetMaNVByAccountId(UserSession.AccountId);
             txtGiaovien.Text = maNV;
-            btnXoaanh1.Visible = false;
-            btnXoaanh2.Visible = false;
+            btnXoaanh01.Visible = false;
+            btnXoaanh02.Visible = false;
 
         }
         private void btnGui_Click(object sender, EventArgs e)
@@ -284,10 +286,10 @@ namespace Nhom7_Project_QLPM.Forms
                     txtMota.Enabled = false;
                     txtAnhSuCo.Enabled = false;
                     picSuCo.Enabled = false;
-                    btnXoaanh1.Visible = false;
+                    btnXoaanh01.Visible = false;
                     txtAnhSuCo2.Enabled = false;
                     picSuCo2.Enabled = false;
-                    btnXoaanh2.Visible = false;
+                    btnXoaanh02.Visible = false;
                     btnOpen.Enabled = false;
                     labelTT.Visible = false;
                     txtTrangthai.Visible = false;
@@ -317,8 +319,8 @@ namespace Nhom7_Project_QLPM.Forms
             txtAnhSuCo2.Text = "";
             picSuCo.Image = null;
             picSuCo2.Image = null;
-            btnXoaanh1.Visible = false;
-            btnXoaanh2.Visible = false;
+            btnXoaanh01.Visible = false;
+            btnXoaanh02.Visible = false;
             labelTT.Visible = false;
             txtTrangthai.Visible = false;
         }
@@ -363,14 +365,14 @@ namespace Nhom7_Project_QLPM.Forms
                     // Nếu pic1 chưa có ảnh, gán ảnh vào pic1
                     picSuCo.Image = Image.FromFile(dlgOpen.FileName);
                     txtAnhSuCo.Text = dlgOpen.FileName;
-                    btnXoaanh1.Visible = true;
+                    btnXoaanh01.Visible = true;
                 }
                 else if (picSuCo2.Image == null)
                 {
                     // Nếu pic1 đã có ảnh và pictureBox2 chưa có ảnh, gán ảnh vào pic2
                     picSuCo2.Image = Image.FromFile(dlgOpen.FileName);
                     txtAnhSuCo2.Text = dlgOpen.FileName;
-                    btnXoaanh2.Visible = true;
+                    btnXoaanh02.Visible = true;
                 }
                 else
                 {
@@ -385,37 +387,10 @@ namespace Nhom7_Project_QLPM.Forms
             return parsedDate.ToString("yyyy-MM-dd HH:mm:ss");
         }
 
-
-        private void btnXoaanh1_Click(object sender, EventArgs e)
-        {
-            if (picSuCo2.Image != null)
-            {
-                picSuCo.Image = picSuCo2.Image;
-                txtAnhSuCo.Text = txtAnhSuCo2.Text;
-                picSuCo2.Image = null;
-                txtAnhSuCo2.Text = "";
-                btnXoaanh2.Visible = false;
-            }
-            else
-            {
-                picSuCo.Image = null;
-                txtAnhSuCo.Text = "";
-                btnXoaanh1.Visible = false; 
-            }
-
-        }
-
-        private void btnXoaanh2_Click(object sender, EventArgs e)
-        {
-            picSuCo2.Image= null;
-            txtAnhSuCo2.Text = null;
-            btnXoaanh2.Visible = false;
-        }
-
         private void btnLoc_Click(object sender, EventArgs e)
         {
             string maNV = GetMaNVByAccountId(UserSession.AccountId);
-            string sql = "SELECT * FROM tblBaoCaoSuCo WHERE 1=1 AND MaNV = N'" + maNV + "' ";
+            string sql = "SELECT * FROM tblBaoCaoSuCo WHERE 1=1 AND MaNV = N'"+ maNV +"'";
 
 
             bool isDateTuClear = dateTu.CustomFormat == " ";
@@ -440,13 +415,14 @@ namespace Nhom7_Project_QLPM.Forms
                 {
                     int trangThai = cboLocTT.SelectedIndex;
                     sql += " AND TrangThai = " + trangThai;
-              
+
                 }
 
                 // Lọc theo ngày
-                if ((!isDateTuClear && isDateDenClear) && (!isDateDenClear && isDateTuClear))
+                if ((!isDateTuClear && isDateDenClear) || (!isDateDenClear && isDateTuClear))
                 {
                     MessageBox.Show("Vui lòng nhập cả ngày bắt đầu và ngày kết thúc.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
 
                 if ((!isDateTuClear) && (!isDateDenClear))
@@ -466,31 +442,52 @@ namespace Nhom7_Project_QLPM.Forms
                     {
                         MessageBox.Show("Ngày kết thúc phải lớn hơn hoặc bằng ngày bắt đầu.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                } 
+                }
             }
-
 
             DataTable result = Class.Function.GetDataToTable(sql);
 
-                dataGridView1.DataSource = result;
+            dataGridView1.DataSource = result;
 
-                if (result.Rows.Count == 0)
-                {
-                    MessageBox.Show("Không có dữ liệu phù hợp!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Load_DataGridView();
-                }
-            
-        
+            if (result.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có dữ liệu phù hợp!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Load_DataGridView();
+            }
         }
-
 
         private void btnHienthi_Click_1(object sender, EventArgs e)
         {
-            cboLocPM.Text = "";
-            cboLocTT.Text = "";
+            cboLocPM.SelectedIndex = -1;
+            cboLocTT.SelectedIndex = -1;
             ClearDTP(dateTu);
             ClearDTP(dateDen);
             Load_DataGridView();
+        }
+
+        private void btnXoaanh01_Click(object sender, EventArgs e)
+        {
+            if (picSuCo2.Image != null)
+            {
+                picSuCo.Image = picSuCo2.Image;
+                txtAnhSuCo.Text = txtAnhSuCo2.Text;
+                picSuCo2.Image = null;
+                txtAnhSuCo2.Text = "";
+                btnXoaanh02.Visible = false;
+            }
+            else
+            {
+                picSuCo.Image = null;
+                txtAnhSuCo.Text = "";
+                btnXoaanh01.Visible = false;
+            }
+        }
+
+        private void btnXoaanh02_Click(object sender, EventArgs e)
+        {
+            picSuCo2.Image = null;
+            txtAnhSuCo2.Text = null;
+            btnXoaanh02.Visible = false;
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -45,9 +46,13 @@ namespace Nhom7_Project_QLPM.Forms
             Class.Function.Connect();
             txtMalop.Enabled = false;
             btnLuu.Enabled = false;
-            btnBoqua.Enabled = false;
+            btnBoQua.Enabled = false;
             Load_DataGridView();
 
+            string query = "SELECT COUNT(*) FROM tblLop";
+            SqlCommand command = new SqlCommand(query, Class.Function.Conn);
+            int soLop = (int)command.ExecuteScalar();
+            label4.Text = "Số lớp thực hành có trong hệ thống:" + soLop;
         }
         private void Load_DataGridView()
         {
@@ -61,7 +66,9 @@ namespace Nhom7_Project_QLPM.Forms
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.EditMode = DataGridViewEditMode.EditProgrammatically;
 
-
+            // Đặt chiều cao của header
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridView1.ColumnHeadersHeight = 30; // Đặt chiều cao là 30px
         }
 
         private void dataGridView1_Click(object sender, EventArgs e)
@@ -83,22 +90,19 @@ namespace Nhom7_Project_QLPM.Forms
             txtTenlop.Text = dataGridView1.CurrentRow.Cells["TenLop"].Value.ToString();
             txtSiso.Text = dataGridView1.CurrentRow.Cells["SiSo"].Value.ToString();
             btnSua.Enabled = true;
-            btnBoqua.Enabled = true;
+            btnBoQua.Enabled = true;
             btnXoa.Enabled = true;
-
         }
-
 
         private void btnThem_Click(object sender, EventArgs e)
         {
             btnSua.Enabled = false;
             btnXoa.Enabled = false;
-            btnBoqua.Enabled = true;
+            btnBoQua.Enabled = true;
             btnLuu.Enabled = true;
             btnThem.Enabled = false;
             ResetValues();
         }
-
         private void ResetValues()
         {
             txtMalop.Text = "";
@@ -107,14 +111,23 @@ namespace Nhom7_Project_QLPM.Forms
         }
         private string SinhMalop()
         {
-            int rowCount = 0;
-            using (SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM tblLop", Class.Function.Conn))
-            {
-                rowCount = (int)cmd.ExecuteScalar();
-            }
+            // Lấy mã cao nhất hiện tại
+            string mamax = Class.Function.GetFieldValues("SELECT MAX(MaLop) FROM tblLop");
 
-            string maBCSC = "L" + (rowCount + 1).ToString("000");
-            return maBCSC;
+            // Nếu bảng rỗng, bắt đầu với CA001
+            if (string.IsNullOrEmpty(mamax))
+            {
+                return "L001";
+            }
+            else
+            {
+                // Lấy phần số của mã cao nhất
+                int masttmax = Convert.ToInt32(mamax.Substring(2));
+                masttmax += 1;
+
+                // Tạo mã mới với định dạng CAxxx
+                return "L" + masttmax.ToString("000");
+            }
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -136,7 +149,7 @@ namespace Nhom7_Project_QLPM.Forms
             int siso;
             if (!int.TryParse(txtSiso.Text.Trim(), out siso))
             {
-                MessageBox.Show("Vui lòng nhập lại, Sĩ số phải là một số nguyên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng nhập lại, Sĩ số phải là số nguyên > 0!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtSiso.Focus();
                 return;
             }
@@ -148,7 +161,7 @@ namespace Nhom7_Project_QLPM.Forms
             btnXoa.Enabled = true;
             btnThem.Enabled = true;
             btnSua.Enabled = true;
-            btnBoqua.Enabled = false;
+            btnBoQua.Enabled = false;
             btnLuu.Enabled = false;
         }
 
@@ -179,7 +192,7 @@ namespace Nhom7_Project_QLPM.Forms
             int siso;
             if (!int.TryParse(txtSiso.Text.Trim(), out siso))
             {
-                MessageBox.Show("Vui lòng nhập lại, Sĩ số phải là một số nguyên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng nhập lại, Sĩ số phải là số nguyên > 0!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtSiso.Focus();
                 return;
             }
@@ -189,8 +202,7 @@ namespace Nhom7_Project_QLPM.Forms
             Class.Function.RunSql(sql);
             Load_DataGridView();
             ResetValues();
-            btnBoqua.Enabled = false;
-
+            btnBoQua.Enabled = false;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -208,24 +220,22 @@ namespace Nhom7_Project_QLPM.Forms
             }
             if (MessageBox.Show("Bạn có chắc chắn muốn xóa lớp học không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
-                sql = "DELETE tblLop WHERE Machatlieu=N'" + txtMalop.Text + "'";
+                sql = "DELETE tblLop WHERE Malop=N'" + txtMalop.Text + "'";
                 Class.Function.RunSqlDel(sql);
                 Load_DataGridView();
                 ResetValues();
 
-
             }
         }
 
-        private void btnBoqua_Click(object sender, EventArgs e)
+        private void btnBoQua_Click(object sender, EventArgs e)
         {
             ResetValues();
-            btnBoqua.Enabled = false;
+            btnBoQua.Enabled = false;
             btnThem.Enabled = true;
             btnXoa.Enabled = true;
             btnSua.Enabled = true;
             btnLuu.Enabled = false;
-
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -235,8 +245,7 @@ namespace Nhom7_Project_QLPM.Forms
 
         private void btnTimkiem_Click(object sender, EventArgs e)
         {
-
-            if (txtTimkiem.Text.Trim() =="")
+            if (txtTimkiem.Text.Trim() == "")
             {
                 MessageBox.Show("Vui lòng nhập từ khóa để tìm kiếm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtTimkiem.Focus();
@@ -244,23 +253,30 @@ namespace Nhom7_Project_QLPM.Forms
             }
 
             string sql = "SELECT * FROM tblLop WHERE TenLop LIKE '%" + txtTimkiem.Text.Trim() + "%'";
-
             DataTable result = Class.Function.GetDataToTable(sql);
 
             if (result.Rows.Count > 0)
             {
                 dataGridView1.DataSource = result;
+
+                label4.Text = "Số kết quả: " + result.Rows.Count.ToString();
             }
             else
             {
                 MessageBox.Show("Không tìm thấy lớp học nào với từ khóa trên.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                dataGridView1.DataSource = Lop; 
+                dataGridView1.DataSource = Lop;
+
+                label4.Text = "Số kết quả: 0";
             }
         }
 
-        private void btnLammoi_Click(object sender, EventArgs e)
+        private void btnReset_Click(object sender, EventArgs e)
         {
             Load_DataGridView();
+            string query = "SELECT COUNT(*) FROM tblLop";
+            SqlCommand command = new SqlCommand(query, Class.Function.Conn);
+            int soLop = (int)command.ExecuteScalar();
+            label4.Text = "Số lớp thực hành có trong hệ thống:" + soLop;
         }
     }
 }

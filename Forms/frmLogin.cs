@@ -27,7 +27,6 @@ namespace Nhom7_Project_QLPM.Forms
             }
         }
 
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             try
@@ -36,24 +35,26 @@ namespace Nhom7_Project_QLPM.Forms
                 string tk = txtAccountid.Text.Trim();
                 string mk = txtPassword.Text.Trim();
 
-                if (string.IsNullOrEmpty(tk) || string.IsNullOrEmpty(mk))
+                if (string.IsNullOrEmpty(tk))
                 {
-                    MessageBox.Show("Vui lòng nhập tài khoản và mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Vui lòng nhập tài khoản của bạn!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-
+                if (string.IsNullOrEmpty(mk))
+                {
+                    MessageBox.Show("Vui lòng nhập mật khẩu của bạn!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
                 string sql = "SELECT * FROM tblAccount WHERE Accountid = @Accountid AND password = @password";
                 using (SqlCommand cmd = new SqlCommand(sql, Function.Conn))
                 {
                     cmd.Parameters.AddWithValue("@Accountid", tk);
                     cmd.Parameters.AddWithValue("@password", mk);
-
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
                         if (reader.Read())
                         {
                             reader.Close();
-
                             // Lấy chức vụ từ bảng tblNhanVien
                             string sqlChucVu = "SELECT ChucVu FROM tblNhanVien WHERE Accountid = @Accountid";
                             using (SqlCommand cmdChucVu = new SqlCommand(sqlChucVu, Function.Conn))
@@ -65,8 +66,6 @@ namespace Nhom7_Project_QLPM.Forms
 
                                 // Bắt đầu phiên người dùng
                                 UserSession.StartSession(tk, chucVu);
-
-                                // Mở form chính
                                 frmMain mainForm = new frmMain();
                                 this.Hide();
                                 mainForm.ShowDialog();
@@ -93,10 +92,6 @@ namespace Nhom7_Project_QLPM.Forms
             }
         }
 
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void quenmatkhau_Click(object sender, EventArgs e)
         {

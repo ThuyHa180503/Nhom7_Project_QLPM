@@ -80,15 +80,7 @@ namespace Nhom7_Project_QLPM.Forms
             dateTimePicker.CustomFormat = null;
         }
 
-        private void dateTu_ValueChanged(object sender, EventArgs e)
-        {
-            RestoreDTP(dateTu);
-        }
-
-        private void dateDen_ValueChanged(object sender, EventArgs e)
-        {
-            RestoreDTP(dateDen);
-        }
+        
 
         private void Load_DataGridView()
         {
@@ -220,6 +212,12 @@ namespace Nhom7_Project_QLPM.Forms
                     MessageBox.Show("Vui lòng chọn một trạng thái để cập nhật!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
             }
+            if (cboTrangthai.Text == "")
+            {
+                MessageBox.Show("Vui lòng chọn trạng thái", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cboTrangthai.Focus();
+                return;
+            }
 
             string maBCSC = dataGridView1.CurrentRow.Cells["MaBCSC"].Value.ToString();
 
@@ -274,10 +272,10 @@ namespace Nhom7_Project_QLPM.Forms
 
         private void btnLammoi_Click(object sender, EventArgs e)
         {
-            cboLocPM.Text = "";
-            cboLocTT.Text = "";
-            dateTu.Text = "";
-            dateDen.Text = "";
+            cboLocPM.SelectedIndex = -1;//Sửa
+            cboLocTT.SelectedIndex = -1;//Sửa
+            ClearDTP(dateTu);
+            ClearDTP(dateDen);
             Load_DataGridView();
         }
 
@@ -350,6 +348,15 @@ namespace Nhom7_Project_QLPM.Forms
             }
 
         }
- 
+
+        private void dateTu_ValueChanged(object sender, EventArgs e)
+        {
+            RestoreDTP(dateTu);
+        }
+
+        private void dateDen_ValueChanged(object sender, EventArgs e)
+        {
+            RestoreDTP(dateDen);
+        }
     }
 }

@@ -40,10 +40,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.ckNam = new System.Windows.Forms.CheckBox();
-            this.btnSua = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtAvt = new System.Windows.Forms.TextBox();
             this.mskDienThoai = new System.Windows.Forms.MaskedTextBox();
+            this.btnSua = new System.Windows.Forms.Button();
             this.picAvt = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtTenDN = new System.Windows.Forms.TextBox();
@@ -69,11 +69,14 @@
             // 
             this.btnThayTheAnh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(149)))), ((int)(((byte)(161)))));
             this.btnThayTheAnh.ForeColor = System.Drawing.Color.White;
+            this.btnThayTheAnh.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_upload_201;
             this.btnThayTheAnh.Location = new System.Drawing.Point(59, 477);
             this.btnThayTheAnh.Name = "btnThayTheAnh";
+            this.btnThayTheAnh.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnThayTheAnh.Size = new System.Drawing.Size(354, 70);
             this.btnThayTheAnh.TabIndex = 1;
-            this.btnThayTheAnh.Text = "THAY THẾ ẢNH";
+            this.btnThayTheAnh.Text = "     THAY THẾ ẢNH";
+            this.btnThayTheAnh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThayTheAnh.UseVisualStyleBackColor = false;
             this.btnThayTheAnh.Click += new System.EventHandler(this.btnThayTheAnh_Click);
             // 
@@ -83,7 +86,7 @@
             this.txtMa.Location = new System.Drawing.Point(590, 73);
             this.txtMa.Multiline = true;
             this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(354, 70);
+            this.txtMa.Size = new System.Drawing.Size(476, 70);
             this.txtMa.TabIndex = 2;
             // 
             // label1
@@ -100,7 +103,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1034, 35);
+            this.label2.Location = new System.Drawing.Point(1186, 47);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(172, 32);
             this.label2.TabIndex = 5;
@@ -109,10 +112,10 @@
             // txtTen
             // 
             this.txtTen.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.txtTen.Location = new System.Drawing.Point(1016, 73);
+            this.txtTen.Location = new System.Drawing.Point(1168, 82);
             this.txtTen.Multiline = true;
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(495, 70);
+            this.txtTen.Size = new System.Drawing.Size(650, 70);
             this.txtTen.TabIndex = 4;
             // 
             // label3
@@ -141,16 +144,16 @@
             this.txtDiaChi.Location = new System.Drawing.Point(591, 372);
             this.txtDiaChi.Multiline = true;
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(354, 70);
+            this.txtDiaChi.Size = new System.Drawing.Size(476, 70);
             this.txtDiaChi.TabIndex = 8;
             // 
             // mskNgaySinh
             // 
             this.mskNgaySinh.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.mskNgaySinh.Location = new System.Drawing.Point(1016, 218);
+            this.mskNgaySinh.Location = new System.Drawing.Point(1168, 227);
             this.mskNgaySinh.Mask = "00/00/0000";
             this.mskNgaySinh.Name = "mskNgaySinh";
-            this.mskNgaySinh.Size = new System.Drawing.Size(495, 39);
+            this.mskNgaySinh.Size = new System.Drawing.Size(650, 39);
             this.mskNgaySinh.TabIndex = 10;
             this.mskNgaySinh.ValidatingType = typeof(System.DateTime);
             // 
@@ -158,7 +161,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(1034, 175);
+            this.label5.Location = new System.Drawing.Point(1186, 184);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(122, 32);
             this.label5.TabIndex = 11;
@@ -168,7 +171,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(1034, 337);
+            this.label6.Location = new System.Drawing.Point(1186, 346);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(114, 32);
             this.label6.TabIndex = 12;
@@ -178,24 +181,12 @@
             // 
             this.ckNam.AutoSize = true;
             this.ckNam.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.ckNam.Location = new System.Drawing.Point(1016, 406);
+            this.ckNam.Location = new System.Drawing.Point(1168, 415);
             this.ckNam.Name = "ckNam";
             this.ckNam.Size = new System.Drawing.Size(98, 36);
             this.ckNam.TabIndex = 13;
             this.ckNam.Text = "Nam";
             this.ckNam.UseVisualStyleBackColor = true;
-            // 
-            // btnSua
-            // 
-            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(149)))), ((int)(((byte)(161)))));
-            this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(656, 477);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(810, 68);
-            this.btnSua.TabIndex = 16;
-            this.btnSua.Text = "Sửa thông tin";
-            this.btnSua.UseVisualStyleBackColor = false;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // groupBox1
             // 
@@ -218,7 +209,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.groupBox1.Location = new System.Drawing.Point(38, 143);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1576, 578);
+            this.groupBox1.Size = new System.Drawing.Size(1861, 578);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "THÔNG TIN CÁ NHÂN";
@@ -236,8 +227,24 @@
             this.mskDienThoai.Location = new System.Drawing.Point(591, 218);
             this.mskDienThoai.Mask = "(999) 000-0000";
             this.mskDienThoai.Name = "mskDienThoai";
-            this.mskDienThoai.Size = new System.Drawing.Size(354, 39);
+            this.mskDienThoai.Size = new System.Drawing.Size(476, 39);
             this.mskDienThoai.TabIndex = 19;
+            // 
+            // btnSua
+            // 
+            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(149)))), ((int)(((byte)(161)))));
+            this.btnSua.ForeColor = System.Drawing.Color.White;
+            this.btnSua.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_edit_20__1_3;
+            this.btnSua.Location = new System.Drawing.Point(834, 477);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Padding = new System.Windows.Forms.Padding(150, 0, 0, 0);
+            this.btnSua.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnSua.Size = new System.Drawing.Size(810, 68);
+            this.btnSua.TabIndex = 16;
+            this.btnSua.Text = "     Sửa thông tin";
+            this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // picAvt
             // 
@@ -245,7 +252,7 @@
             this.picAvt.BackColor = System.Drawing.Color.Transparent;
             this.picAvt.BorderRadius = 154;
             this.picAvt.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.picAvt.Image = global::Nhom7_Project_QLPM.Properties.Resources.logo;
+            this.picAvt.Image = global::Nhom7_Project_QLPM.Properties.Resources.avt_girl_1;
             this.picAvt.ImageRotate = 0F;
             this.picAvt.Location = new System.Drawing.Point(77, 82);
             this.picAvt.Name = "picAvt";
@@ -263,7 +270,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(600, 35);
+            this.label7.Location = new System.Drawing.Point(618, 35);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(177, 32);
             this.label7.TabIndex = 20;
@@ -272,17 +279,17 @@
             // txtTenDN
             // 
             this.txtTenDN.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDN.Location = new System.Drawing.Point(572, 75);
+            this.txtTenDN.Location = new System.Drawing.Point(590, 75);
             this.txtTenDN.Multiline = true;
             this.txtTenDN.Name = "txtTenDN";
-            this.txtTenDN.Size = new System.Drawing.Size(354, 70);
+            this.txtTenDN.Size = new System.Drawing.Size(383, 70);
             this.txtTenDN.TabIndex = 19;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(1037, 35);
+            this.label8.Location = new System.Drawing.Point(1336, 35);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(119, 32);
             this.label8.TabIndex = 22;
@@ -291,10 +298,10 @@
             // txtPassCu
             // 
             this.txtPassCu.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassCu.Location = new System.Drawing.Point(1016, 75);
+            this.txtPassCu.Location = new System.Drawing.Point(1315, 75);
             this.txtPassCu.Multiline = true;
             this.txtPassCu.Name = "txtPassCu";
-            this.txtPassCu.Size = new System.Drawing.Size(474, 70);
+            this.txtPassCu.Size = new System.Drawing.Size(503, 70);
             this.txtPassCu.TabIndex = 21;
             // 
             // label10
@@ -310,10 +317,10 @@
             // txtPassMoi2
             // 
             this.txtPassMoi2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassMoi2.Location = new System.Drawing.Point(696, 52);
+            this.txtPassMoi2.Location = new System.Drawing.Point(651, 50);
             this.txtPassMoi2.Multiline = true;
             this.txtPassMoi2.Name = "txtPassMoi2";
-            this.txtPassMoi2.Size = new System.Drawing.Size(474, 70);
+            this.txtPassMoi2.Size = new System.Drawing.Size(400, 70);
             this.txtPassMoi2.TabIndex = 25;
             // 
             // label9
@@ -332,18 +339,21 @@
             this.txtPassMoi.Location = new System.Drawing.Point(83, 50);
             this.txtPassMoi.Multiline = true;
             this.txtPassMoi.Name = "txtPassMoi";
-            this.txtPassMoi.Size = new System.Drawing.Size(523, 70);
+            this.txtPassMoi.Size = new System.Drawing.Size(444, 70);
             this.txtPassMoi.TabIndex = 27;
             // 
             // btnBoQuaMK
             // 
             this.btnBoQuaMK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(149)))), ((int)(((byte)(161)))));
             this.btnBoQuaMK.ForeColor = System.Drawing.Color.White;
-            this.btnBoQuaMK.Location = new System.Drawing.Point(995, 300);
+            this.btnBoQuaMK.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_cancel_202;
+            this.btnBoQuaMK.Location = new System.Drawing.Point(1563, 219);
             this.btnBoQuaMK.Name = "btnBoQuaMK";
-            this.btnBoQuaMK.Size = new System.Drawing.Size(255, 52);
+            this.btnBoQuaMK.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnBoQuaMK.Size = new System.Drawing.Size(292, 77);
             this.btnBoQuaMK.TabIndex = 22;
-            this.btnBoQuaMK.Text = "Bỏ qua";
+            this.btnBoQuaMK.Text = "     Bỏ qua";
+            this.btnBoQuaMK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBoQuaMK.UseVisualStyleBackColor = false;
             this.btnBoQuaMK.Click += new System.EventHandler(this.btnBoQuaMK_Click);
             // 
@@ -351,11 +361,15 @@
             // 
             this.btnLuuMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(149)))), ((int)(((byte)(161)))));
             this.btnLuuMatKhau.ForeColor = System.Drawing.Color.White;
-            this.btnLuuMatKhau.Location = new System.Drawing.Point(685, 298);
+            this.btnLuuMatKhau.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_save_20;
+            this.btnLuuMatKhau.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuuMatKhau.Location = new System.Drawing.Point(1218, 221);
             this.btnLuuMatKhau.Name = "btnLuuMatKhau";
-            this.btnLuuMatKhau.Size = new System.Drawing.Size(255, 52);
+            this.btnLuuMatKhau.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnLuuMatKhau.Size = new System.Drawing.Size(312, 75);
             this.btnLuuMatKhau.TabIndex = 21;
-            this.btnLuuMatKhau.Text = "Lưu mật khẩu";
+            this.btnLuuMatKhau.Text = "     Lưu mật khẩu";
+            this.btnLuuMatKhau.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLuuMatKhau.UseVisualStyleBackColor = false;
             this.btnLuuMatKhau.Click += new System.EventHandler(this.btnLuuMatKhau_Click);
             // 
@@ -363,11 +377,14 @@
             // 
             this.btnDoiMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(149)))), ((int)(((byte)(161)))));
             this.btnDoiMatKhau.ForeColor = System.Drawing.Color.White;
-            this.btnDoiMatKhau.Location = new System.Drawing.Point(105, 75);
+            this.btnDoiMatKhau.Image = global::Nhom7_Project_QLPM.Properties.Resources.icons8_edit_20__1_3;
+            this.btnDoiMatKhau.Location = new System.Drawing.Point(59, 75);
             this.btnDoiMatKhau.Name = "btnDoiMatKhau";
+            this.btnDoiMatKhau.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnDoiMatKhau.Size = new System.Drawing.Size(354, 70);
             this.btnDoiMatKhau.TabIndex = 20;
-            this.btnDoiMatKhau.Text = "Đổi mật khẩu";
+            this.btnDoiMatKhau.Text = "     Đổi mật khẩu";
+            this.btnDoiMatKhau.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDoiMatKhau.UseVisualStyleBackColor = false;
             this.btnDoiMatKhau.Click += new System.EventHandler(this.btnDoiMatKhau_Click);
             // 
@@ -384,7 +401,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.groupBox2.Location = new System.Drawing.Point(38, 769);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1576, 374);
+            this.groupBox2.Size = new System.Drawing.Size(1861, 374);
             this.groupBox2.TabIndex = 29;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "THÔNG TIN TÀI KHOẢN";
@@ -395,18 +412,18 @@
             this.pnMKMoi.Controls.Add(this.label9);
             this.pnMKMoi.Controls.Add(this.txtPassMoi2);
             this.pnMKMoi.Controls.Add(this.label10);
-            this.pnMKMoi.Location = new System.Drawing.Point(320, 151);
+            this.pnMKMoi.Location = new System.Drawing.Point(21, 177);
             this.pnMKMoi.Name = "pnMKMoi";
-            this.pnMKMoi.Size = new System.Drawing.Size(1256, 140);
+            this.pnMKMoi.Size = new System.Drawing.Size(1164, 140);
             this.pnMKMoi.TabIndex = 31;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(662, 28);
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(765, 44);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(370, 54);
+            this.label11.Size = new System.Drawing.Size(381, 54);
             this.label11.TabIndex = 30;
             this.label11.Text = "THÔNG TIN VỀ TÔI";
             // 
@@ -415,11 +432,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1670, 1177);
+            this.ClientSize = new System.Drawing.Size(1965, 1177);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1965, 1177);
+            this.MinimumSize = new System.Drawing.Size(1965, 1177);
             this.Name = "CaNhanToi";
             this.Text = "CaNhanToi";
             this.Load += new System.EventHandler(this.CaNhanToi_Load);

@@ -402,6 +402,7 @@ namespace Nhom7_Project_QLPM.Forms
             ResetValues();
 
             btnBoqua.Enabled = false;
+            btnCapnhat.Enabled = true;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -425,6 +426,8 @@ namespace Nhom7_Project_QLPM.Forms
                 Load_DataGridView();
                 ResetValues();
             }
+
+            btnCapnhat.Enabled = true;
 
         }
 

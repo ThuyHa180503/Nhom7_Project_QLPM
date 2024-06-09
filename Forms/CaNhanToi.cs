@@ -22,13 +22,10 @@ namespace Nhom7_Project_QLPM.Forms
         }
 
         private void CaNhanToi_Load(object sender, EventArgs e)
-        {// Kiểm tra xem người dùng đã đăng nhập chưa
+        {
             if (Class.UserSession.IsLoggedIn())
             {
-                // Lấy AccountId của người dùng đăng nhập
                 string accountId = Class.UserSession.AccountId;
-
-                // Kết nối đến cơ sở dữ liệu và truy vấn thông tin nhân viên
                 try
                 {
                     Class.Function.Connect();
@@ -39,7 +36,6 @@ namespace Nhom7_Project_QLPM.Forms
 
                     if (reader.Read())
                     {
-                        // Lấy thông tin từ cơ sở dữ liệu
                         string tenNV = reader["TenNV"].ToString();
                         string maNV = reader["MaNV"].ToString();
                         string namSinh = reader["NamSinh"].ToString();
@@ -47,8 +43,7 @@ namespace Nhom7_Project_QLPM.Forms
                         bool gioiTinh = reader["GioiTinh"].ToString() == "Nam"; // Nếu là "Nam", gán true, ngược lại gán false
                         string maTinh = reader["MaTinh"].ToString();
                         string imagePath = reader["Image"].ToString(); // Lấy đường dẫn hình ảnh
-
-                        // Hiển thị thông tin lên giao diện
+                        //Thoong tin hien len gd
                         txtTen.Text = tenNV;
                         txtMa.Text = maNV;
                         mskNgaySinh.Text = namSinh;
@@ -65,7 +60,7 @@ namespace Nhom7_Project_QLPM.Forms
                         else
                         {
                             // Nếu không có hoặc không tìm thấy hình ảnh, có thể hiển thị một hình ảnh mặc định hoặc ẩn PictureBox
-                            picAvt.Image = null; // hoặc có thể hiển thị một hình ảnh mặc định: picAvt.Image = Properties.Resources.DefaultImage;
+                            picAvt.Image = null;
                         }
                     }
 
@@ -86,11 +81,8 @@ namespace Nhom7_Project_QLPM.Forms
                 this.Close();
             }
             //TAI KHOAN
-            // Hiển thị Accountid trong txtTenDN
             txtTenDN.Text = Class.UserSession.AccountId;
-
-            // Ẩn mật khẩu
-            txtPassCu.Text = "";
+            txtPassCu.Text = "";// an mk
             txtPassCu.Enabled = false;
             pnMKMoi.Visible = false;
             btnBoQuaMK.Visible = false;
@@ -114,44 +106,53 @@ namespace Nhom7_Project_QLPM.Forms
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            // Kiểm tra xem các trường có trống không
-            if (string.IsNullOrWhiteSpace(txtTen.Text) ||
-                string.IsNullOrWhiteSpace(mskNgaySinh.Text) ||
-                string.IsNullOrWhiteSpace(mskDienThoai.Text) ||
-                string.IsNullOrWhiteSpace(txtDiaChi.Text))
+            if (string.IsNullOrWhiteSpace(txtTen.Text))
             {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin.");
-                return; // Dừng xử lý nếu có trường trống
+                MessageBox.Show("Vui lòng điền đầy đủ tên của bạn");
+                return;
             }
-
+            if (
+                string.IsNullOrWhiteSpace(mskNgaySinh.Text) )
+            {
+                MessageBox.Show("Vui lòng không để ngày sinh trống");
+                return;
+            }
+            if (
+                string.IsNullOrWhiteSpace(mskDienThoai.Text))
+            {
+                MessageBox.Show("Vui lòng không để số điện thoại trống");
+                return;
+            }
+            if (
+                 string.IsNullOrWhiteSpace(txtDiaChi.Text))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ địa chỉ của bạn");
+                return;
+            }
             // Kiểm tra định dạng của ngày sinh
             if (!DateTime.TryParseExact(mskNgaySinh.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime ngaySinh))
             {
                 MessageBox.Show("Định dạng ngày sinh không hợp lệ. Vui lòng nhập theo định dạng DD/MM/YYYY.");
-                return; // Dừng xử lý nếu ngày sinh không hợp lệ
+                return;
             }
-
+            // Hiển thị hộp thoại xác nhận
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn sửa thông tin này không?", "Xác nhận sửa thông tin", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result != DialogResult.Yes)
+            {
+                return;
+            }
             // Xác định giới tính
             string gioiTinh = ckNam.Checked ? "Nam" : "Nữ";
-            //Nếu không muốn csdl xấu
             string dienThoai = mskDienThoai.Text.Replace("(", "").Replace(")", "").Replace(" ", "").Replace("-", "");
-
             // Thực hiện cập nhật thông tin nhân viên
             try
             {
-                // Lấy AccountId của người dùng đăng nhập
                 string accountId = Class.UserSession.AccountId;
-
-                // Kết nối đến cơ sở dữ liệu và thực hiện truy vấn cập nhật
                 Class.Function.Connect();
-                string query = "UPDATE tblNhanVien SET TenNV = @TenNV, NamSinh = @NamSinh, DienThoai = @DienThoai, MaTinh = @MaTinh, GioiTinh = @GioiTinh WHERE Accountid = @AccountId";
+
+                string query = $"UPDATE tblNhanVien SET TenNV = '{txtTen.Text}', NamSinh = '{ngaySinh.ToString("yyyy-MM-dd")}', DienThoai = '{dienThoai}', MaTinh = '{txtDiaChi.Text}', GioiTinh = '{gioiTinh}' WHERE Accountid = '{accountId}'";
+
                 SqlCommand command = new SqlCommand(query, Class.Function.Conn);
-                command.Parameters.AddWithValue("@TenNV", txtTen.Text);
-                command.Parameters.AddWithValue("@NamSinh", ngaySinh); // Sử dụng giá trị DateTime đã kiểm tra
-                command.Parameters.AddWithValue("@DienThoai", dienThoai);
-                command.Parameters.AddWithValue("@MaTinh", txtDiaChi.Text);
-                command.Parameters.AddWithValue("@GioiTinh", gioiTinh);
-                command.Parameters.AddWithValue("@AccountId", accountId);
                 int rowsAffected = command.ExecuteNonQuery();
 
                 if (rowsAffected > 0)
@@ -171,6 +172,7 @@ namespace Nhom7_Project_QLPM.Forms
             {
                 Class.Function.Disconnect();
             }
+
         }
 
         private void btnThayTheAnh_Click(object sender, EventArgs e)
@@ -181,27 +183,22 @@ namespace Nhom7_Project_QLPM.Forms
                 MessageBox.Show("Vui lòng chọn hình ảnh trước khi thay thế.");
                 return;
             }
-
             // Đọc đường dẫn hình ảnh từ TextBox
             string imagePath = txtAvt.Text;
 
             try
             {
-                // Lấy AccountId của người dùng đăng nhập
                 string accountId = Class.UserSession.AccountId;
-
-                // Kết nối đến cơ sở dữ liệu và thực hiện truy vấn cập nhật
                 Class.Function.Connect();
-                string query = "UPDATE tblNhanVien SET Image = @Image WHERE Accountid = @AccountId";
+
+                string query = $"UPDATE tblNhanVien SET Image = '{imagePath.Replace("'", "''")}' WHERE Accountid = '{accountId.Replace("'", "''")}'";
+
                 SqlCommand command = new SqlCommand(query, Class.Function.Conn);
-                command.Parameters.AddWithValue("@Image", imagePath);
-                command.Parameters.AddWithValue("@AccountId", accountId);
                 int rowsAffected = command.ExecuteNonQuery();
 
                 if (rowsAffected > 0)
                 {
                     MessageBox.Show("Thay thế ảnh thành công.");
-
                     // Hiển thị hình ảnh mới trên picAvt
                     if (File.Exists(imagePath))
                     {
@@ -225,8 +222,8 @@ namespace Nhom7_Project_QLPM.Forms
             {
                 Class.Function.Disconnect();
             }
-        }
 
+        }
         private void btnDoiMatKhau_Click(object sender, EventArgs e)
         {
             btnLuuMatKhau.Visible = true;
@@ -235,31 +232,25 @@ namespace Nhom7_Project_QLPM.Forms
             btnDoiMatKhau.Enabled = false;
             txtPassCu.Enabled = true;
         }
-
         private void btnLuuMatKhau_Click(object sender, EventArgs e)
         {
-            // Lấy dữ liệu từ các ô văn bản
             string passwordCu = txtPassCu.Text;
             string passwordMoi = txtPassMoi.Text;
             string passwordMoi2 = txtPassMoi2.Text;
             string accountid    = txtTenDN.Text;
-
-            // Kiểm tra xem các ô văn bản có trống không
             if (string.IsNullOrWhiteSpace(passwordCu) ||
                 string.IsNullOrWhiteSpace(passwordMoi) ||
                 string.IsNullOrWhiteSpace(passwordMoi2))
             {
-                MessageBox.Show("Vui lòng điền vào tất cả các ô.");
+                MessageBox.Show("Vui lòng không để trống các mật khẩu");
                 return;
             }
-            
             // Kiểm tra mật khẩu cũ
             if (!KiemTraMatKhauCu(accountid, passwordCu))
             {
                 MessageBox.Show("Mật khẩu cũ không chính xác.");
                 return;
             }
-
             // Kiểm tra hai mật khẩu mới
             if (passwordMoi != passwordMoi2)
             {
@@ -271,20 +262,22 @@ namespace Nhom7_Project_QLPM.Forms
                 MessageBox.Show("Mật khẩu mới phải khác mật khẩu cũ.");
                 return;
             }
-            // Kiểm tra mật khẩu mới phải có ít nhất 3 ký tự
             if (passwordMoi.Length < 3)
             {
                 MessageBox.Show("Mật khẩu mới phải có ít nhất 3 ký tự.");
+                return;
+            }
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn đổi mật khẩu không?", "Xác nhận sửa thông tin", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result != DialogResult.Yes)
+            {
                 return;
             }
             // Lưu mật khẩu mới vào cơ sở dữ liệu
             try
             {
                 Class.Function.Connect();
-                string query = "UPDATE tblAccount SET password = @passwordMoi WHERE Accountid = @accountId";
+                string query = $"UPDATE tblAccount SET password = '{passwordMoi.Replace("'", "''")}' WHERE Accountid = '{accountid.Replace("'", "''")}'";
                 SqlCommand command = new SqlCommand(query, Class.Function.Conn);
-                command.Parameters.AddWithValue("@passwordMoi", passwordMoi);
-                command.Parameters.AddWithValue("@accountId", accountid);
                 int rowsAffected = command.ExecuteNonQuery();
 
                 if (rowsAffected > 0)
@@ -304,6 +297,7 @@ namespace Nhom7_Project_QLPM.Forms
             {
                 Class.Function.Disconnect();
             }
+
             btnLuuMatKhau.Visible = false;
             btnBoQuaMK.Visible = false;
             txtPassCu.Text = "";
@@ -319,10 +313,9 @@ namespace Nhom7_Project_QLPM.Forms
             try
             {
                 Class.Function.Connect();
-                string query = "SELECT COUNT(*) FROM tblAccount WHERE Accountid = @accountId AND password = @passwordCu";
+                string query = $"SELECT COUNT(*) FROM tblAccount WHERE Accountid = '{accountId.Replace("'", "''")}' AND password = '{passwordCu.Replace("'", "''")}'";
+
                 SqlCommand command = new SqlCommand(query, Class.Function.Conn);
-                command.Parameters.AddWithValue("@accountId", accountId);
-                command.Parameters.AddWithValue("@passwordCu", passwordCu);
                 int count = (int)command.ExecuteScalar();
 
                 return count > 0;
@@ -336,6 +329,7 @@ namespace Nhom7_Project_QLPM.Forms
             {
                 Class.Function.Disconnect();
             }
+
         }
 
         private void btnBoQuaMK_Click(object sender, EventArgs e)

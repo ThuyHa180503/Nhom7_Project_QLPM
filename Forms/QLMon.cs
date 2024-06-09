@@ -21,17 +21,14 @@ namespace Nhom7_Project_QLPM.Forms
         DataTable MonThucHanh;
         private void QLMon_Load(object sender, EventArgs e)
         {
-            // Kiểm tra xem người dùng đã đăng nhập chưa
             if (!UserSession.IsLoggedIn())
             {
                 MessageBox.Show("Bạn cần đăng nhập trước khi sử dụng chức năng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                // Chuyển đến trang đăng nhập
                 frmLogin loginForm = new frmLogin();
                 loginForm.ShowDialog(); // Mở form đăng nhập dưới dạng dialog để chặn tương tác với các form khác
                 return;
 
             }
-            // Kiểm tra chức vụ của người dùng
             if (UserSession.ChucVu != "Nhân viên")
             {
                 MessageBox.Show("Bạn không có quyền truy cập chức năng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -64,7 +61,6 @@ namespace Nhom7_Project_QLPM.Forms
             DataGridViewMon.ColumnHeadersHeight = 30; // Đặt chiều cao là 30px
         }
 
-
         private void DataGridViewMon_Click(object sender, EventArgs e)
         {
             if (btnThem.Enabled == false)
@@ -91,6 +87,7 @@ namespace Nhom7_Project_QLPM.Forms
         private void btnThem_Click(object sender, EventArgs e)
         {
             btnSua.Enabled = false;
+            txtTenMon.Focus() ;
             btnXoa.Enabled = false;
             btnBoQua.Enabled = true;
             btnLuu.Enabled = true;
@@ -105,14 +102,17 @@ namespace Nhom7_Project_QLPM.Forms
         }
         private string SinhMaMon()
         {
-            int rowCount = 0;
-            using (SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM tblMonThucHanh", Class.Function.Conn))
+            string mamax = Class.Function.GetFieldValues("SELECT MAX(MaMon) FROM tblMonThucHanh");
+            if (string.IsNullOrEmpty(mamax))
             {
-                rowCount = (int)cmd.ExecuteScalar();
+                return "M001";
             }
-
-            string maMon = "M" + (rowCount + 1).ToString("000");
-            return maMon;
+            else
+            {
+                int masttmax = Convert.ToInt32(mamax.Substring(2));
+                masttmax += 1;
+                return "M" + masttmax.ToString("000");
+            }
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -121,7 +121,7 @@ namespace Nhom7_Project_QLPM.Forms
             string maMon = SinhMaMon();
             if (txtTenMon.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Vui lòng nhập tên lớp", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Vui lòng nhập tên môn học", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtTenMon.Focus();
                 return;
             }
@@ -151,7 +151,7 @@ namespace Nhom7_Project_QLPM.Forms
             }
             if (txtTenMon.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Vui lòng nhập tên lớp", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Vui lòng nhập tên môn", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtTenMon.Focus();
                 return;
             }
@@ -178,13 +178,18 @@ namespace Nhom7_Project_QLPM.Forms
                 MessageBox.Show("Bạn chưa chọn bản ghi nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if (MessageBox.Show("Bạn có chắc chắn muốn xóa lớp học không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa môn học không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
                 sql = "DELETE tblMonThucHanh WHERE MaMon=N'" + txtMaMon.Text + "'";
                 Class.Function.RunSqlDel(sql);
                 Load_DataGridView();
                 ResetValues();
             }
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void btnBoQua_Click(object sender, EventArgs e)
@@ -197,14 +202,8 @@ namespace Nhom7_Project_QLPM.Forms
             btnLuu.Enabled = false;
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
             if (txtSearch.Text.Trim() == "")
             {
                 MessageBox.Show("Vui lòng nhập từ khóa để tìm kiếm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -218,16 +217,12 @@ namespace Nhom7_Project_QLPM.Forms
             if (result.Rows.Count > 0)
             {
                 DataGridViewMon.DataSource = result;
-
-                // Hiển thị số lượng kết quả ra label4
                 label4.Text = "Số kết quả: " + result.Rows.Count.ToString();
             }
             else
             {
-                MessageBox.Show("Không tìm thấy lớp học nào với từ khóa trên.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Không tìm thấy môn học nào với từ khóa trên.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 DataGridViewMon.DataSource = MonThucHanh;
-
-                // Nếu không có kết quả, đặt label4 về giá trị mặc định
                 label4.Text = "Số kết quả: 0";
             }
         }
@@ -235,6 +230,10 @@ namespace Nhom7_Project_QLPM.Forms
         private void btnReset_Click(object sender, EventArgs e)
         {
             Load_DataGridView();
+            string query = "SELECT COUNT(*) FROM tblMonThucHanh";
+            SqlCommand command = new SqlCommand(query, Class.Function.Conn);
+            int soMon = (int)command.ExecuteScalar();
+            label4.Text = "Số môn thực hành có trong hệ thống:" + soMon;
         }
 
         private void txtMaMon_TextChanged(object sender, EventArgs e)
